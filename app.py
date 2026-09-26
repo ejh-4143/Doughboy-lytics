@@ -137,8 +137,8 @@ view = view[mask].copy()
 both = view.dropna(subset=["nick_v", "mitch_v"])
 
 
-def mean_median(s):
-    return f"{s.mean():.2f} / {s.median():g}" if s.notna().any() else "–"
+def mean(s):
+    return f"{s.mean():.2f}" if s.notna().any() else "–"
 
 
 def correlation(frame):
@@ -151,8 +151,8 @@ def correlation(frame):
 r_value = correlation(both)
 m1, m2, m3, m4, m5 = st.columns(5)
 m1.metric("Episodes", f"{len(view):,}")
-m2.metric("Nick · mean / median", mean_median(view.nick_v))
-m3.metric("Mitch · mean / median", mean_median(view.mitch_v))
+m2.metric("Nick's average", mean(view.nick_v))
+m3.metric("Mitch's average", mean(view.mitch_v))
 m4.metric("Nick & Mitch agree exactly",
           f"{(both.nick_v == both.mitch_v).mean():.0%}" if len(both) else "–",
           help="Share of episodes where both hosts gave the same score.")
@@ -261,9 +261,16 @@ with tab_time:
                     mode="lines", name=f"{name}, rolling avg", legendgroup=key,
                     showlegend=False, line=dict(color=colors[key], width=2.5),
                     hovertemplate=f"{name} 20-ep avg: %{{y:.2f}}<extra></extra>"))
+        # Legend-only key for marker shape, in neutral ink so it doesn't read as a host.
+        for is_live, label in ((False, "Studio episode"), (True, "Live show")):
+            fig.add_trace(go.Scatter(
+                x=[None], y=[None], mode="markers", name=label, legendgroup="shape",
+                marker=dict(symbol=SYMBOLS[is_live], size=9, color=colors["ink"])))
         style(fig, None, "Forks")
+        fig.update_layout(legend_traceorder="normal")  # one row, no gaps between groups
         st.plotly_chart(fig, width="stretch", theme="streamlit")
-        st.caption("◆ diamonds are live shows. Lines are 20-episode rolling averages.")
+        st.caption("Color shows who gave the score; shape shows where: ● studio, ◆ live show. "
+                   "Lines are 20-episode rolling averages.")
 
 # ---------------------------------------------------------------- table
 
