@@ -6,3 +6,8 @@ data/raw/
 # Jupyter scratch notebooks
 *.ipynb
 .ipynb_checkpoints/
+# Local lockfile: it pins pyarrow<21 for this machine's old glibc, and Streamlit
+# Cloud installs from uv.lock when present. Keeping it out makes Cloud use requirements.txt.
+uv.lock
+# Scratch space (deploy logs etc.)
+temp/
