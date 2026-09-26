@@ -73,7 +73,8 @@ The work is staged so the scraped data can be checked by eye before building the
   - **Table**: links to each episode's wiki page.
 - **Off-scale scores**: always capped at −1 and 6 (`CAP`), with no toggle. This is the user's call. Capping happens per rating, before averaging: the app builds its own per-episode scores from `ratings.csv` (`episode_scores()`), not from the precomputed averages in `episodes.csv`. The hover says what was capped (e.g. "Nicole Byer's 10 capped to 6"). In practice that's the only score beyond −1 and 6.
 - **Headline numbers**: episode count, each host's mean and median, exact-agreement rate, and Nick–Mitch Pearson r. r is computed on real (capped, unjittered) scores and shows "–" with fewer than 3 episodes or no variation.
-- **Live shows**: drawn as diamonds, studio episodes as circles.
+- **Live shows**: in the Nick vs. Mitch scatter, colored red, with studio episodes violet (the user's choice over marker shapes). The pair was validated separately, so it doesn't clash with Nick's blue or Mitch's orange. The Over time chart still uses diamonds for live shows, because color there identifies Nick, Mitch and the guests.
+- **Grid lines**: Streamlit's chart theme hides vertical grid lines, so `style()` sets `showgrid=True` on x.
 - **Color**: validated categorical slots 1-3 (blue for Nick, orange for Mitch, aqua for guests), with light and dark variants. Scatter forms only validate three all-pairs colors, so don't color by restaurant or chain (there are 415 restaurants); use filters instead.
 - **Credit footer**: required, see below.
 

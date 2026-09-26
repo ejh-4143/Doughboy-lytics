@@ -18,10 +18,14 @@ SCALE = (0, 5)
 CAP = (-1, 6)  # the hosts' own joke extremes; anything wilder (Nicole Byer's 10) is pulled in
 
 # Validated categorical slots 1-3 (all-pairs safe for scatter), per theme.
+# Studio/live use violet and red (slots 7 and 8), validated as their own pair,
+# so they don't read as Nick's blue or Mitch's orange.
 PALETTE = {
     "light": {"nick": "#2a78d6", "mitch": "#eb6834", "guests": "#1baf7a",
+              "studio": "#4a3aa7", "live": "#e34948",
               "ink": "#52514e", "grid": "#e6e5e0", "ring": "#fcfcfb"},
     "dark": {"nick": "#3987e5", "mitch": "#d95926", "guests": "#199e70",
+             "studio": "#9085e9", "live": "#e66767",
              "ink": "#c3c2b7", "grid": "#383835", "ring": "#1a1a19"},
 }
 SERIES = {"nick": "Nick", "mitch": "Mitch", "guests": "Guests (avg)"}
@@ -180,7 +184,8 @@ def style(fig, x_title, y_title, height=560):
         legend=dict(orientation="h", yanchor="bottom", y=1.01, x=0, title=None),
         hoverlabel=dict(align="left"), font=dict(color=colors["ink"]),
     )
-    fig.update_xaxes(title=x_title, gridcolor=colors["grid"], zeroline=False)
+    # Streamlit's chart theme hides vertical grid lines, so turn them on explicitly.
+    fig.update_xaxes(title=x_title, showgrid=True, gridcolor=colors["grid"], zeroline=False)
     fig.update_yaxes(title=y_title, gridcolor=colors["grid"], zeroline=False)
     return fig
 
@@ -204,8 +209,8 @@ with tab_vs:
             fig.add_trace(go.Scatter(
                 x=part.nick_v + part.jx, y=part.mitch_v + part.jy, mode="markers",
                 name="Live show" if is_live else "Studio episode",
-                marker=dict(symbol=SYMBOLS[is_live], size=10 if is_live else 9,
-                            color=colors["nick"], opacity=0.75,
+                marker=dict(size=9, color=colors["live" if is_live else "studio"],
+                            opacity=0.75,
                             line=dict(width=1.5, color=colors["ring"])),
                 text=hover(part), hovertemplate="%{text}<extra></extra>"))
         style(fig, "Nick's forks", "Mitch's forks", height=620)
