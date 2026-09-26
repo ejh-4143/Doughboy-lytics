@@ -90,6 +90,15 @@ def episode_scores(version):
     })
 
 
+@st.cache_data
+def guest_ratings(version):
+    """One row per guest rating (page, value), capped like all other scores."""
+    r = load_ratings()
+    r = r[r.role == "guest"]
+    value = r["rating" if version == "Revised" else "rating_original"].clip(*CAP)
+    return pd.DataFrame({"page": r.page, "value": value}).dropna()
+
+
 def theme():
     try:
         return "dark" if st.context.theme.type == "dark" else "light"
@@ -149,24 +158,51 @@ def mean(s):
     return f"{s.mean():.2f}" if s.notna().any() else "–"
 
 
-def correlation(frame):
-    """Pearson r between Nick's and Mitch's scores, or None if it's undefined."""
-    if len(frame) < 3 or frame.nick_v.nunique() < 2 or frame.mitch_v.nunique() < 2:
+def correlation(a, b):
+    """Pearson r between two aligned score series, or None if it's undefined."""
+    if len(a) < 3 or a.nunique() < 2 or b.nunique() < 2:
         return None
-    return frame.nick_v.corr(frame.mitch_v)
+    return a.corr(b)
 
 
-r_value = correlation(both)
-m1, m2, m3, m4, m5 = st.columns(5)
+def pair_stats(a, b):
+    """(correlation, exact-agreement share) for aligned score series."""
+    return correlation(a, b), ((a == b).mean() if len(a) else None)
+
+
+def pair_text(stats):
+    r, agree = stats
+    if agree is None:
+        return "–"
+    return ("r –" if r is None else f"r = {r:.2f}") + f" · {agree:.0%} agree"
+
+
+# Guest comparisons pair each individual guest rating with the host's score for
+# that episode, so agreement means the same thing as it does for Nick vs. Mitch.
+guests = guest_ratings(version)
+guests = guests[guests.page.isin(view.page)].merge(
+    view.drop_duplicates("page")[["page", "nick_v", "mitch_v"]], on="page")
+nick_guest = guests.dropna(subset=["nick_v"])
+mitch_guest = guests.dropna(subset=["mitch_v"])
+nick_mitch = pair_stats(both.nick_v, both.mitch_v)
+r_value = nick_mitch[0]
+
+m1, m2, m3, m4 = st.columns(4)
 m1.metric("Episodes", f"{len(view):,}")
 m2.metric("Nick's average", mean(view.nick_v))
 m3.metric("Mitch's average", mean(view.mitch_v))
-m4.metric("Nick & Mitch agree exactly",
-          f"{(both.nick_v == both.mitch_v).mean():.0%}" if len(both) else "–",
-          help="Share of episodes where both hosts gave the same score.")
-m5.metric("Nick–Mitch correlation", "–" if r_value is None else f"{r_value:.2f}",
-          help="Pearson's r across episodes both hosts rated: 1 means their scores rise and "
-               "fall together perfectly, 0 means no relationship. Needs at least 3 episodes.")
+m4.metric("Guests' average", mean(guests.value),
+          help="Average of every individual guest rating in these episodes.")
+PAIR_HELP = ("Correlation (Pearson's r, needs 3+ scores): 1 means the scores rise and fall "
+             "together perfectly, 0 means no relationship. Agreement: share of scores that "
+             "are exactly the same.")
+p1, p2, p3 = st.columns(3)
+p1.metric("Nick & Mitch", pair_text(nick_mitch),
+          help=PAIR_HELP + " Compared across episodes both hosts rated.")
+p2.metric("Nick & guests", pair_text(pair_stats(nick_guest.nick_v, nick_guest.value)),
+          help=PAIR_HELP + " Each guest's rating is compared with Nick's for that episode.")
+p3.metric("Mitch & guests", pair_text(pair_stats(mitch_guest.mitch_v, mitch_guest.value)),
+          help=PAIR_HELP + " Each guest's rating is compared with Mitch's for that episode.")
 
 
 def hover(frame):
