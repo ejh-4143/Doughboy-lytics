@@ -1,0 +1,87 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project
+
+Doughboy-lytics builds a scatterplot of the fork ratings Nick and Mitch give the restaurants covered on The Doughboys podcast (they asked for one on a recent episode). See README.md for the latest updates and context, and this conversation for the basic project plan: https://claude.ai/share/3fc93090-1789-4692-b4e9-2bbf62228e42
+
+## Commands
+
+Python 3.12 managed with uv (the system `python3` is 3.6, too old).
+
+```bash
+uv sync                          # install deps
+uv run python -m scraper.fetch   # download wikitext into data/raw/ (cached; --refresh to redo)
+uv run python -m scraper.parse   # data/raw/ + data/overrides.csv -> episodes.csv, ratings.csv, review.csv
+uv run streamlit run app.py      # the app, at http://localhost:8501
+```
+
+- **Smoke test**: there's no test suite. `streamlit.testing.v1.AppTest.from_file("app.py").run()` catches exceptions, and `at.session_state["version"]` / `["live"]` exercise the keyed filters.
+- **pyarrow pin**: `pyproject.toml` pins `pyarrow<21` only because this WSL machine has glibc 2.27, which newer pyarrow wheels don't support. Streamlit Community Cloud installs from `requirements.txt`, which doesn't pin it. Keep the two files in step when adding dependencies.
+- **Browser screenshots don't work here**: Playwright also needs a newer glibc. To look at a chart, take the figure spec from AppTest, decode the `{bdata, dtype}` arrays, and render it with `kaleido==0.2.1`'s `PlotlyScope`.
+
+`parse` never touches the network, so iterate on parsing rules freely; only run `fetch` when new episodes drop.
+
+## Pipeline
+
+The work is staged so the scraped data can be checked by eye before building the app.
+
+1. **Fetch** (`scraper/fetch.py`): uses the MediaWiki API, not the page HTML. It gets the `Episodes` master list, then every page linked from its Title column, 50 per `action=query` call. The master list only has the combined fork score, so each host's rating comes from the episode page's "... rating" section.
+2. **Parse** (`scraper/parse.py`, `scraper/wikitable.py`):
+   - The master list is two wikitables with six columns: #, Title, Fork Score, Date, Accolades, Notes.
+   - The ratings table's heading and unit change with the episode's theme ("Spoon rating", "10 carts"). The rating column is chosen from the header (`adjusted` > `overall rating` > `rating`).
+   - `wikitable.table_rows` expands `rowspan` cells.
+   - Struck-out old scores and `<sup>` footnote markers are dropped.
+   - Episodes rated out of 10 are detected because the wiki's score is half their average, and are halved.
+3. **Overrides** (`scraper/overrides.py`, `data/overrides.csv`): keyed by wiki page title, because episode numbers repeat (445 Doubles are just "DD"). A blank `rater` fixes an episode field; otherwise it fixes that rater's row. Never edit the generated CSVs by hand.
+4. **Review** (`data/review.csv`): lists scored episodes whose parsed average is more than 0.05 away from the wiki's fork score. The usual causes are later score revisions the wiki's score reflects, joke units, and odd tables. Resolve them with overrides.
+5. **App** (`app.py`): Streamlit with Plotly. It reads `data/episodes.csv` for episode info and `data/ratings.csv` for scores. The hosting target is still undecided; Streamlit Community Cloud needs `app.py`, `requirements.txt` and `data/`.
+
+## Data conventions
+
+- **`episodes.csv`**: one row per master-list entry, including Doubles, Bread Cast and Snack Pack (`kind`). Contains:
+  - `fork_score`: the wiki's combined score.
+  - `nick` and `mitch`: each host's rating.
+  - `guest_avg`: the guests' average rating.
+  - `date`: the release date, in ISO format.
+  - `live` and `live_source`: whether it was a live show, and why the parser thinks so (🎤 accolade, title, notes, or episode page).
+  - `live_type`: `in person`, `livestream` or `watchalong`.
+  - `live_city`: where it was recorded, as "City, ST". It comes from the notes ("live in …") or the page's "Recorded live … in …" line, and is normalized through `CITY_ALIASES` and `STATES` in `parse.py`. It is blank for livestreams, watchalongs, and the few in-person shows whose page gives no location.
+- **`ratings.csv`**: one row per rater per episode, with `rating_raw` next to the cleaned numbers. It repeats the episode's number, restaurant, date and live columns, so it can be plotted without a join.
+- **Original vs. revised scores**:
+  - `rating_original` is the score given on the episode. Changes made during the episode itself count as original.
+  - `rating` is the revised (current) score, and `revised` flags the rows where the two differ.
+  - `episodes.csv` has `nick`, `mitch`, `guest_avg` and `avg` (revised), each with an `_original` twin, plus an episode-level `revised` flag.
+  - Struck-out cells and "revised to X" are parsed automatically. Revisions mentioned only in prose are overrides: set `rating` when the cell shows the original, or `rating_original` when it shows the revised score. Use the `score` override field (which sets both) for parsing fixes that aren't revisions.
+  - The wiki's `fork_score` is inconsistent: sometimes it reflects revisions and sometimes it doesn't, so `review.csv` accepts either average.
+- **Unparseable values**: stay NaN, with a reason in `rating_note` or `fork_score_note` (e.g. "multiple ratings", "competition: Winner: X" for Munch Madness). Never use sentinels like -1.
+- **Off-scale ratings**: `off_scale` and `off_scale_original` are true for ratings outside 0 to 5, including 6+ and Carrows' -1. The number itself is kept as given.
+- **Live shows**: the app must be able to filter on `live`, and on `live_type` too, so livestreams can be counted as live or not.
+
+## App
+
+- **Filters**: one row above the charts.
+  - Score version (Revised by default; it switches to the `_original` columns).
+  - Year range.
+  - Live: All, Live only or Studio only, plus a "count livestreams & watchalongs as live" toggle.
+  - Episode types (main and Doubles by default).
+  - Restaurant search.
+- **Tabs**:
+  - **Nick vs. Mitch**: a square scatter, one dot per episode, jittered, with a y=x line and a "biggest disagreements" list beside it.
+  - **Over time**: Nick, Mitch and guests, with 20-episode rolling averages.
+  - **Table**: links to each episode's wiki page.
+- **Off-scale scores**: always capped at −1 and 6 (`CAP`), with no toggle. This is the user's call. Capping happens per rating, before averaging: the app builds its own per-episode scores from `ratings.csv` (`episode_scores()`), not from the precomputed averages in `episodes.csv`. The hover says what was capped (e.g. "Nicole Byer's 10 capped to 6"). In practice that's the only score beyond −1 and 6.
+- **Headline numbers**: episode count, each host's mean and median, exact-agreement rate, and Nick–Mitch Pearson r. r is computed on real (capped, unjittered) scores and shows "–" with fewer than 3 episodes or no variation.
+- **Live shows**: drawn as diamonds, studio episodes as circles.
+- **Color**: validated categorical slots 1-3 (blue for Nick, orange for Mitch, aqua for guests), with light and dark variants. Scatter forms only validate three all-pairs colors, so don't color by restaurant or chain (there are 415 restaurants); use filters instead.
+- **Credit footer**: required, see below.
+
+## Credit
+
+The data comes from the Doughboys Wiki (https://doughboys.fandom.com), which is licensed CC BY-SA. The README credits and thanks its editors. Any app or chart must show visible credit with a link to the wiki, and the derived data stays CC BY-SA.
+
+## Working in this repo
+
+- Ask for clarification when in doubt. Asking is encouraged.
+- Record major design decisions and other updates from each session in your memory file.

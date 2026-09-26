@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+
+# Downloaded wiki pages (8 MB); regenerate with: uv run python -m scraper.fetch
+data/raw/
+.ipynb_checkpoints/
