@@ -30,8 +30,9 @@ PALETTE = {
 }
 SERIES = {"nick": "Nick", "mitch": "Mitch", "guests": "Guests (avg)"}
 SYMBOLS = {False: "circle", True: "diamond"}
-KINDS = {"main": "Main episodes", "double": "Doughboys Doubles",
-         "bread_cast": "The Bread Cast", "snack_pack": "Snack Pack", "other": "Other"}
+# Only main episodes and Doubles carry fork ratings worth plotting (the Bread
+# Cast has a single rated episode; other side feeds have none).
+KINDS = {"All": ["main", "double"], "Main episodes": ["main"], "Doubles": ["double"]}
 
 st.set_page_config(page_title="Doughboy-lytics", page_icon="🍴", layout="wide")
 
@@ -39,7 +40,8 @@ st.set_page_config(page_title="Doughboy-lytics", page_icon="🍴", layout="wide"
 @st.cache_data
 def load():
     df = pd.read_csv(DATA, keep_default_na=False, na_values=[""])
-    df = df[df.avg.notna() | df.nick.notna() | df.mitch.notna()].copy()
+    df = df[(df.avg.notna() | df.nick.notna() | df.mitch.notna())
+            & df.kind.isin(KINDS["All"])].copy()
     df["date"] = pd.to_datetime(df.date)
     for col in ("live", "revised"):
         df[col] = df[col].astype(str).str.lower() == "true"
@@ -63,15 +65,20 @@ def episode_scores(version):
     """Per-page nick, mitch, guest and all-rater scores for one score version.
 
     Scores are capped to CAP per rating, before averaging, so a single wild
-    guest score can't skew an episode's guest average. `capped` describes
-    any capping for the hover text ("" if none).
+    guest score can't skew an episode's guest average. `capped` and `revisions`
+    describe any capping and later score changes for the hover text.
     """
     r = load_ratings()
+    who = r.role.map({"nick": "Nick", "mitch": "Mitch"}).fillna(r.rater)
+    changed = r.rating_original.notna() & (r.rating != r.rating_original)
+    later = r.rating.map(lambda v: "thrown out" if pd.isna(v) else f"{v:g}")
+    revision = (who + ": " + r.rating_original.map(lambda v: f"{v:g}", na_action="ignore")
+                + " on the episode → " + later + " later").where(changed, "")
     raw = r["rating" if version == "Revised" else "rating_original"]
     value = raw.clip(*CAP)
     note = np.where(value != raw, r.rater + "'s " + raw.map("{:g}".format)
                     + " capped to " + value.map("{:g}".format), "")
-    r = r.assign(value=value, capped=np.where(raw.notna(), note, ""))
+    r = r.assign(value=value, capped=np.where(raw.notna(), note, ""), revision=revision)
     hosts = r[r.role != "guest"].pivot_table(index="page", columns="role", values="value",
                                               aggfunc="first").reindex(columns=["nick", "mitch"])
     return pd.DataFrame({
@@ -79,6 +86,7 @@ def episode_scores(version):
         "guests_v": r[r.role == "guest"].groupby("page").value.mean(),
         "avg_v": r.groupby("page").value.mean(),
         "capped": r[r.capped != ""].groupby("page").capped.agg("; ".join),
+        "revisions": r[r.revision != ""].groupby("page").revision.agg("<br>✏️ ".join),
     })
 
 
@@ -113,17 +121,17 @@ with c3:
         "Live shows", ["All", "Live only", "Studio only"], default="All", key="live") or "All"
     streams_live = st.checkbox("Count livestreams & watchalongs as live", value=True)
 with c4:
-    kinds_present = [k for k in KINDS if k in set(df.kind)]
-    kinds = st.multiselect("Episode types", kinds_present, default=["main", "double"],
-                           format_func=KINDS.get)
+    kind_choice = st.segmented_control(
+        "Episode types", list(KINDS), default="All", key="kind") or "All"
     search = st.text_input("Restaurant", placeholder="Search, e.g. Taco Bell")
 
 # ---------------------------------------------------------------- apply filters
 
 view = df.join(episode_scores(version), on="page")
 view["capped"] = view.capped.fillna("")
+view["revisions"] = view.revisions.fillna("")
 view["is_live"] = view.live & (streams_live | (view.live_type == "in person"))
-mask = (view.date.dt.year.between(*year_range)) & view.kind.isin(kinds)
+mask = (view.date.dt.year.between(*year_range)) & view.kind.isin(KINDS[kind_choice])
 if live_choice == "Live only":
     mask &= view.is_live
 elif live_choice == "Studio only":
@@ -169,7 +177,7 @@ def hover(frame):
     for r in frame.itertuples():
         where = f"<br>🎤 Live{' in ' + r.live_city if r.live_city else ''} ({r.live_type})" \
             if r.is_live else ""
-        rev = "<br>✏️ Includes a later score revision" if r.revised else ""
+        rev = f"<br>✏️ {r.revisions}" if r.revisions else ""
         if r.capped:
             rev += f"<br>✂️ {r.capped} (scores are capped at −1 and 6)"
         rows.append(f"<b>{r.restaurant}</b><br>{r.label} · {r.date:%b %d, %Y}<br>"

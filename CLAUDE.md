@@ -65,13 +65,14 @@ The work is staged so the scraped data can be checked by eye before building the
   - Score version (Revised by default; it switches to the `_original` columns).
   - Year range.
   - Live: All, Live only or Studio only, plus a "count livestreams & watchalongs as live" toggle.
-  - Episode types (main and Doubles by default).
+  - Episode types: All, Main episodes or Doubles, in the same button style as the live filter. Only main episodes and Doubles are loaded; the Bread Cast (one rated episode) and other side feeds are left out of the app, though they stay in the CSVs.
   - Restaurant search.
 - **Tabs**:
   - **Nick vs. Mitch**: a square scatter, one dot per episode, jittered, with a y=x line and a "biggest disagreements" list beside it.
   - **Over time**: Nick, Mitch and guests, with 20-episode rolling averages.
   - **Table**: links to each episode's wiki page.
 - **Off-scale scores**: always capped at −1 and 6 (`CAP`), with no toggle. This is the user's call. Capping happens per rating, before averaging: the app builds its own per-episode scores from `ratings.csv` (`episode_scores()`), not from the precomputed averages in `episodes.csv`. The hover says what was capped (e.g. "Nicole Byer's 10 capped to 6"). In practice that's the only score beyond −1 and 6.
+- **Hover notes**: `episode_scores()` builds them from `ratings.csv`: revisions ("✏️ Mitch: 5 on the episode → 3 later", or "→ thrown out later") and capping ("✂️ Nicole Byer's 10 capped to 6"). Don't fall back to the yes/no `revised` flag in `episodes.csv`.
 - **Headline numbers**: episode count, each host's mean (median and variance were tried and dropped: they distracted from the head-to-head comparison), exact-agreement rate, and Nick–Mitch Pearson r. r is computed on real (capped, unjittered) scores and shows "–" with fewer than 3 episodes or no variation.
 - **Live shows**: in the Nick vs. Mitch scatter, colored red, with studio episodes violet (the user's choice over marker shapes). The pair was validated separately, so it doesn't clash with Nick's blue or Mitch's orange. The Over time chart keeps diamonds for live shows, because color there identifies Nick, Mitch and the guests (the user wants it that way). Two gray legend-only entries (● Studio episode, ◆ Live show) explain the shapes, and `legend_traceorder="normal"` keeps the legend on one row.
 - **Grid lines**: Streamlit's chart theme hides vertical grid lines, so `style()` sets `showgrid=True` on x.
