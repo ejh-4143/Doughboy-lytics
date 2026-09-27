@@ -16,7 +16,7 @@ uv run python -m scraper.parse   # build data/episodes.csv and data/ratings.csv
 uv run streamlit run app.py      # open the app at http://localhost:8501
 ```
 
-Manual corrections live in `data/overrides.csv`, and are reapplied every time `parse` runs.
+Manual corrections live in `data/overrides.csv`, and are reapplied every time `parse` runs. Each restaurant's food category and canonical chain name live in `data/categories.csv`, which is hand-curated; `parse` lists any new restaurant that still needs a row.
 
 ## Original vs. revised scores
 

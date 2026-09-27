@@ -35,8 +35,9 @@ The work is staged so the scraped data can be checked by eye before building the
    - Struck-out old scores and `<sup>` footnote markers are dropped.
    - Episodes rated out of 10 are detected because the wiki's score is half their average, and are halved.
 3. **Overrides** (`scraper/overrides.py`, `data/overrides.csv`): keyed by wiki page title, because episode numbers repeat (445 Doubles are just "DD"). A blank `rater` fixes an episode field; otherwise it fixes that rater's row. Never edit the generated CSVs by hand.
-4. **Review** (`data/review.csv`): lists scored episodes whose parsed average is more than 0.05 away from the wiki's fork score. The usual causes are later score revisions the wiki's score reflects, joke units, and odd tables. Resolve them with overrides.
-5. **App** (`app.py`): Streamlit with Plotly. It reads `data/episodes.csv` for episode info and `data/ratings.csv` for scores. The hosting target is still undecided; Streamlit Community Cloud needs `app.py`, `requirements.txt` and `data/`.
+4. **Categories** (`data/categories.csv`): hand-curated, one row per parsed restaurant name, with a `chain` (canonical name that merges variants like "Papa Johns"/"Papa John's" or "Popeyes Wings"/"Popeyes") and one food `category`. `parse` joins both into `episodes.csv` and prints any scored restaurant that's missing, so new episodes need a row added here. `check=yes` marks drafts the user hasn't confirmed. The wiki's own `[[Category:...]]` food tags describe what was ordered, not the restaurant type, so they weren't usable for this.
+5. **Review** (`data/review.csv`): lists scored episodes whose parsed average is more than 0.05 away from the wiki's fork score. The usual causes are later score revisions the wiki's score reflects, joke units, and odd tables. Resolve them with overrides.
+6. **App** (`app.py`): Streamlit with Plotly. It reads `data/episodes.csv` for episode info and `data/ratings.csv` for scores. The hosting target is still undecided; Streamlit Community Cloud needs `app.py`, `requirements.txt` and `data/`.
 
 ## Data conventions
 
@@ -55,6 +56,7 @@ The work is staged so the scraped data can be checked by eye before building the
   - `episodes.csv` has `nick`, `mitch`, `guest_avg` and `avg` (revised), each with an `_original` twin, plus an episode-level `revised` flag.
   - Struck-out cells and "revised to X" are parsed automatically. Revisions mentioned only in prose are overrides: set `rating` when the cell shows the original, or `rating_original` when it shows the revised score. Use the `score` override field (which sets both) for parsing fixes that aren't revisions.
   - The wiki's `fork_score` is inconsistent: sometimes it reflects revisions and sometimes it doesn't, so `review.csv` accepts either average.
+- **Food categories** (13, broad on purpose so each has enough episodes): Burgers & Hot Dogs, Pizza & Italian, Chicken, Mexican, Sandwiches & Subs, Asian, Mediterranean, Seafood, American & Casual Dining (including steakhouses, barbecue and sports bars), Breakfast & Diners, Coffee, Bakery & Sweets, Healthy & Juice (salads, bowls, juice, vegan), Other (grocery and convenience stores, theme parks, theaters, produce episodes, frozen food). Seafood (9 episodes) and Mediterranean (7) are small.
 - **Unparseable values**: stay NaN, with a reason in `rating_note` or `fork_score_note` (e.g. "multiple ratings", "competition: Winner: X" for Munch Madness). Never use sentinels like -1.
 - **Off-scale ratings**: `off_scale` and `off_scale_original` are true for ratings outside 0 to 5, including 6+ and Carrows' -1. The number itself is kept as given.
 - **Live shows**: the app must be able to filter on `live`, and on `live_type` too, so livestreams can be counted as live or not.
@@ -66,6 +68,7 @@ The work is staged so the scraped data can be checked by eye before building the
   - Year range.
   - Live: All, Live only or Studio only, plus a "count livestreams & watchalongs as live" toggle.
   - Episode types: All, Main episodes or Doubles, in the same button style as the live filter. Only main episodes and Doubles are loaded; the Bread Cast (one rated episode) and other side feeds are left out of the app, though they stay in the CSVs.
+  - Food category: a popover checklist (`category_filter()`). The button reads "Categories: all / none / <one name> / N of 13". Inside are All and None buttons, then one checkbox per category, sorted by episode count with the count shown. State lives in `st.session_state["cat:<category>"]`, all on by default. The user specifically wanted checkboxes with All/None, not a multi-select dropdown.
   - Restaurant search.
 - **Tabs**:
   - **Nick vs. Mitch**: a square scatter, one dot per episode, jittered, with a y=x line and a "biggest disagreements" list beside it.

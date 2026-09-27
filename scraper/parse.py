@@ -282,6 +282,22 @@ def episode_summary(ratings, col, suffix):
     return out.add_suffix(suffix)
 
 
+def add_categories(episodes, path):
+    """Join the hand-curated chain and food category for each restaurant.
+
+    data/categories.csv (restaurant, chain, category, check, note) is keyed by
+    the parsed restaurant name. Scored episodes whose restaurant isn't listed
+    are reported so new episodes get categorized.
+    """
+    cats = pd.read_csv(path, dtype=str, keep_default_na=False)[["restaurant", "chain", "category"]]
+    episodes = episodes.merge(cats, on="restaurant", how="left")
+    missing = episodes[episodes.fork_score.notna() & episodes.category.isna()
+                       & episodes.kind.isin(["main", "double"])].restaurant.unique()
+    if len(missing):
+        print("restaurants missing from data/categories.csv:\n  " + "\n  ".join(sorted(missing)))
+    return episodes
+
+
 # ---------------------------------------------------------------- main
 
 
@@ -332,6 +348,7 @@ def build():
 
     episodes = pd.DataFrame(episodes).astype({"episode_num": "Int64"})
     ratings = rescale_ten_point(pd.DataFrame(ratings), episodes)
+    episodes = add_categories(episodes, DATA_DIR / "categories.csv")
     episodes, ratings = apply_overrides(episodes, ratings, DATA_DIR / "overrides.csv")
     episodes["live"] = episodes["live_source"].fillna("") != ""
     episodes.loc[~episodes.live, ["live_type", "live_city"]] = ""

@@ -47,6 +47,7 @@ def load():
         df[col] = df[col].astype(str).str.lower() == "true"
     df["live_type"] = df.live_type.fillna("")
     df["live_city"] = df.live_city.fillna("")
+    df["category"] = df.category.fillna("Other")
     df["label"] = np.where(df.kind == "main", "Ep. " + df.number.astype(str), df.number)
     # Deterministic jitter so identical scores don't hide behind each other.
     rng = np.random.default_rng(7)
@@ -106,6 +107,34 @@ def theme():
         return "light"
 
 
+def category_filter(by_size):
+    """Popover checklist of food categories, sorted by episode count, with All/None.
+
+    Each checkbox's state lives in st.session_state["cat:<category>"] (all on by
+    default); returns the checked categories.
+    """
+    keys = {c: f"cat:{c}" for c in by_size.index}
+    for key in keys.values():
+        st.session_state.setdefault(key, True)
+
+    def set_all(on):
+        for key in keys.values():
+            st.session_state[key] = on
+
+    chosen = [c for c, key in keys.items() if st.session_state[key]]
+    summary = ("all" if len(chosen) == len(keys) else "none" if not chosen
+               else chosen[0] if len(chosen) == 1 else f"{len(chosen)} of {len(keys)}")
+    st.markdown("**Food category**", help="One hand-assigned category per restaurant "
+                "(data/categories.csv). Numbers are rated episodes in each.")
+    with st.popover(f"Categories: {summary}", width="stretch"):
+        b1, b2 = st.columns(2)
+        b1.button("All", on_click=set_all, args=(True,), width="stretch")
+        b2.button("None", on_click=set_all, args=(False,), width="stretch")
+        for c, key in keys.items():
+            st.checkbox(f"{c} ({by_size[c]})", key=key)
+    return chosen
+
+
 df = load()
 colors = PALETTE[theme()]
 
@@ -125,6 +154,7 @@ with c1:
 with c2:
     years = (int(df.date.dt.year.min()), int(df.date.dt.year.max()))
     year_range = st.slider("Years", *years, value=years)
+    categories = category_filter(df.category.value_counts())
 with c3:
     live_choice = st.segmented_control(
         "Live shows", ["All", "Live only", "Studio only"], default="All", key="live") or "All"
@@ -145,6 +175,7 @@ if live_choice == "Live only":
     mask &= view.is_live
 elif live_choice == "Studio only":
     mask &= ~view.is_live
+mask &= view.category.isin(categories)
 if search:
     mask &= view.restaurant.str.contains(search, case=False, regex=False)
 view = view[mask].copy()
@@ -216,7 +247,7 @@ def hover(frame):
         rev = f"<br>✏️ {r.revisions}" if r.revisions else ""
         if r.capped:
             rev += f"<br>✂️ {r.capped} (scores are capped at −1 and 6)"
-        rows.append(f"<b>{r.restaurant}</b><br>{r.label} · {r.date:%b %d, %Y}<br>"
+        rows.append(f"<b>{r.restaurant}</b> · {r.category}<br>{r.label} · {r.date:%b %d, %Y}<br>"
                     f"Nick {fmt(r.nick_v)} · Mitch {fmt(r.mitch_v)} · "
                     f"Guests {fmt(r.guests_v)}{where}{rev}")
     return rows
@@ -320,7 +351,7 @@ with tab_time:
 
 with tab_table:
     table = view.sort_values("date", ascending=False)[[
-        "label", "date", "restaurant", "guests", "nick_v", "mitch_v", "guests_v", "avg_v",
+        "label", "date", "restaurant", "category", "guests", "nick_v", "mitch_v", "guests_v", "avg_v",
         "is_live", "live_city", "revised", "page"]]
     table = table.assign(page="https://doughboys.fandom.com/wiki/"
                          + table.page.str.replace(" ", "_"))
@@ -328,7 +359,7 @@ with tab_table:
         table, hide_index=True, width="stretch", height=560,
         column_config={
             "label": "Episode", "date": st.column_config.DateColumn("Date"),
-            "restaurant": "Restaurant", "guests": "Guests",
+            "restaurant": "Restaurant", "category": "Category", "guests": "Guests",
             "nick_v": st.column_config.NumberColumn("Nick", format="%.2f"),
             "mitch_v": st.column_config.NumberColumn("Mitch", format="%.2f"),
             "guests_v": st.column_config.NumberColumn("Guests", format="%.2f"),
