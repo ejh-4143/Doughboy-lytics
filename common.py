@@ -13,8 +13,6 @@ RATINGS = ROOT / "data" / "ratings.csv"
 # transcripts themselves stay local; the app only ever sees counts.
 TRANSCRIPT_EPS = ROOT / "data" / "transcript_episodes.csv"
 PHRASE_COUNTS = ROOT / "data" / "phrase_counts.csv"
-PHRASE_CANDIDATES = ROOT / "data" / "phrase_candidates.csv"
-PHRASES = ROOT / "data" / "phrases.csv"
 PODSCRIPTS = "https://podscripts.co/podcasts/doughboys/"
 WIKI = "https://doughboys.fandom.com/wiki/Doughboys_Wikia"
 SCALE = (0, 5)
@@ -43,8 +41,7 @@ def data_stamp():
     """Modification times of the CSVs. Passed to every cached loader so a
     running app picks up rebuilt data instead of serving its old cache."""
     return tuple(p.stat().st_mtime if p.exists() else 0
-                 for p in (DATA, RATINGS, TRANSCRIPT_EPS, PHRASE_COUNTS, PHRASE_CANDIDATES,
-                           PHRASES))
+                 for p in (DATA, RATINGS, TRANSCRIPT_EPS, PHRASE_COUNTS))
 
 
 @st.cache_data
@@ -112,62 +109,13 @@ def guest_ratings(version, stamp):
 
 @st.cache_data
 def load_words(stamp):
-    """(transcript episodes, phrase counts, candidates), or None before the
-    transcripts have been processed."""
+    """(transcript episodes, phrase counts), or None before the transcripts
+    have been processed."""
     if not (TRANSCRIPT_EPS.exists() and PHRASE_COUNTS.exists()):
         return None
     eps = pd.read_csv(TRANSCRIPT_EPS).dropna(subset=["page"])
     counts = pd.read_csv(PHRASE_COUNTS)
-    cands = pd.read_csv(PHRASE_CANDIDATES) if PHRASE_CANDIDATES.exists() else None
-    if cands is not None and PHRASES.exists():
-        cands = fold_candidates(cands, counts, eps)
-    return eps, counts, cands
-
-
-def _words(text):
-    """Same normalization as scraper/phrases.py: lowercase words, straight apostrophes."""
-    import re
-    return re.findall(r"[a-z0-9]+(?:'[a-z]+)?", str(text).lower().replace("’", "'"))
-
-
-def fold_candidates(cands, counts, eps):
-    """Merge signature-list entries that are spellings of a tracked phrase.
-
-    An entry folds into a phrase from data/phrases.csv when it is that phrase,
-    one of its variants, or a whole-word part of one ("jemmy's", "uncar",
-    "plutt"), and matches no other tracked phrase. The merged row gets the
-    tracked phrase's exact stats from phrase_counts.csv instead.
-    """
-    phrases = pd.read_csv(PHRASES, dtype=str, keep_default_na=False)
-    spellings = {}
-    for row in phrases.itertuples():
-        variants = [row.phrase] + [v for v in row.variants.split("|") if v.strip()]
-        spellings[row.phrase] = [" " + " ".join(_words(v)) + " " for v in variants]
-
-    def owner(entry):
-        e = " " + " ".join(w.removesuffix("'s") for w in _words(entry)) + " "
-        hits = [p for p, vs in spellings.items() if any(e in v for v in vs)]
-        return hits[0] if len(hits) == 1 else None
-
-    cands = cands.assign(owner=cands.phrase.map(owner))
-    folded = [p for p in cands.owner.dropna().unique() if p in set(counts.phrase)]
-    if not folded:
-        return cands.drop(columns="owner")
-    dates = eps.set_index("slug").date
-    rows = []
-    for p in folded:
-        c = counts[counts.phrase == p]
-        by_year = c.groupby(c.slug.map(dates).str[:4])["count"].sum()
-        rows.append({"phrase": p, "words": len(p.split()), "count": int(c["count"].sum()),
-                     "episodes": c.slug.nunique(),
-                     "first_year": int(by_year.index.min()), "peak_year": int(by_year.idxmax())})
-    kept = cands[cands.owner.isna() | ~cands.owner.isin(folded)].drop(columns="owner")
-    # Place each merged phrase where its best-ranked spelling was.
-    merged = pd.DataFrame(rows).set_index("phrase")
-    first_pos = cands.reset_index().groupby("owner")["index"].min()
-    out = pd.concat([kept, merged.reset_index()], ignore_index=True)
-    out["_pos"] = list(kept.index) + [first_pos[p] - 0.5 for p in merged.index]
-    return out.sort_values("_pos").drop(columns="_pos").reset_index(drop=True)
+    return eps, counts
 
 
 # ---------------------------------------------------------------- helpers
