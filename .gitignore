@@ -11,3 +11,5 @@ data/raw/
 uv.lock
 # Scratch space (deploy logs etc.)
 temp/
+# Podcast transcripts from podscripts.co: copyrighted, keep local only
+data/transcripts/

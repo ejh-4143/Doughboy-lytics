@@ -5,6 +5,8 @@ On the recent podcast episode of The Doughboys the Nick and Mitch requested a sc
 
 All episode data comes from the [Doughboys Wiki](https://doughboys.fandom.com/wiki/Doughboys_Wikia) on Fandom. Huge thanks to its editors: they've logged every episode since 2015, with orders, fork ratings and later score revisions, and this project wouldn't exist without them. If you spot a mistake, please fix it on the wiki so everyone benefits.
 
+Word and phrase counts come from the machine-made transcripts at [podscripts.co](https://podscripts.co/podcasts/doughboys/). Thanks to them as well. The transcripts themselves aren't included in this repo, only counts derived from them.
+
 The wiki's text is licensed under [CC BY-SA](https://www.fandom.com/licensing). The CSVs in `data/` are derived from it and are shared under the same license, with attribution to the Doughboys Wiki contributors.
 
 ## Usage
@@ -13,6 +15,8 @@ The wiki's text is licensed under [CC BY-SA](https://www.fandom.com/licensing). 
 uv sync
 uv run python -m scraper.fetch   # download episode pages from the wiki's API into data/raw/
 uv run python -m scraper.parse   # build data/episodes.csv and data/ratings.csv
+uv run python -m scraper.transcripts  # optional: download transcripts (about 1 hour, kept local)
+uv run python -m scraper.phrases      # count the phrases in data/phrases.csv
 uv run streamlit run app.py      # open the app at http://localhost:8501
 ```
 

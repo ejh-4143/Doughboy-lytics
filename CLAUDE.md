@@ -14,6 +14,8 @@ Python 3.12 managed with uv (the system `python3` is 3.6, too old).
 uv sync                          # install deps
 uv run python -m scraper.fetch   # download wikitext into data/raw/ (cached; --refresh to redo)
 uv run python -m scraper.parse   # data/raw/ + data/overrides.csv -> episodes.csv, ratings.csv, review.csv
+uv run python -m scraper.transcripts  # download podscripts.co transcripts into data/transcripts/ (local only; about 1 hour)
+uv run python -m scraper.phrases      # transcripts + data/phrases.csv -> phrase_counts.csv, phrase_candidates.csv (about 3 minutes; --no-candidates is faster)
 uv run streamlit run app.py      # the app, at http://localhost:8501
 ```
 
@@ -38,7 +40,16 @@ The work is staged so the scraped data can be checked by eye before building the
 3. **Overrides** (`scraper/overrides.py`, `data/overrides.csv`): keyed by wiki page title, because episode numbers repeat (445 Doubles are just "DD"). A blank `rater` fixes an episode field; otherwise it fixes that rater's row. Never edit the generated CSVs by hand.
 4. **Categories** (`data/categories.csv`): hand-curated, one row per parsed restaurant name, with a `chain` (canonical name that merges variants like "Papa Johns"/"Papa John's" or "Popeyes Wings"/"Popeyes") and one food `category`. `parse` joins both into `episodes.csv` and prints any scored restaurant that's missing, so new episodes need a row added here. `check=yes` marks drafts the user hasn't confirmed. The wiki's own `[[Category:...]]` food tags describe what was ordered, not the restaurant type, so they weren't usable for this.
 5. **Review** (`data/review.csv`): lists scored episodes whose parsed average is more than 0.05 away from the wiki's fork score. The usual causes are later score revisions the wiki's score reflects, joke units, and odd tables. Resolve them with overrides.
-6. **App** (`app.py`): Streamlit with Plotly. It reads `data/episodes.csv` for episode info and `data/ratings.csv` for scores. The hosting target is still undecided; Streamlit Community Cloud needs `app.py`, `requirements.txt` and `data/`.
+6. **Transcripts** (`scraper/transcripts.py`, `scraper/phrases.py`): podscripts.co has machine-made transcripts of about 580 main-feed episodes.
+   - **Local only:** they're copyrighted, so they stay in the gitignored `data/transcripts/`. Only derived counts are committed: `transcript_episodes.csv`, `phrase_counts.csv` and `phrase_candidates.csv`.
+   - **Rate limit:** podscripts allows 10 requests a minute (`X-RateLimit-Limit`); the fetcher waits 6.5 s between requests and backs off on 429.
+   - **No speaker labels,** so counts are per episode, not per host.
+   - **Coverage gap:** podscripts has nothing from about September 2025 to May 2026.
+   - **Episode matching:** `match_episodes()` uses cleaned titles first (`title_keys()` strips "UNLOCKED!", "Doughboys Double NN -", theme prefixes before a colon, "(LIVE)" and "Alias aka Name" credits), then close titles, then the release date if the titles also share a real word. UNLOCKED re-releases are how 32 Doubles get transcripts. One transcript is kept per wiki episode, and the rest are marked `duplicate`.
+   - **Boilerplate:** sentences of 6+ words that appear verbatim in 3+ episodes (ads, the Headgum intro, Patreon plugs) are dropped before anything is counted.
+   - **Phrase list:** `data/phrases.csv` is user-editable (`phrase`, `"|"`-separated `variants`, `note`). Matching is whole-word and ignores case and punctuation. Variants matter because transcription garbles things: "platinum play club" is more common than "plate", and "this show sucks" also covers "the podcast is bad" and similar.
+   - **Candidates:** `phrase_candidates.csv` lists words far more common than in general English (`wordfreq`) and phrases with high PMI that recur across episodes, ranked separately for each length (1–4 words), with ad copy and misspellings of Wiger/Doughboys filtered out. It's a menu for picking phrases, not ground truth.
+7. **App** (`app.py`): Streamlit with Plotly. It reads `data/episodes.csv` for episode info and `data/ratings.csv` for scores. The hosting target is still undecided; Streamlit Community Cloud needs `app.py`, `requirements.txt` and `data/`.
 
 ## Data conventions
 
@@ -74,6 +85,7 @@ The work is staged so the scraped data can be checked by eye before building the
 - **Tabs**:
   - **Nick vs. Mitch**: a square scatter, one dot per episode, jittered, with a y=x line and a "biggest disagreements" list beside it.
   - **Over time**: Nick, Mitch and guests, with 20-episode rolling averages.
+  - **Words**: up to 5 phrases from `phrase_counts.csv`, shown as rate per 10k words per episode, with 25-episode rolling lines that break across coverage gaps of more than 60 days. A summary table shows total uses, share of episodes, first and peak year, r with the episode's average score, and the episode where it was used most. An expander lists the signature words and phrases. The tab respects all filters, and only shows episodes with a matched transcript.
   - **Table**: links to each episode's wiki page.
 - **Caching**: every `@st.cache_data` loader takes `data_stamp()` (the CSVs' modification times) as an argument, so a running app reloads rebuilt CSVs. Keep passing it to any new cached function that reads the data.
 - **Off-scale scores**: always capped at −1 and 6 (`CAP`), with no toggle. This is the user's call. Capping happens per rating, before averaging: the app builds its own per-episode scores from `ratings.csv` (`episode_scores()`), not from the precomputed averages in `episodes.csv`. The hover says what was capped (e.g. "Nicole Byer's 10 capped to 6"). In practice that's the only score beyond −1 and 6.
