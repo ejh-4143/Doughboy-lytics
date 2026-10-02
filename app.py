@@ -37,8 +37,14 @@ KINDS = {"All": ["main", "double"], "Main episodes": ["main"], "Doubles": ["doub
 st.set_page_config(page_title="Doughboy-lytics", page_icon="🍴", layout="wide")
 
 
+def data_stamp():
+    """Modification times of the CSVs. Passed to every cached loader so a
+    running app picks up rebuilt data instead of serving its old cache."""
+    return DATA.stat().st_mtime, RATINGS.stat().st_mtime
+
+
 @st.cache_data
-def load():
+def load(stamp):
     df = pd.read_csv(DATA, keep_default_na=False, na_values=[""])
     df = df[(df.avg.notna() | df.nick.notna() | df.mitch.notna())
             & df.kind.isin(KINDS["All"])].copy()
@@ -57,19 +63,19 @@ def load():
 
 
 @st.cache_data
-def load_ratings():
+def load_ratings(stamp):
     return pd.read_csv(RATINGS, usecols=["page", "rater", "role", "rating", "rating_original"])
 
 
 @st.cache_data
-def episode_scores(version):
+def episode_scores(version, stamp):
     """Per-page nick, mitch, guest and all-rater scores for one score version.
 
     Scores are capped to CAP per rating, before averaging, so a single wild
     guest score can't skew an episode's guest average. `capped` and `revisions`
     describe any capping and later score changes for the hover text.
     """
-    r = load_ratings()
+    r = load_ratings(stamp)
     who = r.role.map({"nick": "Nick", "mitch": "Mitch"}).fillna(r.rater)
     changed = r.rating_original.notna() & (r.rating != r.rating_original)
     later = r.rating.map(lambda v: "thrown out" if pd.isna(v) else f"{v:g}")
@@ -92,12 +98,22 @@ def episode_scores(version):
 
 
 @st.cache_data
-def guest_ratings(version):
+def guest_ratings(version, stamp):
     """One row per guest rating (page, value), capped like all other scores."""
-    r = load_ratings()
+    r = load_ratings(stamp)
     r = r[r.role == "guest"]
     value = r["rating" if version == "Revised" else "rating_original"].clip(*CAP)
     return pd.DataFrame({"page": r.page, "value": value}).dropna()
+
+
+def normalize(text):
+    """Lowercase, strip accents and apostrophes, and fold spelling variants so
+    a search like "Voodoo Donuts" finds "Voodoo Doughnut"."""
+    text = (text.str.normalize("NFKD").str.encode("ascii", "ignore").str.decode("ascii")
+            .str.lower().str.replace(r"['’`.]", "", regex=True)
+            .str.replace(r"[^a-z0-9]+", " ", regex=True))
+    text = text.str.replace(r"doughnut", "donut", regex=True)
+    return text.str.replace(r"\b(\w{2,}[^s\W])s\b", r"\1", regex=True)  # tacos -> taco
 
 
 def theme():
@@ -135,7 +151,8 @@ def category_filter(by_size):
     return chosen
 
 
-df = load()
+stamp = data_stamp()
+df = load(stamp)
 colors = PALETTE[theme()]
 
 st.title("🍴 Doughboy-lytics")
@@ -162,11 +179,13 @@ with c3:
 with c4:
     kind_choice = st.segmented_control(
         "Episode types", list(KINDS), default="All", key="kind") or "All"
-    search = st.text_input("Restaurant", placeholder="Search, e.g. Taco Bell")
+    search = st.text_input("Search", placeholder="Restaurant or guest, e.g. Taco Bell",
+                           help="Matches restaurant, chain and guest names. Ignores case, "
+                                "accents and apostrophes; plurals and donut/doughnut match.")
 
 # ---------------------------------------------------------------- apply filters
 
-view = df.join(episode_scores(version), on="page")
+view = df.join(episode_scores(version, stamp), on="page")
 view["capped"] = view.capped.fillna("")
 view["revisions"] = view.revisions.fillna("")
 view["is_live"] = view.live & (streams_live | (view.live_type == "in person"))
@@ -177,7 +196,9 @@ elif live_choice == "Studio only":
     mask &= ~view.is_live
 mask &= view.category.isin(categories)
 if search:
-    mask &= view.restaurant.str.contains(search, case=False, regex=False)
+    haystack = normalize(view.restaurant + " " + view.chain.fillna("") + " " + view.guests.fillna(""))
+    for word in normalize(pd.Series([search])).iloc[0].split():
+        mask &= haystack.str.contains(word, regex=False)
 view = view[mask].copy()
 
 # ---------------------------------------------------------------- headline numbers
@@ -210,7 +231,7 @@ def pair_text(stats):
 
 # Guest comparisons pair each individual guest rating with the host's score for
 # that episode, so agreement means the same thing as it does for Nick vs. Mitch.
-guests = guest_ratings(version)
+guests = guest_ratings(version, stamp)
 guests = guests[guests.page.isin(view.page)].merge(
     view.drop_duplicates("page")[["page", "nick_v", "mitch_v"]], on="page")
 nick_guest = guests.dropna(subset=["nick_v"])
