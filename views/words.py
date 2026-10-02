@@ -33,7 +33,7 @@ eps = view.drop_duplicates("page")[["page", "label", "restaurant", "date", "avg_
     .merge(t_eps[["page", "words"]], on="page")
 
 phrases = list(t_counts.groupby("phrase")["count"].sum().sort_values(ascending=False).index)
-default = [p for p in ("wow", "this show sucks") if p in phrases]
+default = [p for p in ("wow",) if p in phrases]  # "wow" dwarfs everything else, so chart it alone
 chosen = st.multiselect("Phrases", phrases, default=default, max_selections=5, key="phrases",
                         help="Up to five at a time. To add phrases, edit data/phrases.csv and "
                              "re-run scraper.phrases.")
@@ -76,6 +76,10 @@ else:
             hovertemplate=f"“{phrase}” {SMOOTH_N}-episode avg: %{{y:.1f}} per 10k words"
                           "<extra></extra>"))
     style(fig, None, "Uses per 10,000 words", height=520)
+    # Larger text than the other charts: this one is the page's main event.
+    fig.update_layout(legend_font_size=15)
+    fig.update_xaxes(tickfont_size=14, title_font_size=15)
+    fig.update_yaxes(tickfont_size=14, title_font_size=15)
     st.plotly_chart(fig, width="stretch", theme="streamlit")
     st.caption(f"Dots are episodes; lines are {SMOOTH_N}-episode rolling averages. Lines break "
                "where transcripts are missing (podscripts.co has none for most episodes from "
