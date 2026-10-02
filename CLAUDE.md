@@ -49,7 +49,7 @@ The work is staged so the scraped data can be checked by eye before building the
    - **Boilerplate:** sentences of 6+ words that appear verbatim in 3+ episodes (ads, the Headgum intro, Patreon plugs) are dropped before anything is counted.
    - **Phrase list:** `data/phrases.csv` is user-editable (`phrase`, `"|"`-separated `variants`, `note`). Matching is whole-word and ignores case and punctuation. Variants matter because transcription garbles things: "platinum play club" is more common than "plate", and "this show sucks" also covers "the podcast is bad" and similar.
    - **Candidates:** `phrase_candidates.csv` lists words far more common than in general English (`wordfreq`) and phrases with high PMI that recur across episodes, ranked separately for each length (1–4 words), with ad copy and misspellings of Wiger/Doughboys filtered out. It's a menu for picking phrases, not ground truth.
-7. **App** (`app.py`): Streamlit with Plotly. It reads `data/episodes.csv` for episode info and `data/ratings.csv` for scores. The hosting target is still undecided; Streamlit Community Cloud needs `app.py`, `requirements.txt` and `data/`.
+7. **App**: a multipage Streamlit app. `app.py` sets up navigation (`st.navigation`) and the shared credit footer. The pages are `views/ratings.py` (🍴 Fork ratings) and `views/words.py` (💬 Words); the folder is `views/` because Streamlit would auto-load a `pages/` folder. Shared loaders, filters, colors and `style()` live in `common.py`. Ratings come from `episodes.csv` and `ratings.csv`, word counts from the phrase CSVs. The hosting target is Streamlit Community Cloud, deployed from the user's fork; it needs `app.py`, `common.py`, `views/`, `requirements.txt` and `data/`.
 
 ## Data conventions
 
@@ -75,17 +75,17 @@ The work is staged so the scraped data can be checked by eye before building the
 
 ## App
 
-- **Filters**: one row above the charts.
+- **Filters**: one row above the charts, drawn by `common.filter_bar()`. The Words page calls it with `scores=False`, which hides the Revised/Original control (the user didn't want fork-score material on that page). Filter choices carry across pages: `keep_filter_state()` re-assigns `FILTER_KEYS` and the `cat:*` keys each run, because Streamlit otherwise drops a widget's state when its page isn't shown. Defaults go in session state via `setdefault`, never as widget `default=`/`value=` arguments, to avoid Streamlit's "default value but also set via Session State" warning.
   - Score version (Revised by default; it switches to the `_original` columns).
   - Year range.
   - Live: All, Live only or Studio only, plus a "count livestreams & watchalongs as live" toggle.
   - Episode types: All, Main episodes or Doubles, in the same button style as the live filter. Only main episodes and Doubles are loaded; the Bread Cast (one rated episode) and other side feeds are left out of the app, though they stay in the CSVs.
   - Food category: a popover checklist (`category_filter()`). The button reads "Categories: all / none / <one name> / N of 13". Inside are All and None buttons, then one checkbox per category, sorted by episode count with the count shown. State lives in `st.session_state["cat:<category>"]`, all on by default. The user specifically wanted checkboxes with All/None, not a multi-select dropdown.
   - Search: restaurant, chain and guest names, matched word by word after `normalize()`. That lowercases, strips accents and apostrophes, treats doughnut and donut as the same word, and drops a single plural "s", applied the same way to the query and the names. It is never a plain substring match: the user searched "Voodoo Donuts" and the wiki says "Voodoo Doughnut".
-- **Tabs**:
+- **Fork ratings page tabs**:
   - **Nick vs. Mitch**: a square scatter, one dot per episode, jittered, with a y=x line and a "biggest disagreements" list beside it.
   - **Over time**: Nick, Mitch and guests, with 20-episode rolling averages.
-  - **Words**: up to 5 phrases from `phrase_counts.csv`, shown as rate per 10k words per episode, with 25-episode rolling lines that break across coverage gaps of more than 60 days. A summary table shows total uses, share of episodes, first and peak year, r with the episode's average score, and the episode where it was used most. An expander lists the signature words and phrases. The tab respects all filters, and only shows episodes with a matched transcript.
+- **Words page** (moved out of the tabs at the user's request, so it doesn't get lost among the rating views): up to 5 phrases from `phrase_counts.csv`, shown as rate per 10k words per episode, with 25-episode rolling lines that break across coverage gaps of more than 60 days. A summary table shows total uses, share of episodes, first and peak year, r with the episode's average score, and the episode where it was used most. An expander lists the signature words and phrases. The tab respects all filters, and only shows episodes with a matched transcript.
   - **Table**: links to each episode's wiki page.
 - **Caching**: every `@st.cache_data` loader takes `data_stamp()` (the CSVs' modification times) as an argument, so a running app reloads rebuilt CSVs. Keep passing it to any new cached function that reads the data.
 - **Off-scale scores**: always capped at −1 and 6 (`CAP`), with no toggle. This is the user's call. Capping happens per rating, before averaging: the app builds its own per-episode scores from `ratings.csv` (`episode_scores()`), not from the precomputed averages in `episodes.csv`. The hover says what was capped (e.g. "Nicole Byer's 10 capped to 6"). In practice that's the only score beyond −1 and 6.
