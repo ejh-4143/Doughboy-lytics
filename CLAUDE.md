@@ -32,6 +32,7 @@ The work is staged so the scraped data can be checked by eye before building the
    - The master list is two wikitables with six columns: #, Title, Fork Score, Date, Accolades, Notes.
    - The ratings table's heading and unit change with the episode's theme ("Spoon rating", "10 carts"). The rating column is chosen from the header (`adjusted` > `overall rating` > `rating`).
    - `wikitable.table_rows` expands `rowspan` cells.
+   - Host detection (`host_roles()`): themed episodes rename the hosts in the ratings table ("Joker Wiger", "The Batspoonman", "Mr. Slice"). The real names win; otherwise `HOST_NICKNAMES` patterns apply (Wiger/Wigru/Wine-ger means Nick; Mitchell/Mitch/spoon/Mr. Slice means Mitch), but only when exactly one rater matches and the name doesn't start with "Mrs." (Mrs. Mitchell is a guest). Anything else gets a `role` override, e.g. "The Dread Podcaster" (Nick) in the pirate episodes. Rows whose name contains "shared" are shared orders with no score, and are skipped. Trailing `*` footnote marks are stripped from names.
    - Struck-out old scores and `<sup>` footnote markers are dropped.
    - Episodes rated out of 10 are detected because the wiki's score is half their average, and are halved.
 3. **Overrides** (`scraper/overrides.py`, `data/overrides.csv`): keyed by wiki page title, because episode numbers repeat (445 Doubles are just "DD"). A blank `rater` fixes an episode field; otherwise it fixes that rater's row. Never edit the generated CSVs by hand.

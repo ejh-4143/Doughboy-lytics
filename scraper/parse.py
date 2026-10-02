@@ -25,6 +25,12 @@ from scraper.overrides import apply_overrides
 from scraper.wikitable import master_rows, plain, table_rows
 
 HOSTS = {"Nick Wiger": "nick", "Mike Mitchell": "mitch"}
+# Themed episodes rename the hosts in the ratings table ("Joker Wiger", "The
+# Batspoonman", "Mr. Slice"). These patterns spot them; see host_roles().
+HOST_NICKNAMES = {
+    "nick": re.compile(r"wig(?:er|ru)\b|wine-?ger", re.I),
+    "mitch": re.compile(r"mitchell|\bmitch\b|spoon|^mr\. slice$", re.I),
+}
 SCALE = (0, 5)
 NUM = r"-?\d*\.?\d+"
 
@@ -251,10 +257,30 @@ def parse_ratings(page_text):
     for cells in table_rows(table.group(0)):
         if col is None:
             col = len(cells) - 1
-        rater = re.sub(r"\s+", " ", plain(cells[0])).strip()
-        if not rater or rater.lower() == "shared" or col >= len(cells):
+        rater = re.sub(r"\s+", " ", plain(cells[0])).strip().rstrip("*").strip()
+        if not rater or "shared" in rater.lower() or col >= len(cells):
             continue
         yield rater, cells[col].strip()
+
+
+def host_roles(raters):
+    """{rater name: "nick" | "mitch"} for one episode's ratings table.
+
+    The hosts' real names always win. When a host's real name is missing, a
+    nickname counts only if exactly one rater in the episode matches that
+    host's pattern (e.g. "Tiger Wiger", "The Batspoonman"); "Mrs. Mitchell"
+    and the like are guests. Anything still unresolved is left to
+    data/overrides.csv (field: role).
+    """
+    roles = {name: role for name, role in HOSTS.items() if name in raters}
+    for role, pattern in HOST_NICKNAMES.items():
+        if role in roles.values():
+            continue
+        matches = [r for r in raters if pattern.search(r) and r not in roles
+                   and not r.lower().startswith("mrs.")]
+        if len(matches) == 1:
+            roles[matches[0]] = role
+    return roles
 
 
 def rescale_ten_point(ratings, episodes):
@@ -334,12 +360,14 @@ def build():
         })
         if score is None:  # individual ratings only matter for scored episodes
             continue
-        for rater, raw in parse_ratings(page_text):
+        rows = list(parse_ratings(page_text))
+        roles = host_roles([rater for rater, _ in rows])
+        for rater, raw in rows:
             value, original, note = parse_rating(raw)
             ratings.append({
                 "page": row["page"],
                 "rater": rater,
-                "role": HOSTS.get(rater, "guest"),
+                "role": roles.get(rater, "guest"),
                 "rating_raw": raw,
                 "rating_original": original,
                 "rating": value,

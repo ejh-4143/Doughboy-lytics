@@ -1,7 +1,7 @@
 number,title,fork_score,avg,avg_original,diff,n_raters,n_parsed,page
 53,Yoshinoya with Jensen Karp,1.67,2.0,2.0,0.33,4.0,4.0,Yoshinoya with Jensen Karp
 68,Red Robin with D'Arcy Carden,3.42,3.3333333333333335,3.3333333333333335,0.09,3.0,3.0,Red Robin with D'Arcy Carden
-76,Red Lobster 4 with Sean Clements & Hayes Davenport,3.54,2.5,2.5,1.04,5.0,4.0,Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport
+76,Red Lobster 4 with Sean Clements & Hayes Davenport,3.54,2.5,2.5,1.04,4.0,4.0,Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport
 115,IHOP 2 with Danny Jelinek,2.83,3.5833333333333335,3.5833333333333335,0.75,3.0,3.0,IHOP 2 with Danny Jelinek
 150,The Dopeboys 4/20 Smokestacular with Jon Gabrus,4.2,,,,,,The Dopeboys 4/20 Smokestacular with Jon Gabrus
 161,IHOb with Bug Mane,3.75,,,,,,IHOb with Bug Mane
@@ -12,7 +12,7 @@ DD,Comet Ping Pong,3.25,,,,2.0,0.0,Feast Coast Tour Diary: Comet Ping Pong
 267,Potbelly Sandwich Shop with Colt Cabana,3.67,3.8333333333333335,3.8333333333333335,0.16,3.0,3.0,Potbelly Sandwich Shop with Colt Cabana
 305,Taco Bell 7 with Lorne Balfe,4.5,4.333333333333333,4.333333333333333,0.17,3.0,3.0,Taco Bell 7 with Lorne Balfe
 DD,MREats with Edwin Hodge,2.83,2.75,2.75,0.08,3.0,2.0,MREats with Edwin Hodge
-308,Golden Road Brewing with Jordan Morris,4.0,,,,4.0,0.0,Golden Road Brewing with Jordan Morris
+308,Golden Road Brewing with Jordan Morris,4.0,,,,3.0,0.0,Golden Road Brewing with Jordan Morris
 DD,Mr. Slice's Bar Pizza Spectacular,4.58,,,,,,Mr. Slice's Bar Pizza Spectacular
 315,Einstein Bros. Bagels with Tony Rodríguez,3.67,3.0,3.3333333333333335,0.34,3.0,3.0,Einstein Bros. Bagels with Tony Rodríguez
 317,Little Caesars 2 with Marisa Pinson and David Neher,3.69,3.1875,3.1875,0.5,4.0,4.0,Little Caesars 2 with Marisa Pinson and David Neher

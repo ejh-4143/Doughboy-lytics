@@ -2,7 +2,6 @@ page,number,restaurant,date,live,live_type,live_city,rater,role,rating_raw,ratin
 1 – Chili’s with Eva Anderson,1,Chili's,2015-05-20,False,,,Nick Wiger,nick,3 forks*,3.0,3.0,footnote,False,False,False
 1 – Chili’s with Eva Anderson,1,Chili's,2015-05-20,False,,,Mike Mitchell,mitch,4 forks*,4.0,4.0,footnote,False,False,False
 1 – Chili’s with Eva Anderson,1,Chili's,2015-05-20,False,,,Eva Anderson,guest,3 forks*,3.0,3.0,footnote,False,False,False
-1 – Chili’s with Eva Anderson,1,Chili's,2015-05-20,False,,,Nick & Mitch shared,guest,,,,no rating,False,False,False
 Taco Bell with Jack Allison,2,Taco Bell,2015-05-25,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Taco Bell with Jack Allison,2,Taco Bell,2015-05-25,False,,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 Taco Bell with Jack Allison,2,Taco Bell,2015-05-25,False,,,Jack Allison,guest,5 forks,5.0,5.0,,False,False,False
@@ -12,7 +11,6 @@ Taco Bell with Jack Allison,2,Taco Bell,2015-05-25,False,,,Jack Allison,guest,5 
 4 - Outback Steakhouse with Jon Gabrus,4,Outback Steakhouse,2015-06-04,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 4 - Outback Steakhouse with Jon Gabrus,4,Outback Steakhouse,2015-06-04,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 4 - Outback Steakhouse with Jon Gabrus,4,Outback Steakhouse,2015-06-04,False,,,Jon Gabrus,guest,4 forks,4.0,4.0,,False,False,False
-4 - Outback Steakhouse with Jon Gabrus,4,Outback Steakhouse,2015-06-04,False,,,Nick & Mitch shared,guest,,,,no rating,False,False,False
 Long John Silver's with Mary Holland,5,Long John Silver's,2015-06-11,False,,,Nick Wiger,nick,2 forks,2.0,2.0,,False,False,False
 Long John Silver's with Mary Holland,5,Long John Silver's,2015-06-11,False,,,Mike Mitchell,mitch,2.5 forks and a Golden Spoon,2.5,2.5,text: 2.5 forks and a Golden Spoon,False,False,False
 Long John Silver's with Mary Holland,5,Long John Silver's,2015-06-11,False,,,Mary Holland,guest,4 forks,4.0,4.0,,False,False,False
@@ -34,7 +32,6 @@ Domino’s with Matt Kowalick,10,Domino's,2015-07-16,False,,,Matt Kowalick,guest
 Carrows with Erin Whitehead,11,Carrows,2015-07-23,False,,,Nick Wiger,nick,2 forks,2.0,2.0,,False,False,False
 Carrows with Erin Whitehead,11,Carrows,2015-07-23,False,,,Mike Mitchell,mitch,.5 fork,0.5,-1.0,,True,True,False
 Carrows with Erin Whitehead,11,Carrows,2015-07-23,False,,,Erin Whitehead,guest,2 forks,2.0,2.0,,False,False,False
-Carrows with Erin Whitehead,11,Carrows,2015-07-23,False,,,Nick and Mitch shared,guest,,,,no rating,False,False,False
 Chick-fil-A with Betsy Sodaro,12,Chick-fil-A,2015-07-29,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 Chick-fil-A with Betsy Sodaro,12,Chick-fil-A,2015-07-29,False,,,Mike Mitchell,mitch,4.5 forks,4.5,4.5,,False,False,False
 Chick-fil-A with Betsy Sodaro,12,Chick-fil-A,2015-07-29,False,,,Betsy Sodaro,guest,5 forks,5.0,5.0,,False,False,False
@@ -44,7 +41,6 @@ Denny’s with Farley Elliott,13,Denny's,2015-08-06,False,,,Farley Elliott,guest
 Original Tommy’s with Jim Woods,14,Original Tommy's,2015-08-12,False,,,Nick Wiger,nick,3.5 forks,3.5,3.5,,False,False,False
 Original Tommy’s with Jim Woods,14,Original Tommy's,2015-08-12,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Original Tommy’s with Jim Woods,14,Original Tommy's,2015-08-12,False,,,Jim Woods,guest,3.5 forks,3.5,3.5,,False,False,False
-Original Tommy’s with Jim Woods,14,Original Tommy's,2015-08-12,False,,,Nick and Mitch shared,guest,,,,no rating,False,False,False
 Boston Market with Annie Mebane,15,Boston Market,2015-08-19,False,,,Nick Wiger,nick,3.5 forks,3.5,3.5,,False,False,False
 Boston Market with Annie Mebane,15,Boston Market,2015-08-19,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Boston Market with Annie Mebane,15,Boston Market,2015-08-19,False,,,Annie Mebane,guest,3.5 forks,3.5,3.5,,False,False,False
@@ -72,7 +68,6 @@ Rockdoughberfest: Cabo Wabo Cantina with Julie Brister,22,Cabo Wabo Cantina,2015
 Rockdoughberfest: Margaritaville with Mike Carlson,23,Margaritaville,2015-10-15,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Rockdoughberfest: Margaritaville with Mike Carlson,23,Margaritaville,2015-10-15,False,,,Mike Mitchell,mitch,2.5 forks*,3.5,2.5,footnote,True,False,False
 Rockdoughberfest: Margaritaville with Mike Carlson,23,Margaritaville,2015-10-15,False,,,Mike Carlson,guest,4 forks**,4.0,4.0,footnote,False,False,False
-Rockdoughberfest: Margaritaville with Mike Carlson,23,Margaritaville,2015-10-15,False,,,Nick and Mitch shared,guest,,,,no rating,False,False,False
 Rockdoughberfest: Hard Rock Cafe with Scott Gairdner,24,Hard Rock Cafe,2015-10-22,False,,,Nick Wiger,nick,2 forks,2.0,2.0,,False,False,False
 Rockdoughberfest: Hard Rock Cafe with Scott Gairdner,24,Hard Rock Cafe,2015-10-22,False,,,Mike Mitchell,mitch,2 forks*,2.5,2.0,footnote,True,False,False
 Rockdoughberfest: Hard Rock Cafe with Scott Gairdner,24,Hard Rock Cafe,2015-10-22,False,,,Scott Gairdner,guest,2.5 forks,2.5,2.5,,False,False,False
@@ -142,14 +137,13 @@ Morton’s The Steakhouse with Tim Kalpakis,52,Morton's The Steakhouse,2016-05-1
 Yoshinoya with Jensen Karp,53,Yoshinoya,2016-05-19,False,,,Nick Wiger,nick,1 fork,1.0,1.0,,False,False,False
 Yoshinoya with Jensen Karp,53,Yoshinoya,2016-05-19,False,,,Mike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
 Yoshinoya with Jensen Karp,53,Yoshinoya,2016-05-19,False,,,Jensen Karp,guest,2 forks,2.0,2.0,,False,False,False
-Yoshinoya with Jensen Karp,53,Yoshinoya,2016-05-19,False,,,Jensen Karp*,guest,3 forks,3.0,3.0,,False,False,False
+Yoshinoya with Jensen Karp,53,Yoshinoya,2016-05-19,False,,,Jensen Karp,guest,3 forks,3.0,3.0,,False,False,False
 Popeyes Louisiana Kitchen with Lesley Arfin,54,Popeyes Louisiana Kitchen,2016-05-26,False,,,Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
 Popeyes Louisiana Kitchen with Lesley Arfin,54,Popeyes Louisiana Kitchen,2016-05-26,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Popeyes Louisiana Kitchen with Lesley Arfin,54,Popeyes Louisiana Kitchen,2016-05-26,False,,,Lesley Arfin,guest,3 forks,3.0,3.0,,False,False,False
 Baja Fresh with Claudia O’Doherty,55,Baja Fresh,2016-06-02,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Baja Fresh with Claudia O’Doherty,55,Baja Fresh,2016-06-02,False,,,Mike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
 Baja Fresh with Claudia O’Doherty,55,Baja Fresh,2016-06-02,False,,,Claudia O’Doherty,guest,2 forks,2.0,2.0,,False,False,False
-Baja Fresh with Claudia O’Doherty,55,Baja Fresh,2016-06-02,False,,,Mitch and Claudia shared,guest,,,,no rating,False,False,False
 Jollibee with Jonah Ray,56,Jollibee,2016-06-09,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Jollibee with Jonah Ray,56,Jollibee,2016-06-09,False,,,Mike Mitchell,mitch,2.75 forks,2.75,2.75,,False,False,False
 Jollibee with Jonah Ray,56,Jollibee,2016-06-09,False,,,Jonah Ray,guest,2.5 forks,2.5,2.5,,False,False,False
@@ -196,7 +190,6 @@ Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport,76,Red Lobst
 Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport,76,Red Lobster,2016-10-27,False,,,Mike Mitchell,mitch,2.5 candied apples,2.5,2.5,text: 2.5 candied apples,False,False,False
 Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport,76,Red Lobster,2016-10-27,False,,,Sean Clements,guest,3 lobster claws,3.0,3.0,text: 3 lobster claws,False,False,False
 Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport,76,Red Lobster,2016-10-27,False,,,Hayes Davenport,guest,1.5 lobster claws,1.5,1.5,text: 1.5 lobster claws,False,False,False
-Rocklobsterfest: Red Lobster 4 with Sean Clements & Hayes Davenport,76,Red Lobster,2016-10-27,False,,,"Nick, Sean, & Hayes shared",guest,,,,no rating,False,False,False
 Cold Stone Creamery with Kevin T. Porter,77,Cold Stone Creamery,2016-11-02,False,,,Nick Wiger,nick,4 spoons,4.0,4.0,text: 4 spoons,False,False,False
 Cold Stone Creamery with Kevin T. Porter,77,Cold Stone Creamery,2016-11-02,False,,,Mike Mitchell,mitch,2 spoons,2.0,2.0,text: 2 spoons,False,False,False
 Cold Stone Creamery with Kevin T. Porter,77,Cold Stone Creamery,2016-11-02,False,,,Kevin T. Porter,guest,3 spoons,3.0,3.0,text: 3 spoons,False,False,False
@@ -245,8 +238,7 @@ Jimmy John's with Lauren Lapkus,99,Jimmy John's,2017-04-13,False,,,Lauren Lapkus
 Wetzel's Pretzels with Jon Daly,101,Wetzel's Pretzels,2017-04-27,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 Wetzel's Pretzels with Jon Daly,101,Wetzel's Pretzels,2017-04-27,False,,,Mike Mitchell,mitch,3 forks,3.0,3.0,,False,False,False
 Wetzel's Pretzels with Jon Daly,101,Wetzel's Pretzels,2017-04-27,False,,,Jon Daly,guest,0.5 forks,0.5,0.5,,False,False,False
-Wetzel's Pretzels with Jon Daly,101,Wetzel's Pretzels,2017-04-27,False,,,Nick and Mitch shared,guest,,,,no rating,False,False,False
-Mr. Pizza with Jesse Thorn,102,Mr. Pizza,2017-05-04,False,,,Nick Wiger*,guest,3 forks,3.0,3.0,,False,False,False
+Mr. Pizza with Jesse Thorn,102,Mr. Pizza,2017-05-04,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Mr. Pizza with Jesse Thorn,102,Mr. Pizza,2017-05-04,False,,,Mike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
 Mr. Pizza with Jesse Thorn,102,Mr. Pizza,2017-05-04,False,,,Jesse Thorn,guest,2.5 forks,2.5,2.5,,False,False,False
 Carl's Jr./Hardee's 2 with Chris VanArtsdalen,103,Carl's Jr./Hardee's,2017-05-11,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
@@ -261,8 +253,8 @@ IKEA with Dave Thomason,105,IKEA,2017-05-25,False,,,Dave Thomason,guest,5 forks,
 The Coffee Bean with Hannah Kasulka,106,The Coffee Bean,2017-05-31,False,,,Nick Wiger,nick,4 spoons,4.0,4.0,text: 4 spoons,False,False,False
 The Coffee Bean with Hannah Kasulka,106,The Coffee Bean,2017-05-31,False,,,Mike Mitchell,mitch,3.666 spoons,3.666,3.666,text: 3.666 spoons,False,False,False
 The Coffee Bean with Hannah Kasulka,106,The Coffee Bean,2017-05-31,False,,,Hannah Kasulka,guest,4 spoons,4.0,4.0,text: 4 spoons,False,False,False
-Jersey Mike's with Drew Tarver,107,Jersey Mike's,2017-06-07,False,,,Nick The GodBurger Wiger,guest,3.5 forks,3.5,3.5,,False,False,False
-Jersey Mike's with Drew Tarver,107,Jersey Mike's,2017-06-07,False,,,Jersey Mitch,guest,3.5 forks,3.5,3.5,,False,False,False
+Jersey Mike's with Drew Tarver,107,Jersey Mike's,2017-06-07,False,,,Nick The GodBurger Wiger,nick,3.5 forks,3.5,3.5,,False,False,False
+Jersey Mike's with Drew Tarver,107,Jersey Mike's,2017-06-07,False,,,Jersey Mitch,mitch,3.5 forks,3.5,3.5,,False,False,False
 Jersey Mike's with Drew Tarver,107,Jersey Mike's,2017-06-07,False,,,Drew Tarver,guest,4 forks,4.0,4.0,,False,False,False
 Sizzler with Marisa Pinson,108,Sizzler,2017-06-15,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 Sizzler with Marisa Pinson,108,Sizzler,2017-06-15,False,,,Mike Mitchell,mitch,4.5 forks,4.5,4.5,,False,False,False
@@ -270,8 +262,8 @@ Sizzler with Marisa Pinson,108,Sizzler,2017-06-15,False,,,Marisa Pinson,guest,4 
 Burger King 2 with Jordan Morris (LIVE),109,Burger King,2017-06-22,True,in person,"Lake Arrowhead, CA",Nick Wiger,nick,1 fork,1.0,1.0,,False,False,False
 Burger King 2 with Jordan Morris (LIVE),109,Burger King,2017-06-22,True,in person,"Lake Arrowhead, CA",Mike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
 Burger King 2 with Jordan Morris (LIVE),109,Burger King,2017-06-22,True,in person,"Lake Arrowhead, CA",Jordan Morris,guest,1.5 forks,1.5,1.5,,False,False,False
-Claim Jumper with Heather Anne Campbell,110,Claim Jumper,2017-06-29,False,,,Limerick Wiger,guest,2 forks,2.0,2.0,,False,False,False
-Claim Jumper with Heather Anne Campbell,110,Claim Jumper,2017-06-29,False,,,Hike Mitchell,guest,2 forks,2.0,2.0,,False,False,False
+Claim Jumper with Heather Anne Campbell,110,Claim Jumper,2017-06-29,False,,,Limerick Wiger,nick,2 forks,2.0,2.0,,False,False,False
+Claim Jumper with Heather Anne Campbell,110,Claim Jumper,2017-06-29,False,,,Hike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
 Claim Jumper with Heather Anne Campbell,110,Claim Jumper,2017-06-29,False,,,Heather Anne Campbell,guest,2.75 forks,2.75,2.75,,False,False,False
 Shake Shack with Jason Concepcion,111,Shake Shack,2017-07-06,False,,,Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
 Shake Shack with Jason Concepcion,111,Shake Shack,2017-07-06,False,,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
@@ -385,13 +377,11 @@ Farmer Boys with Nick Rutherford,151,Farmer Boys,2018-04-26,False,,,Nick Rutherf
 Olive Garden 2 with Joel Kim Booster,152,Olive Garden,2018-05-03,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Olive Garden 2 with Joel Kim Booster,152,Olive Garden,2018-05-03,False,,,Mike Mitchell,mitch,2.85 forks,2.85,2.85,,False,False,False
 Olive Garden 2 with Joel Kim Booster,152,Olive Garden,2018-05-03,False,,,Joel Kim Booster,guest,4.5 forks,4.5,4.5,,False,False,False
-Olive Garden 2 with Joel Kim Booster,152,Olive Garden,2018-05-03,False,,,shared by Nick & Mitch,guest,,,,no rating,False,False,False
 Ruth's Chris Steak House with Andrew Secunda,153,Ruth's Chris Steak House,2018-05-10,False,,,Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
 Ruth's Chris Steak House with Andrew Secunda,153,Ruth's Chris Steak House,2018-05-10,False,,,Mike Mitchell,mitch,4.5 forks,4.5,4.5,,False,False,False
 Ruth's Chris Steak House with Andrew Secunda,153,Ruth's Chris Steak House,2018-05-10,False,,,Andrew Secunda,guest,4 forks,4.0,4.0,,False,False,False
 TGI Friday's 2 with The Sklar Brothers,154,TGI Friday's,2018-05-17,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 TGI Friday's 2 with The Sklar Brothers,154,TGI Friday's,2018-05-17,False,,,Mike Mitchell,mitch,4.5 forks,4.5,4.5,,False,False,False
-TGI Friday's 2 with The Sklar Brothers,154,TGI Friday's,2018-05-17,False,,,Nick & Mitch shared,guest,,,,no rating,False,False,False
 TGI Friday's 2 with The Sklar Brothers,154,TGI Friday's,2018-05-17,False,,,Randy Sklar,guest,3.75 forks,3.75,3.75,,False,False,False
 TGI Friday's 2 with The Sklar Brothers,154,TGI Friday's,2018-05-17,False,,,Jason Sklar,guest,3.85 forks,3.85,3.85,,False,False,False
 Denny's Solo Menu with Matt Mira,155,Denny's Solo Menu,2018-05-24,False,,,Nick Wiger,nick,4 vests,4.0,4.0,text: 4 vests,False,False,False
@@ -444,7 +434,6 @@ Wahoo's Fish Taco with Eliza Skinner,170,Wahoo's Fish Taco,2018-09-06,False,,,El
 Outback Steakhouse 2 with Leann Bowen,171,Outback Steakhouse,2018-09-13,False,,,Nick Wiger,nick,2.5 forks,2.5,2.5,,False,False,False
 Outback Steakhouse 2 with Leann Bowen,171,Outback Steakhouse,2018-09-13,False,,,Mike Mitchell,mitch,2.5 forks,2.5,2.5,,False,False,False
 Outback Steakhouse 2 with Leann Bowen,171,Outback Steakhouse,2018-09-13,False,,,Leann Bowen,guest,3 forks,3.0,3.0,,False,False,False
-Outback Steakhouse 2 with Leann Bowen,171,Outback Steakhouse,2018-09-13,False,,,Nick & Mitch shared,guest,,,,no rating,False,False,False
 Menchie's with Jackie Johnson,172,Menchie's,2018-09-20,False,,,Nick Wiger,nick,4 spoons,4.0,4.0,text: 4 spoons,False,False,False
 Menchie's with Jackie Johnson,172,Menchie's,2018-09-20,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Menchie's with Jackie Johnson,172,Menchie's,2018-09-20,False,,,Jackie Johnson,guest,4 forks,4.0,4.0,,False,False,False
@@ -481,7 +470,6 @@ Dairy Queen with Michael Cassady & Paul Rust,181,Dairy Queen,2018-11-29,False,,,
 Dairy Queen with Michael Cassady & Paul Rust,181,Dairy Queen,2018-11-29,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Dairy Queen with Michael Cassady & Paul Rust,181,Dairy Queen,2018-11-29,False,,,Michael Cassady,guest,3.75 forks,3.75,3.75,,False,False,False
 Dairy Queen with Michael Cassady & Paul Rust,181,Dairy Queen,2018-11-29,False,,,Paul Rust,guest,4 forks,4.0,4.0,,False,False,False
-Dairy Queen with Michael Cassady & Paul Rust,181,Dairy Queen,2018-11-29,False,,,"Mitch, Michael & Paul shared",guest,,,,no rating,False,False,False
 Rubio's with Mary Holland (LIVE),182,Rubio's,2018-12-06,True,in person,"San Diego, CA",Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
 Rubio's with Mary Holland (LIVE),182,Rubio's,2018-12-06,True,in person,"San Diego, CA",Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Rubio's with Mary Holland (LIVE),182,Rubio's,2018-12-06,True,in person,"San Diego, CA",Mary Holland,guest,5 forks,5.0,5.0,,False,False,False
@@ -521,8 +509,6 @@ Native Foods with Tawny Newsome & Alex Kliner,192,Native Foods,2019-02-28,False,
 Sizzle Pie with Bill Oakley (LIVE),197,Sizzle Pie,2019-04-04,True,in person,"Portland, OR",Nick Wiger,nick,3.25 forks,3.25,3.25,,False,False,False
 Sizzle Pie with Bill Oakley (LIVE),197,Sizzle Pie,2019-04-04,True,in person,"Portland, OR",Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Sizzle Pie with Bill Oakley (LIVE),197,Sizzle Pie,2019-04-04,True,in person,"Portland, OR",Bill Oakley,guest,3.75 forks,3.75,3.75,,False,False,False
-Sizzle Pie with Bill Oakley (LIVE),197,Sizzle Pie,2019-04-04,True,in person,"Portland, OR",shared slices,guest,,,,no rating,False,False,False
-Sizzle Pie with Bill Oakley (LIVE),197,Sizzle Pie,2019-04-04,True,in person,"Portland, OR",shared full pizzas,guest,,,,no rating,False,False,False
 Portillo's with Jon Gabrus & Christine Nangle (LIVE),198,Portillo's,2019-04-11,True,in person,"Chicago, IL",Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
 Portillo's with Jon Gabrus & Christine Nangle (LIVE),198,Portillo's,2019-04-11,True,in person,"Chicago, IL",Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 Portillo's with Jon Gabrus & Christine Nangle (LIVE),198,Portillo's,2019-04-11,True,in person,"Chicago, IL",Jon Gabrus,guest,4.5 forks,4.5,4.5,,False,False,False
@@ -627,7 +613,6 @@ Xi'an Famous Foods with Mike Hanford & Paul Rust (LIVE),DD,Xi'an Famous Foods,20
 Xi'an Famous Foods with Mike Hanford & Paul Rust (LIVE),DD,Xi'an Famous Foods,2019-09-24,True,in person,"New York, NY",Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 Xi'an Famous Foods with Mike Hanford & Paul Rust (LIVE),DD,Xi'an Famous Foods,2019-09-24,True,in person,"New York, NY",Mike Hanford,guest,3.8 forks,3.8,3.8,,False,False,False
 Xi'an Famous Foods with Mike Hanford & Paul Rust (LIVE),DD,Xi'an Famous Foods,2019-09-24,True,in person,"New York, NY",Paul Rust,guest,4.5 forks,4.5,4.5,,False,False,False
-Xi'an Famous Foods with Mike Hanford & Paul Rust (LIVE),DD,Xi'an Famous Foods,2019-09-24,True,in person,"New York, NY","Nick, Mitch, and Mike shared",guest,,,,no rating,False,False,False
 Rita's Italian Ice with Carl Tart & Christine Nangle (LIVE),222,Rita's Italian Ice,2019-09-26,True,in person,"Philadelphia, PA",Nick Wiger,nick,4 phorks,4.0,4.0,text: 4 phorks,False,False,False
 Rita's Italian Ice with Carl Tart & Christine Nangle (LIVE),222,Rita's Italian Ice,2019-09-26,True,in person,"Philadelphia, PA",Mike Mitchell,mitch,4 phorks,4.0,4.0,text: 4 phorks,False,False,False
 Rita's Italian Ice with Carl Tart & Christine Nangle (LIVE),222,Rita's Italian Ice,2019-09-26,True,in person,"Philadelphia, PA",Carl Tart,guest,4 phorks,4.0,4.0,text: 4 phorks,False,False,False
@@ -775,7 +760,7 @@ Blaze Pizza with Eliza Skinner,268,Blaze Pizza,2020-09-10,False,,,Eliza Skinner,
 In-N-Out Burger 3 with Rob Lowe,269,In-N-Out Burger,2020-09-17,False,,,Nick Wiger,nick,5 forks,5.0,5.0,,False,False,False
 In-N-Out Burger 3 with Rob Lowe,269,In-N-Out Burger,2020-09-17,False,,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 In-N-Out Burger 3 with Rob Lowe,269,In-N-Out Burger,2020-09-17,False,,,Rob Lowe,guest,5 forks,5.0,5.0,,False,False,False
-The Cheesecake Factory 2 with Arden Myrin,270,The Cheesecake Factory,2020-09-24,False,,,Cookie Ass Wiger,guest,5 forks,5.0,5.0,,False,False,False
+The Cheesecake Factory 2 with Arden Myrin,270,The Cheesecake Factory,2020-09-24,False,,,Cookie Ass Wiger,nick,5 forks,5.0,5.0,,False,False,False
 The Cheesecake Factory 2 with Arden Myrin,270,The Cheesecake Factory,2020-09-24,False,,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 The Cheesecake Factory 2 with Arden Myrin,270,The Cheesecake Factory,2020-09-24,False,,,Arden Myrin,guest,5 forks,5.0,5.0,,False,False,False
 IHOP 4 with Dan Ahdoot,271,IHOP,2020-10-01,False,,,Nick Wiger,nick,2.5 forks,2.5,2.5,,False,False,False
@@ -822,7 +807,7 @@ Popeyes Louisiana Kitchen 3 with Phil Rosenthal,284,Popeyes Louisiana Kitchen,20
 Popeyes Louisiana Kitchen 3 with Phil Rosenthal,284,Popeyes Louisiana Kitchen,2021-01-21,False,,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 Popeyes Louisiana Kitchen 3 with Phil Rosenthal,284,Popeyes Louisiana Kitchen,2021-01-21,False,,,Phil Rosenthal,guest,3.5 forks,3.5,3.5,,False,False,False
 Subway 3 with Sean Clements & Hayes Davenport,285,Subway,2021-01-28,False,,,Nick Wiger,nick,2.5 forks,2.5,2.5,,False,False,False
-Subway 3 with Sean Clements & Hayes Davenport,285,Subway,2021-01-28,False,,,Mr. Slice,guest,3.25 forks,3.25,3.25,,False,False,False
+Subway 3 with Sean Clements & Hayes Davenport,285,Subway,2021-01-28,False,,,Mr. Slice,mitch,3.25 forks,3.25,3.25,,False,False,False
 Subway 3 with Sean Clements & Hayes Davenport,285,Subway,2021-01-28,False,,,Sean Clements,guest,3 forks,3.0,3.0,,False,False,False
 Subway 3 with Sean Clements & Hayes Davenport,285,Subway,2021-01-28,False,,,Hayes Davenport,guest,3.5 forks,3.5,3.5,,False,False,False
 Panda Express 3 with Oscar Montoya,286,Panda Express,2021-02-04,False,,,Nick Wiger,nick,3.75 forks,3.75,3.75,,False,False,False
@@ -922,11 +907,6 @@ Golden Road Brewing with Jordan Morris,308,Golden Road Brewing,2021-07-08,False,
  Passion Wolf Hazy IPA
  Classic Burger
  Mixed Green Salad",False,False,False
-Golden Road Brewing with Jordan Morris,308,Golden Road Brewing,2021-07-08,False,,,shared apps,guest,"* Pub Pretzel
-* Tot-chos
-* Carnitas Fries",,,"unparseable: Pub Pretzel
- Tot-chos
- Carnitas Fries",False,False,False
 "Taco Bell 6 with John Hodgman, Paul F. Tompkins, and Arden Myrin (live)",309,Taco Bell,2021-07-15,True,livestream,,Nick Wiger,nick,5 forks,5.0,5.0,,False,False,False
 "Taco Bell 6 with John Hodgman, Paul F. Tompkins, and Arden Myrin (live)",309,Taco Bell,2021-07-15,True,livestream,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 "Taco Bell 6 with John Hodgman, Paul F. Tompkins, and Arden Myrin (live)",309,Taco Bell,2021-07-15,True,livestream,,John Hodgman,guest,4 forks,4.0,4.0,,False,False,False
@@ -1077,8 +1057,8 @@ Burger King 6 with Jon Gabrus & Adam Pally,358,Burger King,2022-07-14,False,,,Ni
 Burger King 6 with Jon Gabrus & Adam Pally,358,Burger King,2022-07-14,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Burger King 6 with Jon Gabrus & Adam Pally,358,Burger King,2022-07-14,False,,,Jon Gabrus,guest,2.5 forks,2.5,2.5,,False,False,False
 Burger King 6 with Jon Gabrus & Adam Pally,358,Burger King,2022-07-14,False,,,Adam Pally,guest,0.5 forks,0.5,0.5,,False,False,False
-IHOP 5: Minions Menu with Shaun Diston,359,IHOP,2022-07-21,False,,,Nick Wigru,guest,5 Ba-na-nas,5.0,5.0,text: 5 Ba-na-nas,False,False,False
-IHOP 5: Minions Menu with Shaun Diston,359,IHOP,2022-07-21,False,,,"Mike ""The Gru-nman"" Mitchell",guest,5 Ba-na-nas,5.0,5.0,text: 5 Ba-na-nas,False,False,False
+IHOP 5: Minions Menu with Shaun Diston,359,IHOP,2022-07-21,False,,,Nick Wigru,nick,5 Ba-na-nas,5.0,5.0,text: 5 Ba-na-nas,False,False,False
+IHOP 5: Minions Menu with Shaun Diston,359,IHOP,2022-07-21,False,,,"Mike ""The Gru-nman"" Mitchell",mitch,5 Ba-na-nas,5.0,5.0,text: 5 Ba-na-nas,False,False,False
 IHOP 5: Minions Menu with Shaun Diston,359,IHOP,2022-07-21,False,,,Shaun Diston,guest,4 Ba-na-nas,4.0,4.0,text: 4 Ba-na-nas,False,False,False
 Pizza Hut 3 with Brendan James,360,Pizza Hut,2022-07-28,False,,,Nick Wiger,nick,1.5 forks,1.5,1.5,,False,False,False
 Pizza Hut 3 with Brendan James,360,Pizza Hut,2022-07-28,False,,,Mike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
@@ -1112,22 +1092,21 @@ Fat Sal's with Matt Christman,368,Fat Sal's,2022-09-22,False,,,Matt Christman,gu
 Fazoli's with Mitra Jouhari,369,Fazoli's,2022-09-29,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 Fazoli's with Mitra Jouhari,369,Fazoli's,2022-09-29,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Fazoli's with Mitra Jouhari,369,Fazoli's,2022-09-29,False,,,Mitra Jouhari,guest,4 forks,4.0,4.0,,False,False,False
-Fazoli's with Mitra Jouhari,369,Fazoli's,2022-09-29,False,,,shared (Nick and Mitch),guest,,,,no rating,False,False,False
 Pirate's Booty with John Hodgman,370,Pirate's Booty,2022-10-06,False,,,Nick Wiger,nick,2 Pieces of Eight,2.0,2.0,text: 2 Pieces of Eight,False,False,False
 Pirate's Booty with John Hodgman,370,Pirate's Booty,2022-10-06,False,,,Mike Mitchell,mitch,2.75 Pieces of Eight,2.75,2.75,text: 2.75 Pieces of Eight,False,False,False
 Pirate's Booty with John Hodgman,370,Pirate's Booty,2022-10-06,False,,,Patchy Beard,guest,2.5 Pieces of Eight,2.5,2.5,text: 2.5 Pieces of Eight,False,False,False
 Pirates of the Caribbean Ride with Kyle Mooney,DD,Pirates of the Caribbean Ride,2022-10-11,False,,,Nick Wiger,nick,5 Piece of Eight,5.0,5.0,text: 5 Piece of Eight,False,False,False
 Pirates of the Caribbean Ride with Kyle Mooney,DD,Pirates of the Caribbean Ride,2022-10-11,False,,,Mike Mitchell,mitch,5 Pieces of Eight,5.0,5.0,text: 5 Pieces of Eight,False,False,False
 Pirates of the Caribbean Ride with Kyle Mooney,DD,Pirates of the Caribbean Ride,2022-10-11,False,,,Kyle Mooney,guest,5 Pieces of Eight,5.0,5.0,text: 5 Pieces of Eight,False,False,False
-Pirates Dinner Adventure with Eva Anderson,371,Pirates Dinner Adventure,2022-10-13,False,,,The Dread Podcaster,guest,5 Skull and Crossbones,5.0,5.0,text: 5 Skull and Crossbones,False,False,False
-Pirates Dinner Adventure with Eva Anderson,371,Pirates Dinner Adventure,2022-10-13,False,,,The Spoondog,guest,5 Skull and Crossbones,5.0,5.0,text: 5 Skull and Crossbones,False,False,False
+Pirates Dinner Adventure with Eva Anderson,371,Pirates Dinner Adventure,2022-10-13,False,,,The Dread Podcaster,nick,5 Skull and Crossbones,5.0,5.0,text: 5 Skull and Crossbones,False,False,False
+Pirates Dinner Adventure with Eva Anderson,371,Pirates Dinner Adventure,2022-10-13,False,,,The Spoondog,mitch,5 Skull and Crossbones,5.0,5.0,text: 5 Skull and Crossbones,False,False,False
 Pirates Dinner Adventure with Eva Anderson,371,Pirates Dinner Adventure,2022-10-13,False,,,Evil No Handerson,guest,5 Skull and Crossbones,5.0,5.0,text: 5 Skull and Crossbones,False,False,False
-Long John Silver's with Mano Agapion and Betsy Sodaro,372,Long John Silver's,2022-10-20,False,,,The Dread Podcaster,guest,3.5 Pieces of Eight,3.5,3.5,text: 3.5 Pieces of Eight,False,False,False
-Long John Silver's with Mano Agapion and Betsy Sodaro,372,Long John Silver's,2022-10-20,False,,,Spoondog,guest,3 Pieces of Eight + a Golden Hook,3.0,3.0,text: 3 Pieces of Eight + a Golden Hook,False,False,False
+Long John Silver's with Mano Agapion and Betsy Sodaro,372,Long John Silver's,2022-10-20,False,,,The Dread Podcaster,nick,3.5 Pieces of Eight,3.5,3.5,text: 3.5 Pieces of Eight,False,False,False
+Long John Silver's with Mano Agapion and Betsy Sodaro,372,Long John Silver's,2022-10-20,False,,,Spoondog,mitch,3 Pieces of Eight + a Golden Hook,3.0,3.0,text: 3 Pieces of Eight + a Golden Hook,False,False,False
 Long John Silver's with Mano Agapion and Betsy Sodaro,372,Long John Silver's,2022-10-20,False,,,Long Dong Silver,guest,3 Pieces of Eight,3.0,3.0,text: 3 Pieces of Eight,False,False,False
 Long John Silver's with Mano Agapion and Betsy Sodaro,372,Long John Silver's,2022-10-20,False,,,Brown Plate,guest,3.5 Pieces of Eight,3.5,3.5,text: 3.5 Pieces of Eight,False,False,False
-Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Jolly Old St. Nick Wiger,guest,4 Pieces of Eight,4.0,4.0,text: 4 Pieces of Eight,False,False,False
-Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Spoontey Jones,guest,5 Pieces of Eight,5.0,5.0,text: 5 Pieces of Eight,False,False,False
+Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Jolly Old St. Nick Wiger,nick,4 Pieces of Eight,4.0,4.0,text: 4 Pieces of Eight,False,False,False
+Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Spoontey Jones,mitch,5 Pieces of Eight,5.0,5.0,text: 5 Pieces of Eight,False,False,False
 Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Sauvignon Blanc Beard,guest,4 Pieces of Eight,4.0,4.0,text: 4 Pieces of Eight,False,False,False
 Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Captain Snack Tarot,guest,4 Pieces of Eight,4.0,4.0,text: 4 Pieces of Eight,False,False,False
 Blue Bayou with Podcast the Ride,373,Blue Bayou,2022-10-27,False,,,Captain Jason Barbosa,guest,3 Pieces of Eight,3.0,3.0,text: 3 Pieces of Eight,False,False,False
@@ -1143,7 +1122,6 @@ Eataly with Griffin Newman and David Sims,376,Eataly,2022-11-17,False,,,Nick Wig
 Eataly with Griffin Newman and David Sims,376,Eataly,2022-11-17,False,,,Mike Mitchell,mitch,5 forks,5.0,5.0,,False,False,False
 Eataly with Griffin Newman and David Sims,376,Eataly,2022-11-17,False,,,Griffin Newman,guest,4.5 forks,4.5,4.5,,False,False,False
 Eataly with Griffin Newman and David Sims,376,Eataly,2022-11-17,False,,,David Sims,guest,4 forks,4.0,4.0,,False,False,False
-Eataly with Griffin Newman and David Sims,376,Eataly,2022-11-17,False,,,"Nick, Mitch, Griffin shared",guest,,,,no rating,False,False,False
 Krispy Kreme 2 with Sam Sanders,377,Krispy Kreme,2022-12-01,False,,,Nick Wiger,nick,4.25 forks,4.25,4.25,,False,False,False
 Krispy Kreme 2 with Sam Sanders,377,Krispy Kreme,2022-12-01,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Krispy Kreme 2 with Sam Sanders,377,Krispy Kreme,2022-12-01,False,,,Sam Sanders,guest,6 forks,6.0,6.0,,False,True,True
@@ -1153,7 +1131,6 @@ Krispy Kreme 2 with Sam Sanders,377,Krispy Kreme,2022-12-01,False,,,Sam Sanders,
 Shake Shack 3 with Evan Susser,379,Shake Shack,2022-12-15,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Shake Shack 3 with Evan Susser,379,Shake Shack,2022-12-15,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Shake Shack 3 with Evan Susser,379,Shake Shack,2022-12-15,False,,,Evan Susser,guest,4 forks,4.0,4.0,,False,False,False
-Shake Shack 3 with Evan Susser,379,Shake Shack,2022-12-15,False,,,Mitch and Susser shared,guest,,,,no rating,False,False,False
 SushiStop with Alie Ward,380,SushiStop,2023-01-12,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 SushiStop with Alie Ward,380,SushiStop,2023-01-12,False,,,Mike Mitchell,mitch,3 forks,3.0,3.0,,False,False,False
 SushiStop with Alie Ward,380,SushiStop,2023-01-12,False,,,Alie Ward,guest,3.5 forks,3.5,3.5,,False,False,False
@@ -1167,7 +1144,6 @@ Jack in the Box 2 with Don't Stop or We'll Die,382,Jack in the Box,2023-01-26,Fa
 Corner Bakery with Marques Ray,383,Corner Bakery,2023-02-02,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 Corner Bakery with Marques Ray,383,Corner Bakery,2023-02-02,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Corner Bakery with Marques Ray,383,Corner Bakery,2023-02-02,False,,,Marques Ray,guest,4.5 forks,4.5,4.5,,False,False,False
-Corner Bakery with Marques Ray,383,Corner Bakery,2023-02-02,False,,,Mitch and Marques shared,guest,,,,no rating,False,False,False
 Jeni's Splendid Ice Creams with Lilan Bowden,384,Jeni's Splendid Ice Creams,2023-02-09,False,,,Nick Wiger,nick,5 forks,5.0,5.0,,False,False,False
 Jeni's Splendid Ice Creams with Lilan Bowden,384,Jeni's Splendid Ice Creams,2023-02-09,False,,,Mike Mitchell,mitch,5 spoons,5.0,5.0,text: 5 spoons,False,False,False
 Jeni's Splendid Ice Creams with Lilan Bowden,384,Jeni's Splendid Ice Creams,2023-02-09,False,,,Lilan Bowden,guest,5 forks,5.0,5.0,,False,False,False
@@ -1270,19 +1246,19 @@ Hungry Howies with Joe Kwaczala,417,Hungry Howies,2023-09-28,False,,,Nick Wiger,
 Hungry Howies with Joe Kwaczala,417,Hungry Howies,2023-09-28,False,,,Mike Mitchell,mitch,2.25 forks,2.25,2.25,,False,False,False
 Hungry Howies with Joe Kwaczala,417,Hungry Howies,2023-09-28,False,,,Joe Kwaczala,guest,3.75 forks,3.75,3.75,,False,False,False
 Hungry Howies with Joe Kwaczala,417,Hungry Howies,2023-09-28,False,,,Becky Feldman,guest,3 forks,3.0,3.0,,False,False,False
-Voodoo Doughnut with Oscar Montoya,418,Voodoo Doughnut,2023-10-05,False,,,"Nick ""Peanut Butter"" Wiger",guest,3 pitchforks,3.0,3.0,text: 3 pitchforks,False,False,False
-Voodoo Doughnut with Oscar Montoya,418,Voodoo Doughnut,2023-10-05,False,,,"Mike ""Jelly"" Mitchell",guest,3.5 pitchforks,3.5,3.5,text: 3.5 pitchforks,False,False,False
+Voodoo Doughnut with Oscar Montoya,418,Voodoo Doughnut,2023-10-05,False,,,"Nick ""Peanut Butter"" Wiger",nick,3 pitchforks,3.0,3.0,text: 3 pitchforks,False,False,False
+Voodoo Doughnut with Oscar Montoya,418,Voodoo Doughnut,2023-10-05,False,,,"Mike ""Jelly"" Mitchell",mitch,3.5 pitchforks,3.5,3.5,text: 3.5 pitchforks,False,False,False
 Voodoo Doughnut with Oscar Montoya,418,Voodoo Doughnut,2023-10-05,False,,,Oscar Montoya,guest,3 pitchforks,3.0,3.0,text: 3 pitchforks,False,False,False
 Voodoo Doughnut with Oscar Montoya,418,Voodoo Doughnut,2023-10-05,False,,,Amelia Marino,guest,4 pitchforks,4.0,4.0,text: 4 pitchforks,False,False,False
-Zankou Chicken with Jason Mantzoukas,419,Zankou Chicken,2023-10-12,False,,,Joker Wiger,guest,5 pitchforks,5.0,5.0,text: 5 pitchforks,False,False,False
-Zankou Chicken with Jason Mantzoukas,419,Zankou Chicken,2023-10-12,False,,,The Batspoonman,guest,6 pitchforks,6.0,6.0,text: 6 pitchforks,False,True,True
+Zankou Chicken with Jason Mantzoukas,419,Zankou Chicken,2023-10-12,False,,,Joker Wiger,nick,5 pitchforks,5.0,5.0,text: 5 pitchforks,False,False,False
+Zankou Chicken with Jason Mantzoukas,419,Zankou Chicken,2023-10-12,False,,,The Batspoonman,mitch,6 pitchforks,6.0,6.0,text: 6 pitchforks,False,True,True
 Zankou Chicken with Jason Mantzoukas,419,Zankou Chicken,2023-10-12,False,,,Jason Mantzoukas,guest,6 10.0 pitchfork.com ratings,6.0,6.0,text: 6 10.0 pitchfork.com ratings,False,True,True
 Zankou Chicken with Jason Mantzoukas,419,Zankou Chicken,2023-10-12,False,,,Amelia Marino,guest,4.5 forks,4.5,4.5,,False,False,False
-Lucifers Pizza with Eva Anderson,420,Lucifers Pizza,2023-10-19,False,,,Luigi Wiger,guest,3 pitchforks,3.0,3.0,text: 3 pitchforks,False,False,False
-Lucifers Pizza with Eva Anderson,420,Lucifers Pizza,2023-10-19,False,,,Mario Mitchell,guest,3.75 pitchforks,3.75,3.75,text: 3.75 pitchforks,False,False,False
+Lucifers Pizza with Eva Anderson,420,Lucifers Pizza,2023-10-19,False,,,Luigi Wiger,nick,3 pitchforks,3.0,3.0,text: 3 pitchforks,False,False,False
+Lucifers Pizza with Eva Anderson,420,Lucifers Pizza,2023-10-19,False,,,Mario Mitchell,mitch,3.75 pitchforks,3.75,3.75,text: 3.75 pitchforks,False,False,False
 Lucifers Pizza with Eva Anderson,420,Lucifers Pizza,2023-10-19,False,,,Bart Anderson,guest,3 pitchforks,3.0,3.0,text: 3 pitchforks,False,False,False
-Boo's Philly Cheesesteaks with Don't Stop or We'll Die,421,Boo's Philly Cheesesteaks,2023-10-26,True,in person,"Los Angeles, CA",Wendy Wiger,guest,3.5 pitchforks,3.5,3.5,text: 3.5 pitchforks,False,False,False
-Boo's Philly Cheesesteaks with Don't Stop or We'll Die,421,Boo's Philly Cheesesteaks,2023-10-26,True,in person,"Los Angeles, CA",Wendy Mitchell,guest,3.25 pitchforks,3.25,3.25,text: 3.25 pitchforks,False,False,False
+Boo's Philly Cheesesteaks with Don't Stop or We'll Die,421,Boo's Philly Cheesesteaks,2023-10-26,True,in person,"Los Angeles, CA",Wendy Wiger,nick,3.5 pitchforks,3.5,3.5,text: 3.5 pitchforks,False,False,False
+Boo's Philly Cheesesteaks with Don't Stop or We'll Die,421,Boo's Philly Cheesesteaks,2023-10-26,True,in person,"Los Angeles, CA",Wendy Mitchell,mitch,3.25 pitchforks,3.25,3.25,text: 3.25 pitchforks,False,False,False
 Boo's Philly Cheesesteaks with Don't Stop or We'll Die,421,Boo's Philly Cheesesteaks,2023-10-26,True,in person,"Los Angeles, CA",Dave Thomas Rust,guest,4 pitchforks,4.0,4.0,text: 4 pitchforks,False,False,False
 Boo's Philly Cheesesteaks with Don't Stop or We'll Die,421,Boo's Philly Cheesesteaks,2023-10-26,True,in person,"Los Angeles, CA",Dave Thomas Cassady,guest,3.75 pitchforks,3.75,3.75,text: 3.75 pitchforks,False,False,False
 Big Chicken with Dan Black,422,Big Chicken,2023-11-02,False,,,Nick Wiger,nick,1 fork,1.0,1.0,,False,False,False
@@ -1376,7 +1352,7 @@ Tender Greens 2 with Niccole Thurman,450,Tender Greens,2024-06-13,False,,,Niccol
 Bowlero with Allan McLeod,451,Bowlero,2024-06-20,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 Bowlero with Allan McLeod,451,Bowlero,2024-06-20,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Bowlero with Allan McLeod,451,Bowlero,2024-06-20,False,,,Allan McLeod aka Molasses Boy,guest,3.5 forks,3.5,3.5,,False,False,False
-Silverlake Ramen with Sierra Katow,452,Silverlake Ramen,2024-06-27,False,,,"Nick ""Mr. Soup"" Wiger",guest,4 forks,4.0,4.0,,False,False,False
+Silverlake Ramen with Sierra Katow,452,Silverlake Ramen,2024-06-27,False,,,"Nick ""Mr. Soup"" Wiger",nick,4 forks,4.0,4.0,,False,False,False
 Silverlake Ramen with Sierra Katow,452,Silverlake Ramen,2024-06-27,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Silverlake Ramen with Sierra Katow,452,Silverlake Ramen,2024-06-27,False,,,Sierra Katow,guest,4 forks,4.0,4.0,,False,False,False
 Nordstrom's Bar Verde with Jordan Morris,454,Nordstrom's Bar Verde,2024-07-11,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
@@ -1415,7 +1391,7 @@ Watermelon with Becky Feldman,DD,Watermelon,2024-08-27,False,,,Nick Wiger,nick,5
 Watermelon with Becky Feldman,DD,Watermelon,2024-08-27,False,,,Mike Mitchell,mitch,5 Fruit Salad Forks,5.0,5.0,text: 5 Fruit Salad Forks,False,False,False
 Watermelon with Becky Feldman,DD,Watermelon,2024-08-27,False,,,Becky Feldman,guest,5 Fruit Salad Forks,5.0,5.0,text: 5 Fruit Salad Forks,False,False,False
 Carrots with Jon Glover and Marisa Pinson,461,Carrots,2024-08-29,False,,,Nick Wiger,nick,3.0 Salad Forks,3.0,3.0,text: 3.0 Salad Forks,False,False,False
-Carrots with Jon Glover and Marisa Pinson,461,Carrots,2024-08-29,False,,,"Mike ""Tater Top"" Mitchell",guest,4.0 Salad Forks,4.0,4.0,text: 4.0 Salad Forks,False,False,False
+Carrots with Jon Glover and Marisa Pinson,461,Carrots,2024-08-29,False,,,"Mike ""Tater Top"" Mitchell",mitch,4.0 Salad Forks,4.0,4.0,text: 4.0 Salad Forks,False,False,False
 Carrots with Jon Glover and Marisa Pinson,461,Carrots,2024-08-29,False,,,Jon Glover,guest,2.5 Salad Forks,2.5,2.5,text: 2.5 Salad Forks,False,False,False
 Carrots with Jon Glover and Marisa Pinson,461,Carrots,2024-08-29,False,,,Marisa Pinson,guest,5.0 Salad Forks,5.0,5.0,text: 5.0 Salad Forks,False,False,False
 Popeyes Wings with David Brown and Jon Mackey,462,Popeyes Wings,2024-09-05,False,,,Nick Wiger,nick,5 forks,5.0,5.0,,False,False,False
@@ -1432,13 +1408,12 @@ Backyard Bowls with Erin Keif,465,Backyard Bowls,2024-09-26,False,,,Nick Wiger,n
 Backyard Bowls with Erin Keif,465,Backyard Bowls,2024-09-26,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Backyard Bowls with Erin Keif,465,Backyard Bowls,2024-09-26,False,,,Erin Keif,guest,3.8 forks,3.8,3.8,,False,False,False
 Tim Hortons with Stephanie Beatriz and Alana Johnston,466,Tim Hortons,2024-10-03,True,in person,"Toronto, ON",Nick Wiger,nick,2.5 Forks,2.5,2.5,,False,False,False
-Tim Hortons with Stephanie Beatriz and Alana Johnston,466,Tim Hortons,2024-10-03,True,in person,"Toronto, ON","Mike ""Jerk King"" Mitchell",guest,5 Forks,5.0,5.0,,False,False,False
+Tim Hortons with Stephanie Beatriz and Alana Johnston,466,Tim Hortons,2024-10-03,True,in person,"Toronto, ON","Mike ""Jerk King"" Mitchell",mitch,5 Forks,5.0,5.0,,False,False,False
 Tim Hortons with Stephanie Beatriz and Alana Johnston,466,Tim Hortons,2024-10-03,True,in person,"Toronto, ON",Stephanie Beatriz,guest,2 Forks,2.0,2.0,,False,False,False
 Tim Hortons with Stephanie Beatriz and Alana Johnston,466,Tim Hortons,2024-10-03,True,in person,"Toronto, ON",Alana Johnston 🔪,guest,5 Knives = 2 Forks,2.0,2.0,converted: 5 Knives = 2 Forks,False,False,False
 Harvey's with Shaun Diston,467,Harvey's,2024-10-10,False,,,Nick Wiger,nick,3.5 forks,3.5,3.5,,False,False,False
 Harvey's with Shaun Diston,467,Harvey's,2024-10-10,False,,,Mike Mitchell,mitch,3.5 forks,3.5,3.5,,False,False,False
 Harvey's with Shaun Diston,467,Harvey's,2024-10-10,False,,,Shaun Diston,guest,4 forks,4.0,4.0,,False,False,False
-Harvey's with Shaun Diston,467,Harvey's,2024-10-10,False,,,Nick and Mitch shared,guest,,,,no rating,False,False,False
 Swiss Chalet with Alana Johnston,468,Swiss Chalet,2024-10-17,False,,,Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
 Swiss Chalet with Alana Johnston,468,Swiss Chalet,2024-10-17,False,,,Mike Mitchell,mitch,4.5 forks,4.5,4.5,,False,False,False
 Swiss Chalet with Alana Johnston,468,Swiss Chalet,2024-10-17,False,,,Alana Johnston 🔪,guest,4.5 forks,4.5,4.5,,False,False,False
@@ -1465,12 +1440,11 @@ Applebee's with Nicole Byer,474,Applebee's,2024-12-05,False,,,Nicole Byer,guest,
 IHOP Xbox Indiana Jones Menu with Mary Holland,475,IHOP Xbox Indiana Jones Menu,2024-12-12,False,,,Nick Wiger,nick,3.5 forks,3.5,3.5,,False,False,False
 IHOP Xbox Indiana Jones Menu with Mary Holland,475,IHOP Xbox Indiana Jones Menu,2024-12-12,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 IHOP Xbox Indiana Jones Menu with Mary Holland,475,IHOP Xbox Indiana Jones Menu,2024-12-12,False,,,Mary Holland,guest,2.5 forks,2.5,2.5,,False,False,False
-IHOP Xbox Indiana Jones Menu with Mary Holland,475,IHOP Xbox Indiana Jones Menu,2024-12-12,False,,,shared (Nick & Mitch),guest,,,,no rating,False,False,False
-Slice House with Evan Susser,476,Slice House,2024-12-19,True,in person,"Los Angeles, CA",Tiger Wiger,guest,3.5 forks,3.5,3.5,,False,False,False
+Slice House with Evan Susser,476,Slice House,2024-12-19,True,in person,"Los Angeles, CA",Tiger Wiger,nick,3.5 forks,3.5,3.5,,False,False,False
 Slice House with Evan Susser,476,Slice House,2024-12-19,True,in person,"Los Angeles, CA",Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 Slice House with Evan Susser,476,Slice House,2024-12-19,True,in person,"Los Angeles, CA",Evan Susser,guest,3.99 forks,3.99,3.99,,False,False,False
-Crumbl Cookies with Santa & Mrs. Claus,DD,Crumbl Cookies,2024-12-24,False,,,Jolly Old St. Nick Wiger,guest,2.5 Christmas forks,2.5,2.5,text: 2.5 Christmas forks,False,False,False
-Crumbl Cookies with Santa & Mrs. Claus,DD,Crumbl Cookies,2024-12-24,False,,,Frosty the Spoonman,guest,4 Christmas Forks,4.0,4.0,text: 4 Christmas Forks,False,False,False
+Crumbl Cookies with Santa & Mrs. Claus,DD,Crumbl Cookies,2024-12-24,False,,,Jolly Old St. Nick Wiger,nick,2.5 Christmas forks,2.5,2.5,text: 2.5 Christmas forks,False,False,False
+Crumbl Cookies with Santa & Mrs. Claus,DD,Crumbl Cookies,2024-12-24,False,,,Frosty the Spoonman,mitch,4 Christmas Forks,4.0,4.0,text: 4 Christmas Forks,False,False,False
 Crumbl Cookies with Santa & Mrs. Claus,DD,Crumbl Cookies,2024-12-24,False,,,Santa Claus,guest,4 Christmas Forks,4.0,4.0,text: 4 Christmas Forks,False,False,False
 Crumbl Cookies with Santa & Mrs. Claus,DD,Crumbl Cookies,2024-12-24,False,,,Mrs. Claus,guest,2.8 Christmas Forks,2.8,2.8,text: 2.8 Christmas Forks,False,False,False
 Little Caesars 3 with Johnno Wilson,477,Little Caesars,2025-01-09,False,,,Nick Wiger,nick,4.5 forks,4.5,4.5,,False,False,False
@@ -1494,7 +1468,7 @@ Souvla with Jordan Morris,DD,Souvla,2025-02-04,True,in person,"San Francisco, CA
 KFC Bowls with Carmen Christopher,481,KFC Bowls,2025-02-06,False,,,Nick Wiger,nick,3 forks,3.0,3.0,,False,False,False
 KFC Bowls with Carmen Christopher,481,KFC Bowls,2025-02-06,False,,,Mike Mitchell,mitch,4 forks,4.0,4.0,,False,False,False
 KFC Bowls with Carmen Christopher,481,KFC Bowls,2025-02-06,False,,,Carmen Christopher,guest,1 forks,1.0,1.0,,False,False,False
-Chuck E. Cheese 2 with Griffin Newman,482,Chuck E. Cheese,2025-02-13,False,,,Tiger Wiger,guest,1 fork,1.0,1.0,,False,False,False
+Chuck E. Cheese 2 with Griffin Newman,482,Chuck E. Cheese,2025-02-13,False,,,Tiger Wiger,nick,1 fork,1.0,1.0,,False,False,False
 Chuck E. Cheese 2 with Griffin Newman,482,Chuck E. Cheese,2025-02-13,False,,,Mike Mitchell,mitch,0.5 forks,0.5,0.5,,False,False,False
 Chuck E. Cheese 2 with Griffin Newman,482,Chuck E. Cheese,2025-02-13,False,,,King of Kranch Newman,guest,1.75 forks,1.75,1.75,,False,False,False
 Chuck E. Cheese 2 with Griffin Newman,482,Chuck E. Cheese,2025-02-13,False,,,Amelia Marino,guest,0.5 stars,0.5,0.5,text: 0.5 stars,False,False,False
@@ -1607,16 +1581,15 @@ Alfred Coffee with Sean Clements and Hayes Davenport,512,Alfred Coffee,2025-09-1
 Alfred Coffee with Sean Clements and Hayes Davenport,512,Alfred Coffee,2025-09-11,False,,,Mike Mitchell,mitch,2 forks,2.0,2.0,,False,False,False
 Alfred Coffee with Sean Clements and Hayes Davenport,512,Alfred Coffee,2025-09-11,False,,,Sean Clements,guest,3.3 forks,3.3,3.3,,False,False,False
 Alfred Coffee with Sean Clements and Hayes Davenport,512,Alfred Coffee,2025-09-11,False,,,Hayes Davenport,guest,2 forks,2.0,2.0,,False,False,False
-Alfred Coffee with Sean Clements and Hayes Davenport,512,Alfred Coffee,2025-09-11,False,,,Nick & Mitch shared,guest,,,,no rating,False,False,False
 Deluca's Italian Deli with Alana Hope Levinson and Dan O'Sullivan,513,Deluca's Italian Deli,2025-09-18,False,,,Nick Wiger,nick,1.5 forks,1.5,1.5,,False,False,False
 Deluca's Italian Deli with Alana Hope Levinson and Dan O'Sullivan,513,Deluca's Italian Deli,2025-09-18,False,,,Mike Mitchell,mitch,3 forks,3.0,3.0,,False,False,False
 Deluca's Italian Deli with Alana Hope Levinson and Dan O'Sullivan,513,Deluca's Italian Deli,2025-09-18,False,,,Alana Hope Levinson,guest,1 fork,1.0,1.0,,False,False,False
 Deluca's Italian Deli with Alana Hope Levinson and Dan O'Sullivan,513,Deluca's Italian Deli,2025-09-18,False,,,Dan O'Sullivan,guest,2.5 forks,2.5,2.5,,False,False,False
-Plant Power Fast Food with Ashly Burch and Mort Burke,514,Plant Power Fast Food,2025-09-25,False,,,Tiger Wiger,guest,3 forks,3.0,3.0,,False,False,False
-Plant Power Fast Food with Ashly Burch and Mort Burke,514,Plant Power Fast Food,2025-09-25,False,,,Mr. Slice,guest,3 forks,3.0,3.0,,False,False,False
+Plant Power Fast Food with Ashly Burch and Mort Burke,514,Plant Power Fast Food,2025-09-25,False,,,Tiger Wiger,nick,3 forks,3.0,3.0,,False,False,False
+Plant Power Fast Food with Ashly Burch and Mort Burke,514,Plant Power Fast Food,2025-09-25,False,,,Mr. Slice,mitch,3 forks,3.0,3.0,,False,False,False
 Plant Power Fast Food with Ashly Burch and Mort Burke,514,Plant Power Fast Food,2025-09-25,False,,,Hashly Burp,guest,3 forks,3.0,3.0,,False,False,False
 Plant Power Fast Food with Ashly Burch and Mort Burke,514,Plant Power Fast Food,2025-09-25,False,,,Fork Burp,guest,3 forks,3.0,3.0,,False,False,False
-Silverlake Ramen with Betsy Sodaro,515,Silverlake Ramen,2025-10-02,False,,,"Nick ""Mr. Soup"" Wiger",guest,4.5 Soup Forks,4.5,4.5,text: 4.5 Soup Forks,False,False,False
+Silverlake Ramen with Betsy Sodaro,515,Silverlake Ramen,2025-10-02,False,,,"Nick ""Mr. Soup"" Wiger",nick,4.5 Soup Forks,4.5,4.5,text: 4.5 Soup Forks,False,False,False
 Silverlake Ramen with Betsy Sodaro,515,Silverlake Ramen,2025-10-02,False,,,Mike Mitchell,mitch,4.5 Soup Forks,4.5,4.5,text: 4.5 Soup Forks,False,False,False
 Silverlake Ramen with Betsy Sodaro,515,Silverlake Ramen,2025-10-02,False,,,Betsy Sodaro,guest,5 Soup Forks,5.0,5.0,text: 5 Soup Forks,False,False,False
 Le Pain Quotidien 2 with Christine Nangle,516,Le Pain Quotidien,2025-10-09,False,,,Nick Wiger,nick,2 Gator Peens,2.0,2.0,text: 2 Gator Peens,False,False,False
@@ -1658,7 +1631,7 @@ La Colombe with Vic Michaelis,527,La Colombe,2026-01-15,False,,,Vic Michaelis,gu
 KFC 4 with Cullen Crawford,528,KFC,2026-01-22,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
 KFC 4 with Cullen Crawford,528,KFC,2026-01-22,False,,,Mike Mitchell,mitch,4.25 forks,4.25,4.25,,False,False,False
 KFC 4 with Cullen Crawford,528,KFC,2026-01-22,False,,,Cullen Crawford,guest,4 forks,4.0,4.0,,False,False,False
-Small Cheval with Jon Gabrus,DD,Small Cheval,2026-01-27,True,in person,"Chicago, IL",Nick Wine-ger,guest,4 forks,4.0,4.0,,False,False,False
+Small Cheval with Jon Gabrus,DD,Small Cheval,2026-01-27,True,in person,"Chicago, IL",Nick Wine-ger,nick,4 forks,4.0,4.0,,False,False,False
 Small Cheval with Jon Gabrus,DD,Small Cheval,2026-01-27,True,in person,"Chicago, IL",Mike Mitchell,mitch,4.5 forks,4.5,4.5,,False,False,False
 Small Cheval with Jon Gabrus,DD,Small Cheval,2026-01-27,True,in person,"Chicago, IL",Jon Gabrus,guest,4.5 forks,4.5,4.5,,False,False,False
 Trejo's Tacos with Lamar Woods,529,Trejo's Tacos,2026-01-29,False,,,Nick Wiger,nick,4 forks,4.0,4.0,,False,False,False
