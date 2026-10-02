@@ -20,6 +20,7 @@ import math
 import re
 import sys
 from collections import Counter
+from functools import lru_cache
 
 import pandas as pd
 
@@ -43,18 +44,88 @@ AD_LIKE = re.compile(
     r"dietitian|trauma|coping|patreon|gmail|subscribe|sponsor\w*|offer|percent|"
     r"commission|renewable|calories|antioxidants|supermarket|sourdough|artisanal|"
     r"voicemail|email|headgum)\b|\d{3,}")
-# Machine-transcription misspellings of the show's names ("weiger", "doeboys").
-NAME_LIKE = ("wiger", "doughboys", "mitchell")
+# The hosts' and show's names and nicknames. Transcription mangles them
+# ("weiger", "wags" and "wikes" for Wiges, "doeboys"), so near matches count too.
+HOST_NAMES = ("wiger", "wiges", "doughboys", "mitchell", "spoonman")
+# Words that sit inside web and email addresses ("birdfuck com", "roastspoonman at gmail com").
+ADDRESS_NEXT = re.compile(r"(?:\S+ )?(?:com|net|org|gmail|dot|tv)\b")  # used with .match(text, pos)
 
 
-def is_noise(gram):
+def name_tokens():
+    """Distinctive name words of everyone who has rated or guested: hosts, guests,
+    producers and themed aliases. Common English words ("the", "jack") are
+    left out so phrases like "jack in the box" survive."""
+    from wordfreq import zipf_frequency
+
+    names = []
+    ratings = DATA_DIR / "ratings.csv"
+    if ratings.exists():
+        names += pd.read_csv(ratings, usecols=["rater"]).rater.dropna().tolist()
+    episodes = pd.read_csv(DATA_DIR / "episodes.csv", usecols=["guests"])
+    names += [g for gs in episodes.guests.dropna() for g in re.split(r",|&|\band\b", gs)]
+    pages = DATA_DIR / "raw" / "pages.json"  # local wiki cache: infoboxes list everyone on the episode
+    if pages.exists():
+        for text in json.loads(pages.read_text("utf-8")).values():
+            for field in re.findall(r"\|\s*(?:guest|hosted_by)\s*=\s*([^|}]*)", text or ""):
+                names += re.split(r",|&|\band\b", re.sub(r"\[\[|\]\]", "", field))
+    tokens = {t.removesuffix("'s") for n in names for t in normalize(n).split()}
+    return {t for t in tokens if len(t) > 2 and zipf_frequency(t, "en") < 3.5} | set(HOST_NAMES)
+
+
+def restaurant_names():
+    """Every run of words inside a restaurant or chain name ("taco", "taco bell",
+    "carl's jr"), as a set for fast lookup."""
+    eps = pd.read_csv(DATA_DIR / "episodes.csv", usecols=["restaurant", "chain"])
+    runs = set()
+    for name in pd.concat([eps.restaurant, eps.chain]).dropna():
+        w = normalize(name).split()
+        runs |= {" ".join(w[i:j]) for i in range(len(w)) for j in range(i + 1, len(w) + 1)}
+    return runs
+
+
+@lru_cache(maxsize=None)
+def _zipf(word, lang="en"):
+    from wordfreq import zipf_frequency
+    return zipf_frequency(word, lang)
+
+
+def is_noise(gram, names=frozenset(), restaurants=frozenset()):
+    """Ad copy, a restaurant name, or a person's name/nickname (or a mangled
+    transcription of one, e.g. "weigher" or "doe boys")."""
     from difflib import SequenceMatcher
+
+    zipf_frequency = _zipf
+
+    def host_like(w):
+        # Only rare words can be mangled names; ordinary ones ("where", "spoon") are exempt.
+        return (zipf_frequency(w, "en") < 3.5
+                and any(SequenceMatcher(None, w, h).ratio() >= 0.65 for h in HOST_NAMES))
+
     if AD_LIKE.search(gram):
         return True
-    if " " not in gram:
-        base = gram.removesuffix("'s")
-        return any(SequenceMatcher(None, base, name).ratio() >= 0.7 for name in NAME_LIKE)
+    if gram in restaurants:
+        return True
+    words = [w.removesuffix("'s") for w in gram.split()]
+    if any(w in names for w in words):
+        return True
+    pairs = ["".join(words[i:i + 2]) for i in range(len(words) - 1)]  # "doe boys" -> "doeboys"
+    if any(host_like(w) for w in words if len(w) > 3) or any(host_like(p) for p in pairs):
+        return True
+    if len(words) == 1:
+        w = words[0]
+        return zipf_frequency(w, "en") < 3.5 and any(
+            SequenceMatcher(None, w, n).ratio() >= 0.8 for n in names if abs(len(n) - len(w)) <= 2)
     return False
+
+
+def address_share(word, texts):
+    """Share of a word's uses that are part of a web or email address."""
+    total = inside = 0
+    for text in texts.values():
+        for m in re.finditer(rf"\b{re.escape(word)}\b ?", text):
+            total += 1
+            inside += bool(ADDRESS_NEXT.match(text, m.end()))
+    return inside / total if total else 0
 
 
 def normalize(text):
@@ -189,7 +260,24 @@ def count_phrases(texts, patterns):
 # ---------------------------------------------------------------- candidates
 
 
-def candidates(texts, dates, max_n=4, top_per_length=120):
+def phrase_years(texts, dates, phrases, max_n):
+    """{phrase: Counter(year -> uses)} for just the given phrases."""
+    years = {}
+    for slug, text in texts.items():
+        year = (dates.get(slug) or "")[:4]
+        if not year:
+            continue
+        words = text.split()
+        for n in range(1, max_n + 1):
+            for i in range(len(words) - n + 1):
+                g = " ".join(words[i:i + n])
+                if g in phrases:
+                    years.setdefault(g, Counter())[year] += 1
+    return years
+
+
+def candidates(texts, dates, max_n=4, top_per_length=120, names=frozenset(),
+               restaurants=frozenset()):
     """Words and phrases that are unusually common on this show.
 
     Single words: how many times more frequent than in general English
@@ -202,32 +290,28 @@ def candidates(texts, dates, max_n=4, top_per_length=120):
     n_eps = len(texts)
     counts = {n: Counter() for n in range(1, max_n + 1)}
     docs = {n: Counter() for n in range(1, max_n + 1)}
-    years = {}
     total = 0
-    for slug, text in texts.items():
+    for text in texts.values():
         words = text.split()
         total += len(words)
-        year = (dates.get(slug) or "")[:4]
         for n in range(1, max_n + 1):
-            grams = [" ".join(words[i:i + n]) for i in range(len(words) - n + 1)]
-            c = Counter(grams)
+            c = Counter(" ".join(words[i:i + n]) for i in range(len(words) - n + 1))
             counts[n].update(c)
             docs[n].update(c.keys())
-            if year:
-                for g in c:
-                    years.setdefault(g, Counter())[year] += c[g]
     unigram_p = {w: c / total for w, c in counts[1].items()}
+    min_docs = max(8, n_eps // 25)
+    # Free everything below the thresholds before the slower scoring pass.
+    for n in range(1, max_n + 1):
+        docs[n] = Counter({g: d for g, d in docs[n].items() if d >= min_docs})
+        counts[n] = Counter({g: counts[n][g] for g in docs[n] if counts[n][g] >= 2 * min_docs})
 
     rows = []
-    min_docs = max(8, n_eps // 25)
     for n in range(1, max_n + 1):
         for gram, c in counts[n].items():
             d = docs[n][gram]
             if d < min_docs or c < 2 * min_docs:
                 continue
             words = gram.split()
-            if is_noise(gram):
-                continue
             if all(w in STOPWORDS for w in words) or words[0] in STOPWORDS and words[-1] in STOPWORDS:
                 continue
             rate = c / total
@@ -241,14 +325,16 @@ def candidates(texts, dates, max_n=4, top_per_length=120):
                 if pmi < 6:
                     continue
                 score = pmi
-            by_year = years.get(gram, Counter())
+            if is_noise(gram, names, restaurants):  # slow, so only for phrases that scored well
+                continue
             rows.append({
                 "phrase": gram, "words": n, "count": c, "episodes": d,
                 "share_of_episodes": round(d / n_eps, 3), "score": round(score, 2),
-                "first_year": min(by_year) if by_year else None,
-                "peak_year": max(by_year, key=by_year.get) if by_year else None,
             })
     df = pd.DataFrame(rows)
+    years = phrase_years(texts, dates, set(df.phrase), max_n)
+    df["first_year"] = df.phrase.map(lambda g: min(years[g]) if years.get(g) else None)
+    df["peak_year"] = df.phrase.map(lambda g: max(years[g], key=years[g].get) if years.get(g) else None)
     df["rank_score"] = df.score * df.episodes.map(math.log)
     # Drop a phrase when a longer phrase containing it is used almost as often.
     df = df.sort_values("rank_score", ascending=False)
@@ -259,6 +345,10 @@ def candidates(texts, dates, max_n=4, top_per_length=120):
         kept.append(r)
         keep.append(r.Index)
     df = df.loc[keep]
+    # Drop single words that mostly live inside web/email addresses.
+    single = df[df.words == 1].head(3 * top_per_length)
+    addresses = [i for i, w in zip(single.index, single.phrase) if address_share(w, texts) >= 0.25]
+    df = df.drop(index=addresses)
     # Rank each phrase length separately: long phrases score far higher on PMI
     # and would otherwise crowd out single words.
     return (df.groupby("words", group_keys=False).head(top_per_length)
@@ -290,7 +380,7 @@ def main():
 
     if "--no-candidates" not in sys.argv:
         dates = dict(zip(matched.slug, matched.date))
-        cands = candidates(texts, dates)
+        cands = candidates(texts, dates, names=name_tokens(), restaurants=restaurant_names())
         cands.to_csv(DATA_DIR / "phrase_candidates.csv", index=False)
         print(f"{len(cands)} candidate words/phrases -> data/phrase_candidates.csv", file=sys.stderr)
 

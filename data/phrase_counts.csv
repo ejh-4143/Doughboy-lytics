@@ -11,10 +11,10 @@ slug,phrase,count
 800-degrees-with-betsy-sodaro,oh my god,4
 800-degrees-with-betsy-sodaro,jesus christ,4
 800-degrees-with-betsy-sodaro,spoon nation,1
-800-degrees-with-betsy-sodaro,rumblies,1
 800-degrees-with-betsy-sodaro,heat seeker,1
 800-degrees-with-betsy-sodaro,wally and irma,1
 800-degrees-with-betsy-sodaro,spoiler alert,1
+800-degrees-with-betsy-sodaro,rumblies,1
 85c-bakery-cafe-with-lauren-mcguire,wow,25
 85c-bakery-cafe-with-lauren-mcguire,spoonman,1
 85c-bakery-cafe-with-lauren-mcguire,platinum plate club,2
@@ -34,18 +34,19 @@ alamo-drafthouse-with-drew-mcweeny,golden plate club,1
 alamo-drafthouse-with-drew-mcweeny,snack or wack,1
 alamo-drafthouse-with-drew-mcweeny,oh my god,9
 alamo-drafthouse-with-drew-mcweeny,jesus christ,1
-alamo-drafthouse-with-drew-mcweeny,birdfuck,4
-alamo-drafthouse-with-drew-mcweeny,rumblies,1
 alamo-drafthouse-with-drew-mcweeny,wally and irma,1
+alamo-drafthouse-with-drew-mcweeny,rumblies,1
+alamo-drafthouse-with-drew-mcweeny,gemmy,1
+alamo-drafthouse-with-drew-mcweeny,unkar plutt,1
 alfred-coffee-with-sean-clements-and-hayes-davenport,wow,33
 alfred-coffee-with-sean-clements-and-hayes-davenport,spoonman,1
 alfred-coffee-with-sean-clements-and-hayes-davenport,snack or wack,1
 alfred-coffee-with-sean-clements-and-hayes-davenport,oh my god,7
 alfred-coffee-with-sean-clements-and-hayes-davenport,for god's sake,1
-alfred-coffee-with-sean-clements-and-hayes-davenport,birdfuck,2
 alfred-coffee-with-sean-clements-and-hayes-davenport,heat seeker,1
 alfred-coffee-with-sean-clements-and-hayes-davenport,spoiler alert,1
 alfred-coffee-with-sean-clements-and-hayes-davenport,simulacrum,1
+alfred-coffee-with-sean-clements-and-hayes-davenport,gemmy,3
 als-beef-with-megan-batoon-amir-blumenfeld-live,wow,39
 als-beef-with-megan-batoon-amir-blumenfeld-live,spoonman,1
 als-beef-with-megan-batoon-amir-blumenfeld-live,golden plate club,1
@@ -70,6 +71,7 @@ ameci-pizza-and-pasta-with-gilli-nissim,jesus christ,1
 ameci-pizza-and-pasta-with-gilli-nissim,for god's sake,1
 ameci-pizza-and-pasta-with-gilli-nissim,wally and irma,1
 ameci-pizza-and-pasta-with-gilli-nissim,spoiler alert,1
+ameci-pizza-and-pasta-with-gilli-nissim,gemmy,6
 ample-hills-creamery-with-jason-sheridan,wow,42
 ample-hills-creamery-with-jason-sheridan,spoonman,3
 ample-hills-creamery-with-jason-sheridan,golden plate club,1
@@ -86,6 +88,7 @@ applebees-with-nicole-byer,jesus christ,2
 applebees-with-nicole-byer,for god's sake,1
 applebees-with-nicole-byer,hand holding club,1
 applebees-with-nicole-byer,ungapatchka,6
+applebees-with-nicole-byer,gemmy,13
 arbys-2-with-john-hodgman,wow,36
 arbys-2-with-john-hodgman,spoonman,1
 arbys-2-with-john-hodgman,golden plate club,1
@@ -128,10 +131,10 @@ backyard-bowls-with-erin-keif,snack or wack,1
 backyard-bowls-with-erin-keif,oh my god,17
 backyard-bowls-with-erin-keif,howdy ho,6
 backyard-bowls-with-erin-keif,spoon nation,2
-backyard-bowls-with-erin-keif,birdfuck,1
-backyard-bowls-with-erin-keif,rumblies,1
 backyard-bowls-with-erin-keif,heat seeker,1
 backyard-bowls-with-erin-keif,wally and irma,1
+backyard-bowls-with-erin-keif,rumblies,1
+backyard-bowls-with-erin-keif,gemmy,2
 baja-fresh-with-claudia-odoherty,wow,10
 baja-fresh-with-claudia-odoherty,spoonman,4
 baja-fresh-with-claudia-odoherty,platinum plate club,1
@@ -152,8 +155,9 @@ bbq-chicken-with-tansu-philip,spoonman,1
 bbq-chicken-with-tansu-philip,golden plate club,3
 bbq-chicken-with-tansu-philip,platinum plate club,1
 bbq-chicken-with-tansu-philip,oh my god,14
-bbq-chicken-with-tansu-philip,birdfuck,4
 bbq-chicken-with-tansu-philip,heat seeker,1
+bbq-chicken-with-tansu-philip,gemmy,2
+bbq-chicken-with-tansu-philip,unkar plutt,1
 ben-jerrys-with-the-sloppy-boys,wow,24
 ben-jerrys-with-the-sloppy-boys,spoonman,4
 ben-jerrys-with-the-sloppy-boys,golden plate club,1
@@ -166,8 +170,8 @@ benihana-with-darcy-carden,platinum plate club,2
 benihana-with-darcy-carden,oh my god,11
 benihana-with-darcy-carden,jesus christ,2
 benihana-with-darcy-carden,for god's sake,4
-benihana-with-darcy-carden,rumblies,2
 benihana-with-darcy-carden,spoiler alert,1
+benihana-with-darcy-carden,rumblies,2
 bens-chili-bowl-with-christine-nangle-carl-tart-live,wow,42
 bens-chili-bowl-with-christine-nangle-carl-tart-live,golden plate club,1
 bens-chili-bowl-with-christine-nangle-carl-tart-live,oh my god,4
@@ -188,11 +192,12 @@ bhc-chicken-with-matt-selman,spoonman,3
 bhc-chicken-with-matt-selman,oh my god,13
 bhc-chicken-with-matt-selman,jesus christ,2
 bhc-chicken-with-matt-selman,for god's sake,1
-bhc-chicken-with-matt-selman,birdfuck,3
 bhc-chicken-with-matt-selman,heat seeker,2
 bhc-chicken-with-matt-selman,wally and irma,2
 bhc-chicken-with-matt-selman,simulacrum,1
 bhc-chicken-with-matt-selman,ungapatchka,2
+bhc-chicken-with-matt-selman,gemmy,5
+bhc-chicken-with-matt-selman,unkar plutt,1
 big-chicken-with-dan-black,wow,36
 big-chicken-with-dan-black,spoonman,3
 big-chicken-with-dan-black,platinum plate club,1
@@ -203,9 +208,9 @@ big-mamas-papas-pizzeria-with-zach-cherry,spoonman,4
 big-mamas-papas-pizzeria-with-zach-cherry,golden plate club,1
 big-mamas-papas-pizzeria-with-zach-cherry,oh my god,7
 big-mamas-papas-pizzeria-with-zach-cherry,jesus christ,7
-big-mamas-papas-pizzeria-with-zach-cherry,birdfuck,3
 big-mamas-papas-pizzeria-with-zach-cherry,heat seeker,1
 big-mamas-papas-pizzeria-with-zach-cherry,ungapatchka,1
+big-mamas-papas-pizzeria-with-zach-cherry,gemmy,6
 bjs-with-sean-clements-hayes-davenport,wow,16
 bjs-with-sean-clements-hayes-davenport,spoonman,1
 bjs-with-sean-clements-hayes-davenport,golden plate club,1
@@ -234,7 +239,7 @@ blue-bottle-with-kate-berlant,wow,74
 blue-bottle-with-kate-berlant,spoonman,3
 blue-bottle-with-kate-berlant,oh my god,19
 blue-bottle-with-kate-berlant,jesus christ,1
-blue-bottle-with-kate-berlant,birdfuck,2
+blue-bottle-with-kate-berlant,gemmy,4
 bobs-big-boy-with-dave-ferguson,wow,11
 bobs-big-boy-with-dave-ferguson,spoonman,5
 bobs-big-boy-with-dave-ferguson,golden plate club,1
@@ -242,8 +247,8 @@ bobs-big-boy-with-dave-ferguson,oh my god,7
 bobs-big-boy-with-dave-ferguson,jesus christ,4
 bobs-big-boy-with-dave-ferguson,howdy ho,1
 bobs-big-boy-with-dave-ferguson,spoon nation,2
-bobs-big-boy-with-dave-ferguson,rumblies,3
 bobs-big-boy-with-dave-ferguson,hand holding club,1
+bobs-big-boy-with-dave-ferguson,rumblies,3
 bojangles-with-jesse-farrar-and-mike-hale-live,this show sucks,1
 bojangles-with-jesse-farrar-and-mike-hale-live,wow,49
 bojangles-with-jesse-farrar-and-mike-hale-live,spoonman,2
@@ -291,6 +296,7 @@ bowlero-with-allan-mcleod,platinum plate club,2
 bowlero-with-allan-mcleod,oh my god,11
 bowlero-with-allan-mcleod,jesus christ,3
 bowlero-with-allan-mcleod,ungapatchka,1
+bowlero-with-allan-mcleod,gemmy,8
 bubba-gump-shrimp-co-with-paul-scheer,wow,9
 bubba-gump-shrimp-co-with-paul-scheer,spoonman,5
 bubba-gump-shrimp-co-with-paul-scheer,oh my god,5
@@ -298,13 +304,14 @@ bubba-gump-shrimp-co-with-paul-scheer,jesus christ,1
 bubba-gump-shrimp-co-with-paul-scheer,howdy ho,1
 bubba-gump-shrimp-co-with-paul-scheer,spoon nation,1
 bubba-gump-shrimp-co-with-paul-scheer,hand holding club,2
+bubba-gump-shrimp-co-with-paul-scheer,unkar plutt,1
 buca-di-beppo-2-with-chloe-radcliffe,wow,43
 buca-di-beppo-2-with-chloe-radcliffe,spoonman,2
 buca-di-beppo-2-with-chloe-radcliffe,munch madness,1
 buca-di-beppo-2-with-chloe-radcliffe,oh my god,10
 buca-di-beppo-2-with-chloe-radcliffe,jesus christ,1
-buca-di-beppo-2-with-chloe-radcliffe,birdfuck,3
 buca-di-beppo-2-with-chloe-radcliffe,heat seeker,4
+buca-di-beppo-2-with-chloe-radcliffe,gemmy,2
 buca-di-beppo-with-drew-mcweeny,wow,12
 buca-di-beppo-with-drew-mcweeny,spoonman,6
 buca-di-beppo-with-drew-mcweeny,snack or wack,1
@@ -312,6 +319,7 @@ buca-di-beppo-with-drew-mcweeny,oh my god,6
 buca-di-beppo-with-drew-mcweeny,jesus christ,7
 buca-di-beppo-with-drew-mcweeny,spoon nation,1
 buca-di-beppo-with-drew-mcweeny,heat seeker,4
+buca-di-beppo-with-drew-mcweeny,unkar plutt,2
 buddys-detroit-style-pizza-w-marisa-pinson-live,wow,39
 buddys-detroit-style-pizza-w-marisa-pinson-live,spoonman,1
 buddys-detroit-style-pizza-w-marisa-pinson-live,golden plate club,1
@@ -333,9 +341,9 @@ buffalo-wild-wings-3-with-johnny-pemberton,golden plate club,3
 buffalo-wild-wings-3-with-johnny-pemberton,oh my god,15
 buffalo-wild-wings-3-with-johnny-pemberton,jesus christ,4
 buffalo-wild-wings-3-with-johnny-pemberton,howdy ho,2
-buffalo-wild-wings-3-with-johnny-pemberton,birdfuck,5
 buffalo-wild-wings-3-with-johnny-pemberton,heat seeker,3
 buffalo-wild-wings-3-with-johnny-pemberton,ungapatchka,2
+buffalo-wild-wings-3-with-johnny-pemberton,gemmy,6
 burger-king-2-with-jordan-morris-live,wow,16
 burger-king-2-with-jordan-morris-live,spoonman,4
 burger-king-2-with-jordan-morris-live,snack or wack,1
@@ -381,8 +389,8 @@ burger-king-7-with-andrea-jin,spoonman,1
 burger-king-7-with-andrea-jin,golden plate club,2
 burger-king-7-with-andrea-jin,oh my god,11
 burger-king-7-with-andrea-jin,jesus christ,2
-burger-king-7-with-andrea-jin,birdfuck,3
 burger-king-7-with-andrea-jin,ungapatchka,1
+burger-king-7-with-andrea-jin,gemmy,10
 burger-king-with-john-roy,wow,8
 burger-king-with-john-roy,spoonman,2
 burger-king-with-john-roy,snack or wack,2
@@ -402,7 +410,6 @@ cafe-gratitude-with-bryan-quinby,spoonman,3
 cafe-gratitude-with-bryan-quinby,munch madness,4
 cafe-gratitude-with-bryan-quinby,oh my god,5
 cafe-gratitude-with-bryan-quinby,jesus christ,2
-cafe-gratitude-with-bryan-quinby,birdfuck,1
 cafe-gratitude-with-bryan-quinby,heat seeker,1
 cafe-gratitude-with-bryan-quinby,wally and irma,2
 california-pizza-kitchen-2-with-avital-ash,wow,68
@@ -411,9 +418,10 @@ california-pizza-kitchen-2-with-avital-ash,snack or wack,4
 california-pizza-kitchen-2-with-avital-ash,oh my god,5
 california-pizza-kitchen-2-with-avital-ash,jesus christ,1
 california-pizza-kitchen-2-with-avital-ash,spoon nation,1
-california-pizza-kitchen-2-with-avital-ash,birdfuck,1
 california-pizza-kitchen-2-with-avital-ash,heat seeker,1
 california-pizza-kitchen-2-with-avital-ash,simulacrum,1
+california-pizza-kitchen-2-with-avital-ash,gemmy,6
+california-pizza-kitchen-2-with-avital-ash,unkar plutt,4
 california-pizza-kitchen-with-eva-anderson,wow,18
 california-pizza-kitchen-with-eva-anderson,spoonman,5
 california-pizza-kitchen-with-eva-anderson,golden plate club,1
@@ -435,14 +443,14 @@ carls-jrhardees-3-with-alana-johnston,golden plate club,5
 carls-jrhardees-3-with-alana-johnston,oh my god,25
 carls-jrhardees-3-with-alana-johnston,jesus christ,2
 carls-jrhardees-3-with-alana-johnston,spoon nation,1
-carls-jrhardees-3-with-alana-johnston,rumblies,4
+carls-jrhardees-3-with-alana-johnston,case of the rumblies,1
 carls-jrhardees-3-with-alana-johnston,heat seeker,3
+carls-jrhardees-3-with-alana-johnston,rumblies,4
 carls-jrhardees-4-with-stavros-halkias,wow,29
 carls-jrhardees-4-with-stavros-halkias,spoonman,1
 carls-jrhardees-4-with-stavros-halkias,golden plate club,3
 carls-jrhardees-4-with-stavros-halkias,munch madness,2
 carls-jrhardees-4-with-stavros-halkias,oh my god,4
-carls-jrhardees-4-with-stavros-halkias,birdfuck,2
 carls-jrhardees-4-with-stavros-halkias,wally and irma,2
 carls-jrhardees-4-with-stavros-halkias,simulacrum,1
 carls-jrhardees-4-with-stavros-halkias,ungapatchka,1
@@ -458,9 +466,9 @@ carneys-with-jamie-loftus,oh my god,5
 carneys-with-jamie-loftus,jesus christ,2
 carneys-with-jamie-loftus,for god's sake,1
 carneys-with-jamie-loftus,spoon nation,1
-carneys-with-jamie-loftus,birdfuck,2
 carneys-with-jamie-loftus,wally and irma,3
 carneys-with-jamie-loftus,spoiler alert,1
+carneys-with-jamie-loftus,gemmy,4
 carrows-with-erin-whitehead,wow,6
 carrows-with-erin-whitehead,spoonman,11
 carrows-with-erin-whitehead,snack or wack,1
@@ -490,10 +498,10 @@ cheba-hut-with-jon-gabrus-live,jesus christ,5
 cheba-hut-with-jon-gabrus-live,for god's sake,2
 cheba-hut-with-jon-gabrus-live,howdy ho,1
 cheba-hut-with-jon-gabrus-live,spoon nation,2
-cheba-hut-with-jon-gabrus-live,rumblies,3
 cheba-hut-with-jon-gabrus-live,heat seeker,2
 cheba-hut-with-jon-gabrus-live,wally and irma,3
 cheba-hut-with-jon-gabrus-live,spoiler alert,1
+cheba-hut-with-jon-gabrus-live,rumblies,3
 checkers-and-rallys-2-with-tom-scharpling,wow,33
 checkers-and-rallys-2-with-tom-scharpling,spoonman,4
 checkers-and-rallys-2-with-tom-scharpling,platinum plate club,1
@@ -514,18 +522,18 @@ chick-fil-a-2-with-john-hodgman,spoonman,8
 chick-fil-a-2-with-john-hodgman,golden plate club,5
 chick-fil-a-2-with-john-hodgman,oh my god,11
 chick-fil-a-2-with-john-hodgman,jesus christ,1
-chick-fil-a-2-with-john-hodgman,birdfuck,3
 chick-fil-a-2-with-john-hodgman,heat seeker,1
 chick-fil-a-2-with-john-hodgman,wally and irma,2
+chick-fil-a-2-with-john-hodgman,gemmy,31
 chick-fil-a-3-with-john-hodgman,this show sucks,1
 chick-fil-a-3-with-john-hodgman,wow,63
 chick-fil-a-3-with-john-hodgman,spoonman,7
 chick-fil-a-3-with-john-hodgman,golden plate club,5
 chick-fil-a-3-with-john-hodgman,oh my god,5
 chick-fil-a-3-with-john-hodgman,spoon nation,1
-chick-fil-a-3-with-john-hodgman,birdfuck,2
 chick-fil-a-3-with-john-hodgman,heat seeker,1
 chick-fil-a-3-with-john-hodgman,wally and irma,1
+chick-fil-a-3-with-john-hodgman,gemmy,14
 chick-fil-a-with-betsy-sodaro,wow,6
 chick-fil-a-with-betsy-sodaro,spoonman,8
 chick-fil-a-with-betsy-sodaro,golden plate club,2
@@ -549,11 +557,11 @@ chilis-3-with-eva-anderson,snack or wack,1
 chilis-3-with-eva-anderson,oh my god,14
 chilis-3-with-eva-anderson,jesus christ,5
 chilis-3-with-eva-anderson,spoon nation,1
-chilis-3-with-eva-anderson,birdfuck,3
-chilis-3-with-eva-anderson,rumblies,1
 chilis-3-with-eva-anderson,wally and irma,1
 chilis-3-with-eva-anderson,simulacrum,1
 chilis-3-with-eva-anderson,ungapatchka,1
+chilis-3-with-eva-anderson,rumblies,1
+chilis-3-with-eva-anderson,gemmy,9
 chilis-with-eva-anderson,wow,6
 chilis-with-eva-anderson,snack or wack,3
 chilis-with-eva-anderson,oh my god,8
@@ -563,7 +571,6 @@ chimmelier-with-john-early-claudia-odoherty-and-pat-regan,golden plate club,1
 chimmelier-with-john-early-claudia-odoherty-and-pat-regan,platinum plate club,1
 chimmelier-with-john-early-claudia-odoherty-and-pat-regan,snack or wack,1
 chimmelier-with-john-early-claudia-odoherty-and-pat-regan,oh my god,25
-chimmelier-with-john-early-claudia-odoherty-and-pat-regan,birdfuck,4
 chimmelier-with-john-early-claudia-odoherty-and-pat-regan,heat seeker,1
 chimmelier-with-john-early-claudia-odoherty-and-pat-regan,hat on a hat,1
 chipotle-2-with-chelsea-davison,this show sucks,1
@@ -575,8 +582,8 @@ chipotle-2-with-chelsea-davison,oh my god,3
 chipotle-2-with-chelsea-davison,jesus christ,3
 chipotle-2-with-chelsea-davison,for god's sake,1
 chipotle-2-with-chelsea-davison,spoon nation,1
-chipotle-2-with-chelsea-davison,rumblies,1
 chipotle-2-with-chelsea-davison,wally and irma,1
+chipotle-2-with-chelsea-davison,rumblies,1
 chipotle-3-with-alan-aisenberg-and-mike-castle,wow,18
 chipotle-3-with-alan-aisenberg-and-mike-castle,spoonman,7
 chipotle-3-with-alan-aisenberg-and-mike-castle,oh my god,9
@@ -599,10 +606,11 @@ chuck-e-cheese-2-with-griffin-newman,munch madness,4
 chuck-e-cheese-2-with-griffin-newman,oh my god,8
 chuck-e-cheese-2-with-griffin-newman,jesus christ,4
 chuck-e-cheese-2-with-griffin-newman,spoon nation,1
-chuck-e-cheese-2-with-griffin-newman,birdfuck,1
 chuck-e-cheese-2-with-griffin-newman,wally and irma,1
 chuck-e-cheese-2-with-griffin-newman,spoiler alert,1
 chuck-e-cheese-2-with-griffin-newman,simulacrum,1
+chuck-e-cheese-2-with-griffin-newman,gemmy,9
+chuck-e-cheese-2-with-griffin-newman,unkar plutt,4
 chuck-e-cheeses-with-erin-mcgathy,wow,15
 chuck-e-cheeses-with-erin-mcgathy,spoonman,3
 chuck-e-cheeses-with-erin-mcgathy,oh my god,10
@@ -639,10 +647,10 @@ coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,wow,44
 coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,spoonman,3
 coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,snack or wack,1
 coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,oh my god,12
-coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,birdfuck,5
 coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,heat seeker,1
 coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,wally and irma,1
 coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,ungapatchka,1
+coco-ichibanya-with-matt-apodaca-and-heather-anne-campbell,gemmy,3
 cocos-with-alison-rosen,wow,14
 cocos-with-alison-rosen,golden plate club,2
 cocos-with-alison-rosen,munch madness,1
@@ -653,9 +661,10 @@ cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,wow,55
 cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,spoonman,1
 cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,oh my god,5
 cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,jesus christ,1
-cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,rumblies,1
 cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,wally and irma,1
 cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,spoiler alert,1
+cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,rumblies,1
+cold-stone-creamery-3-with-shaun-diston-and-gilli-nissim,gemmy,4
 cold-stone-creamery-with-kevin-t-porter,wow,11
 cold-stone-creamery-with-kevin-t-porter,spoonman,6
 cold-stone-creamery-with-kevin-t-porter,golden plate club,1
@@ -686,9 +695,10 @@ cornish-pasty-with-jon-gabrus-live,oh my god,1
 cornish-pasty-with-jon-gabrus-live,jesus christ,6
 cornish-pasty-with-jon-gabrus-live,for god's sake,1
 cornish-pasty-with-jon-gabrus-live,spoon nation,1
-cornish-pasty-with-jon-gabrus-live,rumblies,3
+cornish-pasty-with-jon-gabrus-live,case of the rumblies,1
 cornish-pasty-with-jon-gabrus-live,wally and irma,4
 cornish-pasty-with-jon-gabrus-live,simulacrum,1
+cornish-pasty-with-jon-gabrus-live,rumblies,3
 cosmic-wings-with-jana-schmieding,wow,29
 cosmic-wings-with-jana-schmieding,oh my god,7
 cosmic-wings-with-jana-schmieding,jesus christ,4
@@ -753,15 +763,17 @@ daphnes-with-jessica-jean-jardine,oh my god,11
 daphnes-with-jessica-jean-jardine,jesus christ,2
 daphnes-with-jessica-jean-jardine,for god's sake,3
 daphnes-with-jessica-jean-jardine,spoon nation,1
-daphnes-with-jessica-jean-jardine,rumblies,1
+daphnes-with-jessica-jean-jardine,case of the rumblies,1
 daphnes-with-jessica-jean-jardine,heat seeker,2
 daphnes-with-jessica-jean-jardine,wally and irma,1
+daphnes-with-jessica-jean-jardine,rumblies,1
 dave-busters-with-allan-mcleod,wow,4
 dave-busters-with-allan-mcleod,spoonman,13
 dave-busters-with-allan-mcleod,oh my god,4
 dave-busters-with-allan-mcleod,jesus christ,8
 dave-busters-with-allan-mcleod,for god's sake,2
 dave-busters-with-allan-mcleod,spoon nation,2
+dave-busters-with-allan-mcleod,unkar plutt,2
 daves-hot-chicken-with-joe-randazzo,wow,17
 daves-hot-chicken-with-joe-randazzo,spoonman,2
 daves-hot-chicken-with-joe-randazzo,golden plate club,2
@@ -769,8 +781,8 @@ daves-hot-chicken-with-joe-randazzo,oh my god,7
 daves-hot-chicken-with-joe-randazzo,jesus christ,4
 daves-hot-chicken-with-joe-randazzo,for god's sake,1
 daves-hot-chicken-with-joe-randazzo,spoon nation,2
-daves-hot-chicken-with-joe-randazzo,rumblies,1
 daves-hot-chicken-with-joe-randazzo,heat seeker,2
+daves-hot-chicken-with-joe-randazzo,rumblies,1
 del-taco-2-with-kevin-bartelt-yusong-liu,wow,30
 del-taco-2-with-kevin-bartelt-yusong-liu,golden plate club,1
 del-taco-2-with-kevin-bartelt-yusong-liu,platinum plate club,1
@@ -785,16 +797,17 @@ del-taco-3-with-libby-watson,oh my god,6
 del-taco-3-with-libby-watson,jesus christ,6
 del-taco-3-with-libby-watson,for god's sake,1
 del-taco-3-with-libby-watson,spoon nation,3
-del-taco-3-with-libby-watson,birdfuck,8
-del-taco-3-with-libby-watson,rumblies,5
+del-taco-3-with-libby-watson,case of the rumblies,1
 del-taco-3-with-libby-watson,simulacrum,1
+del-taco-3-with-libby-watson,rumblies,5
+del-taco-3-with-libby-watson,gemmy,4
 del-taco-4-with-jen-dangelo,wow,65
 del-taco-4-with-jen-dangelo,spoonman,2
 del-taco-4-with-jen-dangelo,golden plate club,3
 del-taco-4-with-jen-dangelo,oh my god,8
 del-taco-4-with-jen-dangelo,jesus christ,2
-del-taco-4-with-jen-dangelo,birdfuck,3
 del-taco-4-with-jen-dangelo,heat seeker,1
+del-taco-4-with-jen-dangelo,gemmy,9
 del-taco-with-alan-yang,wow,12
 del-taco-with-alan-yang,spoonman,9
 del-taco-with-alan-yang,snack or wack,1
@@ -831,7 +844,7 @@ dickeys-barbecue-pit-with-jamelle-bouie,snack or wack,2
 dickeys-barbecue-pit-with-jamelle-bouie,munch madness,1
 dickeys-barbecue-pit-with-jamelle-bouie,oh my god,11
 dickeys-barbecue-pit-with-jamelle-bouie,jesus christ,4
-dickeys-barbecue-pit-with-jamelle-bouie,birdfuck,3
+dickeys-barbecue-pit-with-jamelle-bouie,gemmy,4
 dicks-drive-in-with-evan-susser-live,wow,22
 dicks-drive-in-with-evan-susser-live,spoonman,6
 dicks-drive-in-with-evan-susser-live,golden plate club,2
@@ -846,8 +859,8 @@ dickys-barbecue-pit-with-jamelle-bouie,snack or wack,2
 dickys-barbecue-pit-with-jamelle-bouie,munch madness,2
 dickys-barbecue-pit-with-jamelle-bouie,oh my god,13
 dickys-barbecue-pit-with-jamelle-bouie,jesus christ,5
-dickys-barbecue-pit-with-jamelle-bouie,birdfuck,2
 dickys-barbecue-pit-with-jamelle-bouie,heat seeker,1
+dickys-barbecue-pit-with-jamelle-bouie,gemmy,4
 din-tai-fung-with-farley-elliott,wow,29
 din-tai-fung-with-farley-elliott,spoonman,3
 din-tai-fung-with-farley-elliott,platinum plate club,4
@@ -931,19 +944,21 @@ dominos-3-with-clare-okane,spoonman,3
 dominos-3-with-clare-okane,platinum plate club,1
 dominos-3-with-clare-okane,oh my god,5
 dominos-3-with-clare-okane,jesus christ,1
-dominos-3-with-clare-okane,birdfuck,1
 dominos-3-with-clare-okane,heat seeker,1
 dominos-3-with-clare-okane,hat on a hat,2
 dominos-3-with-clare-okane,ungapatchka,6
+dominos-3-with-clare-okane,gemmy,8
+dominos-3-with-clare-okane,unkar plutt,9
 dominos-4-with-clare-okane,wow,36
 dominos-4-with-clare-okane,spoonman,3
 dominos-4-with-clare-okane,platinum plate club,1
 dominos-4-with-clare-okane,oh my god,5
 dominos-4-with-clare-okane,jesus christ,1
-dominos-4-with-clare-okane,birdfuck,1
 dominos-4-with-clare-okane,heat seeker,1
 dominos-4-with-clare-okane,hat on a hat,2
 dominos-4-with-clare-okane,ungapatchka,6
+dominos-4-with-clare-okane,gemmy,8
+dominos-4-with-clare-okane,unkar plutt,9
 dominos-with-matt-kowalick,wow,6
 dominos-with-matt-kowalick,spoonman,11
 dominos-with-matt-kowalick,golden plate club,12
@@ -977,8 +992,9 @@ doughboys-double-42-a-very-doughboys-christmas,spoonman,6
 doughboys-double-42-a-very-doughboys-christmas,oh my god,8
 doughboys-double-42-a-very-doughboys-christmas,jesus christ,1
 doughboys-double-42-a-very-doughboys-christmas,spoon nation,1
-doughboys-double-42-a-very-doughboys-christmas,rumblies,3
+doughboys-double-42-a-very-doughboys-christmas,case of the rumblies,1
 doughboys-double-42-a-very-doughboys-christmas,wally and irma,1
+doughboys-double-42-a-very-doughboys-christmas,rumblies,3
 doughboys-double-66-tarot-pizza-with-ariana-lenarsky,wow,19
 doughboys-double-66-tarot-pizza-with-ariana-lenarsky,oh my god,13
 doughboys-double-66-tarot-pizza-with-ariana-lenarsky,jesus christ,1
@@ -995,6 +1011,7 @@ doughboys-double-dream-mitchy,spoonman,1
 doughboys-double-dream-mitchy,oh my god,3
 doughboys-double-dream-mitchy,jesus christ,6
 doughboys-double-dream-mitchy,for god's sake,1
+doughboys-double-dream-mitchy,unkar plutt,1
 doughboys-double-garfields-thanksgiving-w-paul-rust,wow,16
 doughboys-double-garfields-thanksgiving-w-paul-rust,spoonman,1
 doughboys-double-garfields-thanksgiving-w-paul-rust,oh my god,2
@@ -1018,15 +1035,16 @@ doughlympics-dunkin-donuts-v-mcdonalds-v-starbucks-with-sean-oconnor,spoonman,3
 doughlympics-dunkin-donuts-v-mcdonalds-v-starbucks-with-sean-oconnor,oh my god,7
 doughlympics-dunkin-donuts-v-mcdonalds-v-starbucks-with-sean-oconnor,jesus christ,3
 doughlympics-dunkin-donuts-v-mcdonalds-v-starbucks-with-sean-oconnor,spoon nation,3
+doughlympics-dunkin-donuts-v-mcdonalds-v-starbucks-with-sean-oconnor,unkar plutt,1
 dunkin-3-with-alyssa-limperis,wow,67
 dunkin-3-with-alyssa-limperis,spoonman,1
 dunkin-3-with-alyssa-limperis,golden plate club,2
 dunkin-3-with-alyssa-limperis,munch madness,2
 dunkin-3-with-alyssa-limperis,oh my god,15
 dunkin-3-with-alyssa-limperis,jesus christ,2
-dunkin-3-with-alyssa-limperis,birdfuck,3
 dunkin-3-with-alyssa-limperis,heat seeker,3
 dunkin-3-with-alyssa-limperis,simulacrum,1
+dunkin-3-with-alyssa-limperis,gemmy,7
 dunkin-donuts-with-joe-mande,wow,12
 dunkin-donuts-with-joe-mande,spoonman,2
 dunkin-donuts-with-joe-mande,golden plate club,2
@@ -1049,8 +1067,8 @@ eggslut-with-raiza-licea,golden plate club,10
 eggslut-with-raiza-licea,snack or wack,1
 eggslut-with-raiza-licea,oh my god,16
 eggslut-with-raiza-licea,jesus christ,3
-eggslut-with-raiza-licea,birdfuck,7
 eggslut-with-raiza-licea,ungapatchka,2
+eggslut-with-raiza-licea,gemmy,3
 einstein-bros-bagels-with-tony-rodriguez,wow,53
 einstein-bros-bagels-with-tony-rodriguez,spoonman,2
 einstein-bros-bagels-with-tony-rodriguez,golden plate club,3
@@ -1069,9 +1087,9 @@ el-pollo-loco-with-lamar-woods,snack or wack,2
 el-pollo-loco-with-lamar-woods,oh my god,4
 el-pollo-loco-with-lamar-woods,for god's sake,2
 el-pollo-loco-with-lamar-woods,spoon nation,1
-el-pollo-loco-with-lamar-woods,rumblies,2
 el-pollo-loco-with-lamar-woods,heat seeker,2
 el-pollo-loco-with-lamar-woods,spoiler alert,1
+el-pollo-loco-with-lamar-woods,rumblies,2
 el-torito-with-jack-allison,wow,23
 el-torito-with-jack-allison,spoonman,2
 el-torito-with-jack-allison,golden plate club,2
@@ -1123,10 +1141,10 @@ fat-burger-3-buffalos-express-whitmer-thomas,wow,22
 fat-burger-3-buffalos-express-whitmer-thomas,spoonman,1
 fat-burger-3-buffalos-express-whitmer-thomas,golden plate club,1
 fat-burger-3-buffalos-express-whitmer-thomas,oh my god,8
-fat-burger-3-buffalos-express-whitmer-thomas,birdfuck,1
-fat-burger-3-buffalos-express-whitmer-thomas,rumblies,1
 fat-burger-3-buffalos-express-whitmer-thomas,heat seeker,3
 fat-burger-3-buffalos-express-whitmer-thomas,wally and irma,1
+fat-burger-3-buffalos-express-whitmer-thomas,rumblies,1
+fat-burger-3-buffalos-express-whitmer-thomas,gemmy,3
 fat-sals-with-matt-christman,wow,30
 fat-sals-with-matt-christman,spoonman,2
 fat-sals-with-matt-christman,golden plate club,1
@@ -1169,9 +1187,9 @@ firehouse-subs-2-with-brandie-posey,spoonman,2
 firehouse-subs-2-with-brandie-posey,golden plate club,1
 firehouse-subs-2-with-brandie-posey,oh my god,6
 firehouse-subs-2-with-brandie-posey,jesus christ,6
-firehouse-subs-2-with-brandie-posey,birdfuck,3
 firehouse-subs-2-with-brandie-posey,heat seeker,2
 firehouse-subs-2-with-brandie-posey,wally and irma,1
+firehouse-subs-2-with-brandie-posey,gemmy,1
 firehouse-subs-with-mary-sohn,wow,18
 firehouse-subs-with-mary-sohn,spoonman,1
 firehouse-subs-with-mary-sohn,golden plate club,3
@@ -1207,8 +1225,8 @@ fosters-freeze-with-holly-prazoff,oh my god,13
 fosters-freeze-with-holly-prazoff,jesus christ,3
 fosters-freeze-with-holly-prazoff,for god's sake,1
 fosters-freeze-with-holly-prazoff,spoon nation,1
-fosters-freeze-with-holly-prazoff,rumblies,1
 fosters-freeze-with-holly-prazoff,spoiler alert,1
+fosters-freeze-with-holly-prazoff,rumblies,1
 fresh-brothers-with-chris-mckay-samantha-nisenboim,wow,57
 fresh-brothers-with-chris-mckay-samantha-nisenboim,spoonman,2
 fresh-brothers-with-chris-mckay-samantha-nisenboim,golden plate club,2
@@ -1233,32 +1251,32 @@ garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,munch madness,1
 garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,oh my god,37
 garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,for god's sake,1
 garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,blah blah blah,1
-garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,birdfuck,3
 garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,wally and irma,1
 garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,hand holding club,1
+garden-of-eatin-broccoli-with-lindsay-katai-and-kelly-nugent,gemmy,11
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,wow,109
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,spoonman,4
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,oh my god,11
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,jesus christ,3
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,blah blah blah,1
-garden-of-eatin-carrots-with-jon-glover-marisa-pinson,birdfuck,3
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,wally and irma,2
 garden-of-eatin-carrots-with-jon-glover-marisa-pinson,simulacrum,1
+garden-of-eatin-carrots-with-jon-glover-marisa-pinson,gemmy,8
 garden-of-eatin-endives-with-jess-rona,this show sucks,1
 garden-of-eatin-endives-with-jess-rona,wow,59
 garden-of-eatin-endives-with-jess-rona,spoonman,1
 garden-of-eatin-endives-with-jess-rona,snack or wack,1
 garden-of-eatin-endives-with-jess-rona,oh my god,21
 garden-of-eatin-endives-with-jess-rona,jesus christ,1
-garden-of-eatin-endives-with-jess-rona,birdfuck,1
 garden-of-eatin-endives-with-jess-rona,wally and irma,3
 garden-of-eatin-endives-with-jess-rona,spoiler alert,1
+garden-of-eatin-endives-with-jess-rona,gemmy,11
 garden-of-eatin-onions-with-arden-myrin,wow,41
 garden-of-eatin-onions-with-arden-myrin,spoonman,2
 garden-of-eatin-onions-with-arden-myrin,oh my god,7
 garden-of-eatin-onions-with-arden-myrin,for god's sake,1
 garden-of-eatin-onions-with-arden-myrin,spoon nation,1
-garden-of-eatin-onions-with-arden-myrin,birdfuck,3
+garden-of-eatin-onions-with-arden-myrin,gemmy,7
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,wow,38
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,spoonman,3
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,golden plate club,1
@@ -1266,16 +1284,16 @@ garden-of-eatin-sweet-potatoes-with-dani-fernandez,snack or wack,1
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,oh my god,8
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,jesus christ,3
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,howdy ho,1
-garden-of-eatin-sweet-potatoes-with-dani-fernandez,birdfuck,1
 garden-of-eatin-sweet-potatoes-with-dani-fernandez,wally and irma,1
+garden-of-eatin-sweet-potatoes-with-dani-fernandez,gemmy,2
 ginos-east-with-carmen-christopher,wow,42
 ginos-east-with-carmen-christopher,spoonman,2
 ginos-east-with-carmen-christopher,munch madness,4
 ginos-east-with-carmen-christopher,oh my god,3
 ginos-east-with-carmen-christopher,jesus christ,2
-ginos-east-with-carmen-christopher,birdfuck,3
 ginos-east-with-carmen-christopher,simulacrum,1
 ginos-east-with-carmen-christopher,ungapatchka,1
+ginos-east-with-carmen-christopher,gemmy,2
 golden-corral-with-stoney-sharp,this show sucks,1
 golden-corral-with-stoney-sharp,wow,29
 golden-corral-with-stoney-sharp,spoonman,2
@@ -1303,8 +1321,9 @@ good-humor-with-evan-susser,oh my god,5
 good-humor-with-evan-susser,jesus christ,1
 good-humor-with-evan-susser,for god's sake,1
 good-humor-with-evan-susser,spoon nation,3
-good-humor-with-evan-susser,rumblies,1
+good-humor-with-evan-susser,case of the rumblies,1
 good-humor-with-evan-susser,wally and irma,3
+good-humor-with-evan-susser,rumblies,1
 good-times-burgers-with-betsy-sodaro-live,wow,23
 good-times-burgers-with-betsy-sodaro-live,spoonman,3
 good-times-burgers-with-betsy-sodaro-live,golden plate club,3
@@ -1318,9 +1337,9 @@ goop-kitchen-with-luke-del-tredici,spoonman,11
 goop-kitchen-with-luke-del-tredici,golden plate club,1
 goop-kitchen-with-luke-del-tredici,oh my god,6
 goop-kitchen-with-luke-del-tredici,jesus christ,1
-goop-kitchen-with-luke-del-tredici,birdfuck,1
 goop-kitchen-with-luke-del-tredici,heat seeker,1
 goop-kitchen-with-luke-del-tredici,simulacrum,1
+goop-kitchen-with-luke-del-tredici,gemmy,2
 grays-papaya-with-zach-cherry-mike-hanford-tami-sagher-live,wow,50
 grays-papaya-with-zach-cherry-mike-hanford-tami-sagher-live,spoonman,2
 grays-papaya-with-zach-cherry-mike-hanford-tami-sagher-live,oh my god,23
@@ -1373,15 +1392,14 @@ guisados-with-lamar-woods,spoonman,2
 guisados-with-lamar-woods,platinum plate club,1
 guisados-with-lamar-woods,oh my god,6
 guisados-with-lamar-woods,jesus christ,1
-guisados-with-lamar-woods,rumblies,2
 guisados-with-lamar-woods,wally and irma,1
+guisados-with-lamar-woods,rumblies,2
 guss-world-famous-fried-chicken-2-with-sean-clements,wow,24
 guss-world-famous-fried-chicken-2-with-sean-clements,spoonman,2
 guss-world-famous-fried-chicken-2-with-sean-clements,golden plate club,2
 guss-world-famous-fried-chicken-2-with-sean-clements,platinum plate club,4
 guss-world-famous-fried-chicken-2-with-sean-clements,munch madness,5
 guss-world-famous-fried-chicken-2-with-sean-clements,oh my god,4
-guss-world-famous-fried-chicken-2-with-sean-clements,birdfuck,3
 guss-world-famous-fried-chicken-2-with-sean-clements,heat seeker,3
 guss-world-famous-fried-chicken-2-with-sean-clements,wally and irma,2
 guss-world-famous-fried-chicken-2-with-sean-clements,simulacrum,2
@@ -1391,9 +1409,9 @@ guss-world-famous-fried-chicken-with-ben-gruber,golden plate club,5
 guss-world-famous-fried-chicken-with-ben-gruber,snack or wack,2
 guss-world-famous-fried-chicken-with-ben-gruber,oh my god,4
 guss-world-famous-fried-chicken-with-ben-gruber,jesus christ,1
-guss-world-famous-fried-chicken-with-ben-gruber,rumblies,3
 guss-world-famous-fried-chicken-with-ben-gruber,heat seeker,1
 guss-world-famous-fried-chicken-with-ben-gruber,hand holding club,1
+guss-world-famous-fried-chicken-with-ben-gruber,rumblies,3
 guy-fieris-flavortown-kitchen-with-eva-anderson,wow,48
 guy-fieris-flavortown-kitchen-with-eva-anderson,spoonman,1
 guy-fieris-flavortown-kitchen-with-eva-anderson,platinum plate club,1
@@ -1414,6 +1432,7 @@ handels-with-aniz-adam-ansari,snack or wack,1
 handels-with-aniz-adam-ansari,oh my god,2
 handels-with-aniz-adam-ansari,wally and irma,3
 handels-with-aniz-adam-ansari,simulacrum,1
+handels-with-aniz-adam-ansari,gemmy,1
 harolds-chicken-shack-with-jacquis-neal,wow,24
 harolds-chicken-shack-with-jacquis-neal,spoonman,1
 harolds-chicken-shack-with-jacquis-neal,golden plate club,2
@@ -1422,16 +1441,16 @@ harolds-chicken-shack-with-jacquis-neal,oh my god,5
 harolds-chicken-shack-with-jacquis-neal,jesus christ,4
 harolds-chicken-shack-with-jacquis-neal,for god's sake,1
 harolds-chicken-shack-with-jacquis-neal,spoon nation,2
-harolds-chicken-shack-with-jacquis-neal,rumblies,1
 harolds-chicken-shack-with-jacquis-neal,heat seeker,1
 harolds-chicken-shack-with-jacquis-neal,hand holding club,1
+harolds-chicken-shack-with-jacquis-neal,rumblies,1
 hattie-bs-with-carl-tart-live,wow,26
 hattie-bs-with-carl-tart-live,spoonman,3
 hattie-bs-with-carl-tart-live,golden plate club,1
 hattie-bs-with-carl-tart-live,oh my god,5
 hattie-bs-with-carl-tart-live,jesus christ,6
-hattie-bs-with-carl-tart-live,rumblies,2
 hattie-bs-with-carl-tart-live,heat seeker,1
+hattie-bs-with-carl-tart-live,rumblies,2
 hillstone-with-david-phillips,wow,11
 hillstone-with-david-phillips,spoonman,5
 hillstone-with-david-phillips,golden plate club,1
@@ -1478,8 +1497,8 @@ honeybee-burger-with-mort-burke,platinum plate club,1
 honeybee-burger-with-mort-burke,oh my god,1
 honeybee-burger-with-mort-burke,jesus christ,2
 honeybee-burger-with-mort-burke,for god's sake,1
-honeybee-burger-with-mort-burke,rumblies,2
 honeybee-burger-with-mort-burke,hat on a hat,3
+honeybee-burger-with-mort-burke,rumblies,2
 hooters-with-kulap-vilaysack,wow,7
 hooters-with-kulap-vilaysack,spoonman,5
 hooters-with-kulap-vilaysack,oh my god,12
@@ -1502,7 +1521,6 @@ howlin-rays-with-kumail-nanjiani,golden plate club,2
 howlin-rays-with-kumail-nanjiani,platinum plate club,3
 howlin-rays-with-kumail-nanjiani,oh my god,3
 howlin-rays-with-kumail-nanjiani,jesus christ,1
-howlin-rays-with-kumail-nanjiani,birdfuck,6
 howlin-rays-with-kumail-nanjiani,heat seeker,4
 howlin-rays-with-kumail-nanjiani,wally and irma,1
 hungry-howies-with-joe-kwaczala,wow,37
@@ -1535,14 +1553,15 @@ ihop-5-minions-menu-with-shaun-diston,jesus christ,1
 ihop-5-minions-menu-with-shaun-diston,heat seeker,2
 ihop-5-minions-menu-with-shaun-diston,spoiler alert,4
 ihop-5-minions-menu-with-shaun-diston,ungapatchka,1
+ihop-5-minions-menu-with-shaun-diston,unkar plutt,1
 ihop-6-sonic-menu-with-bryan-quinby,wow,35
 ihop-6-sonic-menu-with-bryan-quinby,spoonman,4
 ihop-6-sonic-menu-with-bryan-quinby,golden plate club,1
 ihop-6-sonic-menu-with-bryan-quinby,snack or wack,1
 ihop-6-sonic-menu-with-bryan-quinby,oh my god,13
-ihop-6-sonic-menu-with-bryan-quinby,birdfuck,5
-ihop-6-sonic-menu-with-bryan-quinby,rumblies,2
 ihop-6-sonic-menu-with-bryan-quinby,heat seeker,1
+ihop-6-sonic-menu-with-bryan-quinby,rumblies,2
+ihop-6-sonic-menu-with-bryan-quinby,gemmy,7
 ihop-with-alison-agosti,wow,8
 ihop-with-alison-agosti,snack or wack,3
 ihop-with-alison-agosti,jesus christ,1
@@ -1553,9 +1572,9 @@ ihop-xbox-indiana-jones-menu-with-mary-holland,oh my god,17
 ihop-xbox-indiana-jones-menu-with-mary-holland,jesus christ,3
 ihop-xbox-indiana-jones-menu-with-mary-holland,for god's sake,1
 ihop-xbox-indiana-jones-menu-with-mary-holland,spoon nation,2
-ihop-xbox-indiana-jones-menu-with-mary-holland,birdfuck,3
 ihop-xbox-indiana-jones-menu-with-mary-holland,heat seeker,1
 ihop-xbox-indiana-jones-menu-with-mary-holland,ungapatchka,2
+ihop-xbox-indiana-jones-menu-with-mary-holland,gemmy,4
 ikea-with-dave-thomason,wow,13
 ikea-with-dave-thomason,spoonman,6
 ikea-with-dave-thomason,oh my god,2
@@ -1584,6 +1603,7 @@ in-n-out-burger-2-with,for god's sake,2
 in-n-out-burger-2-with,spoon nation,1
 in-n-out-burger-2-with,wally and irma,3
 in-n-out-burger-2-with,spoiler alert,2
+in-n-out-burger-2-with,unkar plutt,3
 in-n-out-burger-3-with-rob-lowe,wow,55
 in-n-out-burger-3-with-rob-lowe,spoonman,5
 in-n-out-burger-3-with-rob-lowe,platinum plate club,3
@@ -1606,9 +1626,9 @@ irvs-burgers-with-sam-brown,spoonman,4
 irvs-burgers-with-sam-brown,golden plate club,2
 irvs-burgers-with-sam-brown,oh my god,6
 irvs-burgers-with-sam-brown,jesus christ,1
-irvs-burgers-with-sam-brown,birdfuck,1
-irvs-burgers-with-sam-brown,rumblies,3
 irvs-burgers-with-sam-brown,heat seeker,2
+irvs-burgers-with-sam-brown,rumblies,3
+irvs-burgers-with-sam-brown,gemmy,8
 islands-with-nick-mundy,wow,4
 islands-with-nick-mundy,spoonman,9
 islands-with-nick-mundy,snack or wack,2
@@ -1649,15 +1669,15 @@ jamba-juice-with-dylan-gelula,jesus christ,3
 jamba-juice-with-dylan-gelula,for god's sake,2
 jamba-juice-with-dylan-gelula,howdy ho,1
 jamba-juice-with-dylan-gelula,spoon nation,1
-jamba-juice-with-dylan-gelula,rumblies,2
 jamba-juice-with-dylan-gelula,wally and irma,4
+jamba-juice-with-dylan-gelula,rumblies,2
 jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,wow,34
 jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,spoonman,4
 jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,golden plate club,4
 jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,platinum plate club,1
 jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,oh my god,14
-jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,birdfuck,1
 jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,wally and irma,1
+jenis-splendid-ice-creams-2-with-stephanie-beatriz-and-michael-jonathan-smith,gemmy,1
 jenis-splendid-ice-creams-with-lilan-bowden,wow,33
 jenis-splendid-ice-creams-with-lilan-bowden,spoonman,3
 jenis-splendid-ice-creams-with-lilan-bowden,golden plate club,1
@@ -1690,10 +1710,11 @@ jimmy-johns-2-with-mary-sohn,golden plate club,4
 jimmy-johns-2-with-mary-sohn,platinum plate club,2
 jimmy-johns-2-with-mary-sohn,oh my god,8
 jimmy-johns-2-with-mary-sohn,jesus christ,2
-jimmy-johns-2-with-mary-sohn,birdfuck,2
-jimmy-johns-2-with-mary-sohn,rumblies,2
 jimmy-johns-2-with-mary-sohn,heat seeker,2
 jimmy-johns-2-with-mary-sohn,wally and irma,2
+jimmy-johns-2-with-mary-sohn,rumblies,2
+jimmy-johns-2-with-mary-sohn,gemmy,5
+jimmy-johns-2-with-mary-sohn,unkar plutt,2
 jimmy-johns-with-lauren-lapkus,wow,13
 jimmy-johns-with-lauren-lapkus,spoonman,2
 jimmy-johns-with-lauren-lapkus,oh my god,11
@@ -1715,7 +1736,6 @@ jollibee-2-with-john-early-claudia-odoherty,golden plate club,3
 jollibee-2-with-john-early-claudia-odoherty,platinum plate club,2
 jollibee-2-with-john-early-claudia-odoherty,oh my god,16
 jollibee-2-with-john-early-claudia-odoherty,spoon nation,1
-jollibee-2-with-john-early-claudia-odoherty,birdfuck,14
 jollibee-with-jonah-ray,wow,12
 jollibee-with-jonah-ray,spoonman,6
 jollibee-with-jonah-ray,golden plate club,1
@@ -1754,8 +1774,8 @@ kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,golden plate club,8
 kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,snack or wack,2
 kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,munch madness,3
 kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,oh my god,30
-kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,birdfuck,6
 kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,simulacrum,2
+kfc-3-saucy-nuggets-with-john-early-claudia-odoherty,gemmy,29
 kfc-beyond-with-mike-sacks,wow,35
 kfc-beyond-with-mike-sacks,spoonman,1
 kfc-beyond-with-mike-sacks,platinum plate club,1
@@ -1771,12 +1791,11 @@ kfc-bowls-with-carmen-christopher,platinum plate club,1
 kfc-bowls-with-carmen-christopher,oh my god,11
 kfc-bowls-with-carmen-christopher,jesus christ,4
 kfc-bowls-with-carmen-christopher,blah blah blah,1
-kfc-bowls-with-carmen-christopher,birdfuck,2
-kfc-bowls-with-carmen-christopher,rumblies,1
 kfc-bowls-with-carmen-christopher,heat seeker,1
 kfc-bowls-with-carmen-christopher,simulacrum,1
 kfc-bowls-with-carmen-christopher,hat on a hat,2
 kfc-bowls-with-carmen-christopher,ungapatchka,1
+kfc-bowls-with-carmen-christopher,rumblies,1
 kfc-with-paul-f-tompkins,this show sucks,1
 kfc-with-paul-f-tompkins,wow,20
 kfc-with-paul-f-tompkins,spoonman,3
@@ -1822,17 +1841,17 @@ krispy-kreme-x-pop-tarts-with-jess-mckenna,spoonman,3
 krispy-kreme-x-pop-tarts-with-jess-mckenna,golden plate club,4
 krispy-kreme-x-pop-tarts-with-jess-mckenna,oh my god,7
 krispy-kreme-x-pop-tarts-with-jess-mckenna,jesus christ,1
-krispy-kreme-x-pop-tarts-with-jess-mckenna,birdfuck,2
 krispy-kreme-x-pop-tarts-with-jess-mckenna,wally and irma,2
 krispy-kreme-x-pop-tarts-with-jess-mckenna,simulacrum,1
 krispy-kreme-x-pop-tarts-with-jess-mckenna,ungapatchka,1
+krispy-kreme-x-pop-tarts-with-jess-mckenna,gemmy,5
 krusty-burger-with-henry-gilbert-and-bob-mackey,wow,52
 krusty-burger-with-henry-gilbert-and-bob-mackey,spoonman,7
 krusty-burger-with-henry-gilbert-and-bob-mackey,golden plate club,1
 krusty-burger-with-henry-gilbert-and-bob-mackey,oh my god,7
 krusty-burger-with-henry-gilbert-and-bob-mackey,jesus christ,2
-krusty-burger-with-henry-gilbert-and-bob-mackey,birdfuck,4
 krusty-burger-with-henry-gilbert-and-bob-mackey,simulacrum,1
+krusty-burger-with-henry-gilbert-and-bob-mackey,gemmy,5
 kura-with-jesse-farrar-and-mike-hale,wow,30
 kura-with-jesse-farrar-and-mike-hale,spoonman,5
 kura-with-jesse-farrar-and-mike-hale,golden plate club,3
@@ -1850,8 +1869,8 @@ le-pain-quotidien-with-johnny-pemberton,oh my god,10
 le-pain-quotidien-with-johnny-pemberton,jesus christ,2
 le-pain-quotidien-with-johnny-pemberton,for god's sake,1
 le-pain-quotidien-with-johnny-pemberton,spoon nation,1
-le-pain-quotidien-with-johnny-pemberton,rumblies,1
 le-pain-quotidien-with-johnny-pemberton,hat on a hat,1
+le-pain-quotidien-with-johnny-pemberton,rumblies,1
 ledo-pizza-with-jamelle-bouie-tami-sagher-live,wow,49
 ledo-pizza-with-jamelle-bouie-tami-sagher-live,spoonman,6
 ledo-pizza-with-jamelle-bouie-tami-sagher-live,snack or wack,1
@@ -1877,9 +1896,9 @@ little-caesars-2-with-marisa-pinson-and-david-neher,platinum plate club,3
 little-caesars-2-with-marisa-pinson-and-david-neher,oh my god,15
 little-caesars-2-with-marisa-pinson-and-david-neher,jesus christ,6
 little-caesars-2-with-marisa-pinson-and-david-neher,spoon nation,2
-little-caesars-2-with-marisa-pinson-and-david-neher,rumblies,1
 little-caesars-2-with-marisa-pinson-and-david-neher,simulacrum,7
 little-caesars-2-with-marisa-pinson-and-david-neher,ungapatchka,1
+little-caesars-2-with-marisa-pinson-and-david-neher,rumblies,1
 little-caesars-3-with-johnno-wilson,wow,52
 little-caesars-3-with-johnno-wilson,spoonman,6
 little-caesars-3-with-johnno-wilson,golden plate club,3
@@ -1891,6 +1910,7 @@ little-caesars-3-with-johnno-wilson,heat seeker,3
 little-caesars-3-with-johnno-wilson,wally and irma,2
 little-caesars-3-with-johnno-wilson,spoiler alert,1
 little-caesars-3-with-johnno-wilson,simulacrum,1
+little-caesars-3-with-johnno-wilson,gemmy,6
 little-caesars-4-with-josh-gondelman,wow,26
 little-caesars-4-with-josh-gondelman,spoonman,3
 little-caesars-4-with-josh-gondelman,golden plate club,1
@@ -1899,10 +1919,10 @@ little-caesars-4-with-josh-gondelman,snack or wack,1
 little-caesars-4-with-josh-gondelman,oh my god,3
 little-caesars-4-with-josh-gondelman,for god's sake,3
 little-caesars-4-with-josh-gondelman,blah blah blah,1
-little-caesars-4-with-josh-gondelman,birdfuck,1
-little-caesars-4-with-josh-gondelman,rumblies,1
 little-caesars-4-with-josh-gondelman,heat seeker,2
 little-caesars-4-with-josh-gondelman,ungapatchka,1
+little-caesars-4-with-josh-gondelman,rumblies,1
+little-caesars-4-with-josh-gondelman,gemmy,6
 little-caesars-5-with-kimmy-gatewood,this show sucks,1
 little-caesars-5-with-kimmy-gatewood,wow,36
 little-caesars-5-with-kimmy-gatewood,spoonman,2
@@ -1911,11 +1931,12 @@ little-caesars-5-with-kimmy-gatewood,platinum plate club,1
 little-caesars-5-with-kimmy-gatewood,munch madness,4
 little-caesars-5-with-kimmy-gatewood,oh my god,14
 little-caesars-5-with-kimmy-gatewood,spoon nation,1
-little-caesars-5-with-kimmy-gatewood,birdfuck,4
-little-caesars-5-with-kimmy-gatewood,rumblies,1
+little-caesars-5-with-kimmy-gatewood,case of the rumblies,1
 little-caesars-5-with-kimmy-gatewood,heat seeker,2
 little-caesars-5-with-kimmy-gatewood,spoiler alert,1
 little-caesars-5-with-kimmy-gatewood,ungapatchka,1
+little-caesars-5-with-kimmy-gatewood,rumblies,1
+little-caesars-5-with-kimmy-gatewood,gemmy,2
 little-caesars-with-john-ross-bowie,wow,22
 little-caesars-with-john-ross-bowie,spoonman,3
 little-caesars-with-john-ross-bowie,golden plate club,2
@@ -1974,11 +1995,12 @@ magpies-with-andrea-jin,golden plate club,2
 magpies-with-andrea-jin,oh my god,11
 magpies-with-andrea-jin,jesus christ,3
 magpies-with-andrea-jin,spoon nation,1
-magpies-with-andrea-jin,birdfuck,1
-magpies-with-andrea-jin,rumblies,1
 magpies-with-andrea-jin,wally and irma,1
 magpies-with-andrea-jin,simulacrum,1
 magpies-with-andrea-jin,ungapatchka,1
+magpies-with-andrea-jin,rumblies,1
+magpies-with-andrea-jin,gemmy,2
+magpies-with-andrea-jin,unkar plutt,3
 marcos-pizza-with-jon-daly,wow,26
 marcos-pizza-with-jon-daly,spoonman,5
 marcos-pizza-with-jon-daly,chompion,1
@@ -2004,18 +2026,18 @@ mcdonalds-ice-cream-with-samoa-joe,jesus christ,1
 mcdonalds-ice-cream-with-samoa-joe,for god's sake,1
 mcdonalds-ice-cream-with-samoa-joe,blah blah blah,1
 mcdonalds-ice-cream-with-samoa-joe,spoon nation,1
-mcdonalds-ice-cream-with-samoa-joe,birdfuck,1
 mcdonalds-ice-cream-with-samoa-joe,wally and irma,1
 mcdonalds-ice-cream-with-samoa-joe,spoiler alert,1
 mcdonalds-ice-cream-with-samoa-joe,simulacrum,1
+mcdonalds-ice-cream-with-samoa-joe,gemmy,3
 mcdonalds-with-sarah-silverman,this show sucks,1
 mcdonalds-with-sarah-silverman,wow,15
 mcdonalds-with-sarah-silverman,spoonman,3
 mcdonalds-with-sarah-silverman,platinum plate club,4
 mcdonalds-with-sarah-silverman,oh my god,7
 mcdonalds-with-sarah-silverman,spoon nation,3
-mcdonalds-with-sarah-silverman,rumblies,2
 mcdonalds-with-sarah-silverman,wally and irma,1
+mcdonalds-with-sarah-silverman,rumblies,2
 mcplant-with-eric-edelstein,wow,29
 mcplant-with-eric-edelstein,spoonman,1
 mcplant-with-eric-edelstein,golden plate club,1
@@ -2119,13 +2141,15 @@ mortons-the-steakhouse-with-tim-kalpakis,oh my god,6
 mortons-the-steakhouse-with-tim-kalpakis,jesus christ,2
 mortons-the-steakhouse-with-tim-kalpakis,spoon nation,5
 mortons-the-steakhouse-with-tim-kalpakis,hand holding club,2
+mortons-the-steakhouse-with-tim-kalpakis,unkar plutt,6
 movita-juice-bar-with-julian-stern,wow,38
 movita-juice-bar-with-julian-stern,spoonman,3
 movita-juice-bar-with-julian-stern,snack or wack,1
 movita-juice-bar-with-julian-stern,oh my god,6
 movita-juice-bar-with-julian-stern,howdy ho,1
-movita-juice-bar-with-julian-stern,birdfuck,2
 movita-juice-bar-with-julian-stern,wally and irma,2
+movita-juice-bar-with-julian-stern,gemmy,1
+movita-juice-bar-with-julian-stern,unkar plutt,1
 mr-charlies-told-me-so-with-jackie-johnson,this show sucks,3
 mr-charlies-told-me-so-with-jackie-johnson,wow,86
 mr-charlies-told-me-so-with-jackie-johnson,spoonman,3
@@ -2134,9 +2158,9 @@ mr-charlies-told-me-so-with-jackie-johnson,munch madness,3
 mr-charlies-told-me-so-with-jackie-johnson,oh my god,8
 mr-charlies-told-me-so-with-jackie-johnson,jesus christ,2
 mr-charlies-told-me-so-with-jackie-johnson,blah blah blah,1
-mr-charlies-told-me-so-with-jackie-johnson,birdfuck,2
 mr-charlies-told-me-so-with-jackie-johnson,wally and irma,3
 mr-charlies-told-me-so-with-jackie-johnson,simulacrum,1
+mr-charlies-told-me-so-with-jackie-johnson,gemmy,4
 mr-pizza-with-jesse-thorn,wow,16
 mr-pizza-with-jesse-thorn,spoonman,2
 mr-pizza-with-jesse-thorn,oh my god,13
@@ -2156,9 +2180,10 @@ mrs-fields-with-matt-singer,golden plate club,1
 mrs-fields-with-matt-singer,snack or wack,1
 mrs-fields-with-matt-singer,oh my god,3
 mrs-fields-with-matt-singer,jesus christ,4
-mrs-fields-with-matt-singer,birdfuck,1
 mrs-fields-with-matt-singer,hand holding club,1
 mrs-fields-with-matt-singer,ungapatchka,2
+mrs-fields-with-matt-singer,gemmy,3
+mrs-fields-with-matt-singer,unkar plutt,11
 munch-madness-cava-vs-sweetfin-with-arden-myrin,this show sucks,1
 munch-madness-cava-vs-sweetfin-with-arden-myrin,wow,62
 munch-madness-cava-vs-sweetfin-with-arden-myrin,spoonman,3
@@ -2169,6 +2194,7 @@ munch-madness-cava-vs-sweetfin-with-arden-myrin,howdy ho,2
 munch-madness-cava-vs-sweetfin-with-arden-myrin,spoon nation,1
 munch-madness-cava-vs-sweetfin-with-arden-myrin,spoiler alert,1
 munch-madness-cava-vs-sweetfin-with-arden-myrin,ungapatchka,1
+munch-madness-cava-vs-sweetfin-with-arden-myrin,unkar plutt,2
 munch-madness-cava-vs-sweetgreen-with-adam-pally,wow,49
 munch-madness-cava-vs-sweetgreen-with-adam-pally,spoonman,2
 munch-madness-cava-vs-sweetgreen-with-adam-pally,golden plate club,2
@@ -2177,9 +2203,9 @@ munch-madness-cava-vs-sweetgreen-with-adam-pally,chompion,3
 munch-madness-cava-vs-sweetgreen-with-adam-pally,oh my god,5
 munch-madness-cava-vs-sweetgreen-with-adam-pally,jesus christ,3
 munch-madness-cava-vs-sweetgreen-with-adam-pally,for god's sake,1
-munch-madness-cava-vs-sweetgreen-with-adam-pally,rumblies,1
 munch-madness-cava-vs-sweetgreen-with-adam-pally,heat seeker,1
 munch-madness-cava-vs-sweetgreen-with-adam-pally,spoiler alert,1
+munch-madness-cava-vs-sweetgreen-with-adam-pally,rumblies,1
 munch-madness-chipotle-vs-pressed-with-paul-scheer,wow,61
 munch-madness-chipotle-vs-pressed-with-paul-scheer,spoonman,1
 munch-madness-chipotle-vs-pressed-with-paul-scheer,munch madness,6
@@ -2187,8 +2213,8 @@ munch-madness-chipotle-vs-pressed-with-paul-scheer,oh my god,1
 munch-madness-chipotle-vs-pressed-with-paul-scheer,jesus christ,1
 munch-madness-chipotle-vs-pressed-with-paul-scheer,blah blah blah,2
 munch-madness-chipotle-vs-pressed-with-paul-scheer,spoon nation,1
-munch-madness-chipotle-vs-pressed-with-paul-scheer,rumblies,6
 munch-madness-chipotle-vs-pressed-with-paul-scheer,heat seeker,1
+munch-madness-chipotle-vs-pressed-with-paul-scheer,rumblies,6
 munch-madness-chipotle-vs-qdoba-with-toni-charline,this show sucks,1
 munch-madness-chipotle-vs-qdoba-with-toni-charline,wow,28
 munch-madness-chipotle-vs-qdoba-with-toni-charline,spoonman,2
@@ -2208,9 +2234,9 @@ munch-madness-chomp-out-round-2-with-michael-jonathan-smith,munch madness,12
 munch-madness-chomp-out-round-2-with-michael-jonathan-smith,oh my god,5
 munch-madness-chomp-out-round-2-with-michael-jonathan-smith,jesus christ,2
 munch-madness-chomp-out-round-2-with-michael-jonathan-smith,for god's sake,1
-munch-madness-chomp-out-round-2-with-michael-jonathan-smith,birdfuck,6
-munch-madness-chomp-out-round-2-with-michael-jonathan-smith,rumblies,3
 munch-madness-chomp-out-round-2-with-michael-jonathan-smith,wally and irma,1
+munch-madness-chomp-out-round-2-with-michael-jonathan-smith,rumblies,3
+munch-madness-chomp-out-round-2-with-michael-jonathan-smith,gemmy,5
 munch-madness-dominos-vs-pizza-hut-with-claudia-odoherty,this show sucks,1
 munch-madness-dominos-vs-pizza-hut-with-claudia-odoherty,wow,24
 munch-madness-dominos-vs-pizza-hut-with-claudia-odoherty,munch madness,4
@@ -2234,6 +2260,7 @@ munch-madness-finale-with-mano-agapion-jon-gabrus-and-betsy-sodaro-live,oh my go
 munch-madness-finale-with-mano-agapion-jon-gabrus-and-betsy-sodaro-live,jesus christ,1
 munch-madness-finale-with-mano-agapion-jon-gabrus-and-betsy-sodaro-live,for god's sake,1
 munch-madness-finale-with-mano-agapion-jon-gabrus-and-betsy-sodaro-live,rumblies,1
+munch-madness-finale-with-mano-agapion-jon-gabrus-and-betsy-sodaro-live,gemmy,4
 munch-madness-finals-with-paul-scheer,wow,54
 munch-madness-finals-with-paul-scheer,spoonman,9
 munch-madness-finals-with-paul-scheer,munch madness,2
@@ -2253,9 +2280,9 @@ munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,oh my go
 munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,jesus christ,4
 munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,for god's sake,2
 munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,spoon nation,1
-munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,rumblies,1
 munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,heat seeker,1
 munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,ungapatchka,1
+munch-madness-firehouse-subs-vs-jersey-mikes-with-carl-tart-lamar-woods,rumblies,1
 munch-madness-jimmy-johns-vs-jersey-mikes-with-mano-agapion-betsy-sodaro-w-joe-saunders-as-bread-correspondent,wow,78
 munch-madness-jimmy-johns-vs-jersey-mikes-with-mano-agapion-betsy-sodaro-w-joe-saunders-as-bread-correspondent,spoonman,2
 munch-madness-jimmy-johns-vs-jersey-mikes-with-mano-agapion-betsy-sodaro-w-joe-saunders-as-bread-correspondent,golden plate club,1
@@ -2345,8 +2372,9 @@ munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,chompion
 munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,oh my god,3
 munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,jesus christ,1
 munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,spoon nation,1
-munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,rumblies,3
+munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,case of the rumblies,1
 munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,wally and irma,1
+munch-madness-pie-noon-semisweet-final-2-with-carl-tart-ahsohn-williams,rumblies,3
 munch-madness-poquito-mas-vs-qdoba-vs-taco-bell-with-nicole-byer,this show sucks,1
 munch-madness-poquito-mas-vs-qdoba-vs-taco-bell-with-nicole-byer,wow,38
 munch-madness-poquito-mas-vs-qdoba-vs-taco-bell-with-nicole-byer,spoonman,2
@@ -2375,8 +2403,9 @@ munch-madness-pressed-vs-jamba-with-zach-cherry,spoonman,3
 munch-madness-pressed-vs-jamba-with-zach-cherry,munch madness,6
 munch-madness-pressed-vs-jamba-with-zach-cherry,oh my god,4
 munch-madness-pressed-vs-jamba-with-zach-cherry,jesus christ,2
-munch-madness-pressed-vs-jamba-with-zach-cherry,rumblies,4
 munch-madness-pressed-vs-jamba-with-zach-cherry,spoiler alert,1
+munch-madness-pressed-vs-jamba-with-zach-cherry,rumblies,4
+munch-madness-pressed-vs-jamba-with-zach-cherry,unkar plutt,2
 munch-madness-qdoba-vs-del-taco-with-matt-apodaca,wow,40
 munch-madness-qdoba-vs-del-taco-with-matt-apodaca,spoonman,2
 munch-madness-qdoba-vs-del-taco-with-matt-apodaca,golden plate club,1
@@ -2429,9 +2458,10 @@ munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-b
 munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,chompion,4
 munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,oh my god,22
 munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,jesus christ,5
-munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,rumblies,3
 munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,heat seeker,3
 munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,wally and irma,1
+munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,rumblies,3
+munch-madness-sweetfin-vs-chipotle-vs-sweetgreen-with-lauren-lapkus-and-nicole-byer-live,unkar plutt,1
 munch-madness-taco-bell-round-1-with-carl-tart,wow,99
 munch-madness-taco-bell-round-1-with-carl-tart,spoonman,3
 munch-madness-taco-bell-round-1-with-carl-tart,platinum plate club,1
@@ -2441,9 +2471,10 @@ munch-madness-taco-bell-round-1-with-carl-tart,oh my god,5
 munch-madness-taco-bell-round-1-with-carl-tart,jesus christ,1
 munch-madness-taco-bell-round-1-with-carl-tart,howdy ho,1
 munch-madness-taco-bell-round-1-with-carl-tart,spoon nation,1
-munch-madness-taco-bell-round-1-with-carl-tart,rumblies,1
 munch-madness-taco-bell-round-1-with-carl-tart,simulacrum,1
 munch-madness-taco-bell-round-1-with-carl-tart,ungapatchka,4
+munch-madness-taco-bell-round-1-with-carl-tart,rumblies,1
+munch-madness-taco-bell-round-1-with-carl-tart,gemmy,2
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,this show sucks,1
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,wow,63
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,spoonman,4
@@ -2452,32 +2483,33 @@ munch-madness-taco-bell-round-3-with-toni-charline-ramos,munch madness,9
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,oh my god,10
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,jesus christ,1
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,howdy ho,4
-munch-madness-taco-bell-round-3-with-toni-charline-ramos,birdfuck,7
-munch-madness-taco-bell-round-3-with-toni-charline-ramos,rumblies,4
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,heat seeker,2
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,wally and irma,2
 munch-madness-taco-bell-round-3-with-toni-charline-ramos,ungapatchka,1
+munch-madness-taco-bell-round-3-with-toni-charline-ramos,rumblies,4
+munch-madness-taco-bell-round-3-with-toni-charline-ramos,gemmy,8
+munch-madness-taco-bell-round-3-with-toni-charline-ramos,unkar plutt,1
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,wow,141
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,spoonman,1
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,platinum plate club,1
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,munch madness,8
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,oh my god,19
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,jesus christ,1
-munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,birdfuck,1
-munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,rumblies,3
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,heat seeker,1
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,wally and irma,1
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,spoiler alert,1
 munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,simulacrum,1
+munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,rumblies,3
+munch-madness-x-in-n-out-burger-vs-handels-with-jason-mantzoukas-and-paul-scheer,gemmy,22
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,wow,62
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,spoonman,2
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,munch madness,11
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,oh my god,21
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,jesus christ,2
-munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,birdfuck,2
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,heat seeker,1
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,simulacrum,1
 munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,ungapatchka,1
+munch-madness-x-taco-bell-vs-wendys-with-carl-tart-and-lamar-woods,gemmy,4
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,wow,52
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,spoonman,1
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,munch madness,7
@@ -2485,10 +2517,11 @@ munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,oh my
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,jesus christ,12
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,for god's sake,1
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,blah blah blah,1
-munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,rumblies,3
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,heat seeker,1
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,wally and irma,1
 munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,hat on a hat,1
+munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,rumblies,3
+munch-madness-x-wendys-vs-in-n-out-burger-with-jon-gabrus-and-betsy-sodaro,gemmy,12
 munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,this show sucks,2
 munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,wow,78
 munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,spoonman,1
@@ -2499,15 +2532,16 @@ munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,jesus 
 munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,spoon nation,1
 munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,wally and irma,1
 munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,spoiler alert,3
+munch-madness-x-wendys-vs-jersey-mikes-with-lauren-lapkus-and-arden-myrin,gemmy,12
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,wow,52
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,spoonman,2
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,munch madness,8
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,oh my god,13
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,jesus christ,1
-munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,birdfuck,3
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,heat seeker,2
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,simulacrum,1
 munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,ungapatchka,1
+munch-madness-x-wendys-vs-taco-bell-with-carl-tart-and-lamar-woods,gemmy,3
 native-foods-with-tawny-newsome-alex-kliner,wow,17
 native-foods-with-tawny-newsome-alex-kliner,spoonman,1
 native-foods-with-tawny-newsome-alex-kliner,platinum plate club,1
@@ -2518,6 +2552,7 @@ nick-the-greek-with-becky-feldman,spoonman,3
 nick-the-greek-with-becky-feldman,golden plate club,1
 nick-the-greek-with-becky-feldman,oh my god,11
 nick-the-greek-with-becky-feldman,jesus christ,1
+nick-the-greek-with-becky-feldman,gemmy,2
 noahs-new-york-bagels-with-jennie-pierson,wow,31
 noahs-new-york-bagels-with-jennie-pierson,spoonman,2
 noahs-new-york-bagels-with-jennie-pierson,oh my god,11
@@ -2529,11 +2564,11 @@ nordstroms-bar-verde-with-jordan-morris,wow,30
 nordstroms-bar-verde-with-jordan-morris,spoonman,8
 nordstroms-bar-verde-with-jordan-morris,oh my god,5
 nordstroms-bar-verde-with-jordan-morris,jesus christ,3
-nordstroms-bar-verde-with-jordan-morris,birdfuck,2
 nordstroms-bar-verde-with-jordan-morris,heat seeker,1
 nordstroms-bar-verde-with-jordan-morris,wally and irma,1
 nordstroms-bar-verde-with-jordan-morris,spoiler alert,1
 nordstroms-bar-verde-with-jordan-morris,simulacrum,1
+nordstroms-bar-verde-with-jordan-morris,gemmy,43
 norms-with-jordan-morris,wow,11
 norms-with-jordan-morris,golden plate club,5
 norms-with-jordan-morris,jesus christ,2
@@ -2559,8 +2594,8 @@ oakberry-with-johnny-tv-and-taya-valkyrie,golden plate club,1
 oakberry-with-johnny-tv-and-taya-valkyrie,munch madness,5
 oakberry-with-johnny-tv-and-taya-valkyrie,oh my god,5
 oakberry-with-johnny-tv-and-taya-valkyrie,jesus christ,2
-oakberry-with-johnny-tv-and-taya-valkyrie,birdfuck,5
 oakberry-with-johnny-tv-and-taya-valkyrie,heat seeker,1
+oakberry-with-johnny-tv-and-taya-valkyrie,gemmy,5
 octdoughberblessed-canters-deli-with-evan-susser-and-david-phillips,wow,23
 octdoughberblessed-canters-deli-with-evan-susser-and-david-phillips,spoonman,4
 octdoughberblessed-canters-deli-with-evan-susser-and-david-phillips,oh my god,6
@@ -2609,6 +2644,7 @@ oops-all-segments-2,spoonman,5
 oops-all-segments-2,snack or wack,1
 oops-all-segments-2,oh my god,7
 oops-all-segments-2,heat seeker,5
+oops-all-segments-2,gemmy,12
 oops-all-segments-3,wow,68
 oops-all-segments-3,spoonman,2
 oops-all-segments-3,snack or wack,1
@@ -2616,11 +2652,11 @@ oops-all-segments-3,oh my god,22
 oops-all-segments-3,jesus christ,2
 oops-all-segments-3,for god's sake,1
 oops-all-segments-3,spoon nation,1
-oops-all-segments-3,birdfuck,1
 oops-all-segments-3,heat seeker,4
 oops-all-segments-3,wally and irma,1
 oops-all-segments-3,spoiler alert,2
 oops-all-segments-3,ungapatchka,4
+oops-all-segments-3,gemmy,14
 orange-julius-with-scott-aukerman,wow,44
 orange-julius-with-scott-aukerman,spoonman,4
 orange-julius-with-scott-aukerman,golden plate club,1
@@ -2661,8 +2697,8 @@ outback-steakhouse-4-with-tom-walker,oh my god,9
 outback-steakhouse-4-with-tom-walker,jesus christ,3
 outback-steakhouse-4-with-tom-walker,for god's sake,1
 outback-steakhouse-4-with-tom-walker,spoon nation,2
-outback-steakhouse-4-with-tom-walker,birdfuck,5
 outback-steakhouse-4-with-tom-walker,wally and irma,1
+outback-steakhouse-4-with-tom-walker,gemmy,3
 outback-steakhouse-with-jon-gabrus,wow,10
 outback-steakhouse-with-jon-gabrus,oh my god,2
 outback-steakhouse-with-jon-gabrus,jesus christ,2
@@ -2691,8 +2727,9 @@ panda-express-2-with-cristela-alonzo,golden plate club,2
 panda-express-2-with-cristela-alonzo,oh my god,6
 panda-express-2-with-cristela-alonzo,jesus christ,1
 panda-express-2-with-cristela-alonzo,for god's sake,2
-panda-express-2-with-cristela-alonzo,rumblies,1
+panda-express-2-with-cristela-alonzo,case of the rumblies,1
 panda-express-2-with-cristela-alonzo,wally and irma,4
+panda-express-2-with-cristela-alonzo,rumblies,1
 panda-express-3-with-oscar-montoya,wow,8
 panda-express-3-with-oscar-montoya,spoonman,5
 panda-express-3-with-oscar-montoya,golden plate club,5
@@ -2705,8 +2742,9 @@ panda-express-4-with-matt-kowalick-and-holly-prazoff,spoonman,2
 panda-express-4-with-matt-kowalick-and-holly-prazoff,platinum plate club,1
 panda-express-4-with-matt-kowalick-and-holly-prazoff,oh my god,40
 panda-express-4-with-matt-kowalick-and-holly-prazoff,jesus christ,7
-panda-express-4-with-matt-kowalick-and-holly-prazoff,birdfuck,4
 panda-express-4-with-matt-kowalick-and-holly-prazoff,wally and irma,2
+panda-express-4-with-matt-kowalick-and-holly-prazoff,gemmy,1
+panda-express-4-with-matt-kowalick-and-holly-prazoff,unkar plutt,1
 panda-express-with-tricia-mcalpin,wow,10
 panda-express-with-tricia-mcalpin,spoonman,6
 panda-express-with-tricia-mcalpin,oh my god,15
@@ -2718,11 +2756,11 @@ panera-3-with-kimia-behpoornia,spoonman,2
 panera-3-with-kimia-behpoornia,golden plate club,1
 panera-3-with-kimia-behpoornia,oh my god,19
 panera-3-with-kimia-behpoornia,jesus christ,3
-panera-3-with-kimia-behpoornia,birdfuck,2
 panera-3-with-kimia-behpoornia,heat seeker,3
 panera-3-with-kimia-behpoornia,wally and irma,4
 panera-3-with-kimia-behpoornia,spoiler alert,1
 panera-3-with-kimia-behpoornia,simulacrum,1
+panera-3-with-kimia-behpoornia,gemmy,5
 panera-5-with-david-wain,wow,50
 panera-5-with-david-wain,spoonman,3
 panera-5-with-david-wain,golden plate club,2
@@ -2730,9 +2768,9 @@ panera-5-with-david-wain,snack or wack,3
 panera-5-with-david-wain,munch madness,4
 panera-5-with-david-wain,oh my god,4
 panera-5-with-david-wain,jesus christ,2
-panera-5-with-david-wain,birdfuck,4
 panera-5-with-david-wain,heat seeker,1
 panera-5-with-david-wain,wally and irma,2
+panera-5-with-david-wain,gemmy,2
 panera-bread-2-with-monica-ruiz-and-chris-omalley,this show sucks,1
 panera-bread-2-with-monica-ruiz-and-chris-omalley,wow,74
 panera-bread-2-with-monica-ruiz-and-chris-omalley,spoonman,7
@@ -2749,6 +2787,7 @@ panera-bread-with-bill-oakley,spoonman,1
 panera-bread-with-bill-oakley,golden plate club,2
 panera-bread-with-bill-oakley,oh my god,7
 panera-bread-with-bill-oakley,spoon nation,1
+panera-bread-with-bill-oakley,case of the rumblies,1
 panera-bread-with-bill-oakley,rumblies,1
 papa-ginos-with-john-hodgman-jean-grae-and-jeff-tweedy,wow,27
 papa-ginos-with-john-hodgman-jean-grae-and-jeff-tweedy,oh my god,4
@@ -2771,11 +2810,10 @@ papa-johns-3-with-steve-sladkowski,spoonman,3
 papa-johns-3-with-steve-sladkowski,golden plate club,2
 papa-johns-3-with-steve-sladkowski,munch madness,1
 papa-johns-3-with-steve-sladkowski,oh my god,6
-papa-johns-3-with-steve-sladkowski,birdfuck,2
-papa-johns-3-with-steve-sladkowski,rumblies,1
 papa-johns-3-with-steve-sladkowski,heat seeker,1
 papa-johns-3-with-steve-sladkowski,wally and irma,1
 papa-johns-3-with-steve-sladkowski,ungapatchka,1
+papa-johns-3-with-steve-sladkowski,rumblies,1
 papa-johns-with-lamar-woods,wow,19
 papa-johns-with-lamar-woods,spoonman,1
 papa-johns-with-lamar-woods,platinum plate club,1
@@ -2802,17 +2840,17 @@ philz-coffee-with-corin-wells,spoonman,5
 philz-coffee-with-corin-wells,oh my god,11
 philz-coffee-with-corin-wells,jesus christ,3
 philz-coffee-with-corin-wells,spoon nation,1
-philz-coffee-with-corin-wells,birdfuck,3
 philz-coffee-with-corin-wells,heat seeker,2
+philz-coffee-with-corin-wells,gemmy,4
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,this show sucks,1
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,wow,64
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,spoonman,2
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,snack or wack,2
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,oh my god,8
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,jesus christ,5
-pinkberry-2-with-grant-dekernion-and-patty-guggenheim,birdfuck,2
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,wally and irma,3
 pinkberry-2-with-grant-dekernion-and-patty-guggenheim,simulacrum,1
+pinkberry-2-with-grant-dekernion-and-patty-guggenheim,gemmy,1
 pinkberry-with-lauren-lapkus,wow,10
 pinkberry-with-lauren-lapkus,spoonman,2
 pinkberry-with-lauren-lapkus,oh my god,16
@@ -2835,8 +2873,9 @@ pizza-hut-2-with-jen-dangelo,platinum plate club,1
 pizza-hut-2-with-jen-dangelo,oh my god,2
 pizza-hut-2-with-jen-dangelo,jesus christ,3
 pizza-hut-2-with-jen-dangelo,howdy ho,1
-pizza-hut-2-with-jen-dangelo,rumblies,1
+pizza-hut-2-with-jen-dangelo,case of the rumblies,1
 pizza-hut-2-with-jen-dangelo,wally and irma,1
+pizza-hut-2-with-jen-dangelo,rumblies,1
 pizza-hut-3-with-brendan-james,wow,24
 pizza-hut-3-with-brendan-james,spoonman,5
 pizza-hut-3-with-brendan-james,platinum plate club,1
@@ -2850,10 +2889,10 @@ pizza-hut-4-with-neil-campbell-and-mitra-jouhari,snack or wack,1
 pizza-hut-4-with-neil-campbell-and-mitra-jouhari,munch madness,1
 pizza-hut-4-with-neil-campbell-and-mitra-jouhari,oh my god,14
 pizza-hut-4-with-neil-campbell-and-mitra-jouhari,jesus christ,2
-pizza-hut-4-with-neil-campbell-and-mitra-jouhari,birdfuck,3
 pizza-hut-4-with-neil-campbell-and-mitra-jouhari,heat seeker,1
 pizza-hut-4-with-neil-campbell-and-mitra-jouhari,hand holding club,1
 pizza-hut-4-with-neil-campbell-and-mitra-jouhari,simulacrum,1
+pizza-hut-4-with-neil-campbell-and-mitra-jouhari,gemmy,2
 pizza-hut-with-neil-campbell,wow,11
 pizza-hut-with-neil-campbell,spoonman,9
 pizza-hut-with-neil-campbell,snack or wack,2
@@ -2865,7 +2904,6 @@ planet-hollywood-with-griffin-newman-and-david-sims,spoonman,1
 planet-hollywood-with-griffin-newman-and-david-sims,broken plate club,1
 planet-hollywood-with-griffin-newman-and-david-sims,oh my god,10
 planet-hollywood-with-griffin-newman-and-david-sims,jesus christ,3
-planet-hollywood-with-griffin-newman-and-david-sims,birdfuck,1
 planet-hollywood-with-griffin-newman-and-david-sims,wally and irma,1
 planet-hollywood-with-griffin-newman-and-david-sims,simulacrum,1
 poke-bar-with-payman-benz,wow,41
@@ -2875,13 +2913,14 @@ poke-bar-with-payman-benz,munch madness,5
 poke-bar-with-payman-benz,oh my god,6
 poke-bar-with-payman-benz,jesus christ,1
 poke-bar-with-payman-benz,rumblies,7
+poke-bar-with-payman-benz,gemmy,6
+poke-bar-with-payman-benz,unkar plutt,2
 pollo-campero-with-jack-allison-and-kate-shapiro,wow,37
 pollo-campero-with-jack-allison-and-kate-shapiro,spoonman,7
 pollo-campero-with-jack-allison-and-kate-shapiro,golden plate club,2
 pollo-campero-with-jack-allison-and-kate-shapiro,platinum plate club,2
 pollo-campero-with-jack-allison-and-kate-shapiro,oh my god,5
 pollo-campero-with-jack-allison-and-kate-shapiro,blah blah blah,1
-pollo-campero-with-jack-allison-and-kate-shapiro,birdfuck,1
 pollo-campero-with-jack-allison-and-kate-shapiro,heat seeker,1
 popeyes-4-with-van-robichaux,this show sucks,3
 popeyes-4-with-van-robichaux,wow,65
@@ -2899,9 +2938,9 @@ popeyes-6-with-tim-baltz,spoonman,2
 popeyes-6-with-tim-baltz,platinum plate club,2
 popeyes-6-with-tim-baltz,oh my god,18
 popeyes-6-with-tim-baltz,jesus christ,3
-popeyes-6-with-tim-baltz,birdfuck,5
 popeyes-6-with-tim-baltz,heat seeker,3
 popeyes-6-with-tim-baltz,simulacrum,1
+popeyes-6-with-tim-baltz,gemmy,2
 popeyes-louisiana-kitchen-2-with-andrew-ti,wow,21
 popeyes-louisiana-kitchen-2-with-andrew-ti,golden plate club,1
 popeyes-louisiana-kitchen-2-with-andrew-ti,platinum plate club,1
@@ -2909,8 +2948,8 @@ popeyes-louisiana-kitchen-2-with-andrew-ti,oh my god,7
 popeyes-louisiana-kitchen-2-with-andrew-ti,jesus christ,4
 popeyes-louisiana-kitchen-2-with-andrew-ti,for god's sake,2
 popeyes-louisiana-kitchen-2-with-andrew-ti,spoon nation,1
-popeyes-louisiana-kitchen-2-with-andrew-ti,rumblies,1
 popeyes-louisiana-kitchen-2-with-andrew-ti,heat seeker,1
+popeyes-louisiana-kitchen-2-with-andrew-ti,rumblies,1
 popeyes-louisiana-kitchen-3-with-phil-rosenthal,wow,60
 popeyes-louisiana-kitchen-3-with-phil-rosenthal,spoonman,3
 popeyes-louisiana-kitchen-3-with-phil-rosenthal,golden plate club,1
@@ -2927,9 +2966,9 @@ popeyes-louisiana-kitchen-with-lesley-arfin,oh my god,9
 popeyes-louisiana-kitchen-with-lesley-arfin,jesus christ,1
 popeyes-louisiana-kitchen-with-lesley-arfin,blah blah blah,1
 popeyes-louisiana-kitchen-with-lesley-arfin,spoon nation,1
-popeyes-louisiana-kitchen-with-lesley-arfin,rumblies,5
 popeyes-louisiana-kitchen-with-lesley-arfin,heat seeker,1
 popeyes-louisiana-kitchen-with-lesley-arfin,spoiler alert,3
+popeyes-louisiana-kitchen-with-lesley-arfin,rumblies,5
 popeyes-wings-with-david-brown-jon-mackey,wow,66
 popeyes-wings-with-david-brown-jon-mackey,spoonman,8
 popeyes-wings-with-david-brown-jon-mackey,golden plate club,3
@@ -2937,7 +2976,6 @@ popeyes-wings-with-david-brown-jon-mackey,platinum plate club,1
 popeyes-wings-with-david-brown-jon-mackey,munch madness,1
 popeyes-wings-with-david-brown-jon-mackey,oh my god,9
 popeyes-wings-with-david-brown-jon-mackey,jesus christ,2
-popeyes-wings-with-david-brown-jon-mackey,birdfuck,1
 popeyes-wings-with-david-brown-jon-mackey,wally and irma,1
 popeyes-wings-with-david-brown-jon-mackey,ungapatchka,2
 poquito-mas-with-dan-goor,wow,39
@@ -2948,9 +2986,10 @@ poquito-mas-with-dan-goor,oh my god,10
 poquito-mas-with-dan-goor,jesus christ,5
 poquito-mas-with-dan-goor,for god's sake,1
 poquito-mas-with-dan-goor,spoon nation,2
-poquito-mas-with-dan-goor,rumblies,3
+poquito-mas-with-dan-goor,case of the rumblies,1
 poquito-mas-with-dan-goor,heat seeker,2
 poquito-mas-with-dan-goor,hand holding club,1
+poquito-mas-with-dan-goor,rumblies,3
 portillos-with-jon-gabrus-christine-nangle-live,wow,20
 portillos-with-jon-gabrus-christine-nangle-live,spoonman,6
 portillos-with-jon-gabrus-christine-nangle-live,golden plate club,1
@@ -2987,8 +3026,8 @@ pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,spoonman,7
 pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,golden plate club,1
 pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,oh my god,11
 pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,jesus christ,2
-pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,birdfuck,2
 pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,heat seeker,1
+pret-a-manger-with-charlotte-mcdonnell-and-libby-watson,gemmy,9
 qdoba-with-jamelle-bouie,wow,41
 qdoba-with-jamelle-bouie,spoonman,1
 qdoba-with-jamelle-bouie,golden plate club,2
@@ -3009,7 +3048,6 @@ qwench-juice-bar-with-eliza-skinner,golden plate club,1
 qwench-juice-bar-with-eliza-skinner,platinum plate club,1
 qwench-juice-bar-with-eliza-skinner,oh my god,2
 qwench-juice-bar-with-eliza-skinner,jesus christ,3
-qwench-juice-bar-with-eliza-skinner,birdfuck,1
 qwench-juice-bar-with-eliza-skinner,wally and irma,1
 qwench-juice-bar-with-eliza-skinner,hand holding club,1
 raising-canes-chicken-fingers-2-with-john-early,this show sucks,1
@@ -3039,7 +3077,6 @@ randys-donuts-with-gareth-reynolds,golden plate club,5
 randys-donuts-with-gareth-reynolds,oh my god,13
 randys-donuts-with-gareth-reynolds,jesus christ,5
 randys-donuts-with-gareth-reynolds,spoon nation,1
-randys-donuts-with-gareth-reynolds,birdfuck,1
 randys-donuts-with-gareth-reynolds,heat seeker,1
 randys-donuts-with-gareth-reynolds,wally and irma,6
 randys-donuts-with-gareth-reynolds,simulacrum,1
@@ -3052,8 +3089,8 @@ red-robin-with-darcy-carden,oh my god,7
 red-robin-with-darcy-carden,jesus christ,3
 red-robin-with-darcy-carden,for god's sake,1
 red-robin-with-darcy-carden,spoon nation,5
-red-robin-with-darcy-carden,rumblies,1
 red-robin-with-darcy-carden,wally and irma,1
+red-robin-with-darcy-carden,rumblies,1
 regina-pizzeria-with-john-hodgman-nicole-byer-live,wow,61
 regina-pizzeria-with-john-hodgman-nicole-byer-live,spoonman,1
 regina-pizzeria-with-john-hodgman-nicole-byer-live,platinum plate club,2
@@ -3069,7 +3106,6 @@ ricks-drive-in-out-with-ashley-ray,oh my god,9
 ricks-drive-in-out-with-ashley-ray,jesus christ,2
 ricks-drive-in-out-with-ashley-ray,for god's sake,2
 ricks-drive-in-out-with-ashley-ray,howdy ho,1
-ricks-drive-in-out-with-ashley-ray,birdfuck,4
 ricks-drive-in-out-with-ashley-ray,wally and irma,1
 ritas-italian-ice-with-carl-tart-christine-nangle-live,wow,46
 ritas-italian-ice-with-carl-tart-christine-nangle-live,spoonman,1
@@ -3160,6 +3196,7 @@ rocklobsterfest-red-lobster-2-with-ross-kimball,spoonman,7
 rocklobsterfest-red-lobster-2-with-ross-kimball,oh my god,9
 rocklobsterfest-red-lobster-2-with-ross-kimball,jesus christ,2
 rocklobsterfest-red-lobster-2-with-ross-kimball,spoon nation,1
+rocklobsterfest-red-lobster-2-with-ross-kimball,case of the rumblies,2
 rocklobsterfest-red-lobster-2-with-ross-kimball,rumblies,2
 rocklobsterfest-red-lobster-3-with-nicole-byer,wow,5
 rocklobsterfest-red-lobster-3-with-nicole-byer,spoonman,4
@@ -3168,9 +3205,10 @@ rocklobsterfest-red-lobster-3-with-nicole-byer,oh my god,7
 rocklobsterfest-red-lobster-3-with-nicole-byer,jesus christ,4
 rocklobsterfest-red-lobster-3-with-nicole-byer,howdy ho,1
 rocklobsterfest-red-lobster-3-with-nicole-byer,spoon nation,1
-rocklobsterfest-red-lobster-3-with-nicole-byer,rumblies,2
+rocklobsterfest-red-lobster-3-with-nicole-byer,case of the rumblies,1
 rocklobsterfest-red-lobster-3-with-nicole-byer,wally and irma,1
 rocklobsterfest-red-lobster-3-with-nicole-byer,spoiler alert,1
+rocklobsterfest-red-lobster-3-with-nicole-byer,rumblies,2
 rocklobsterfest-red-lobster-4-with-sean-clements-hayes-davenport,wow,9
 rocklobsterfest-red-lobster-4-with-sean-clements-hayes-davenport,spoonman,1
 rocklobsterfest-red-lobster-4-with-sean-clements-hayes-davenport,golden plate club,1
@@ -3180,6 +3218,7 @@ rocklobsterfest-red-lobster-4-with-sean-clements-hayes-davenport,spoon nation,1
 rogueboys-rogue-one-with-drew-mcweeny,wow,3
 rogueboys-rogue-one-with-drew-mcweeny,spoonman,2
 rogueboys-rogue-one-with-drew-mcweeny,oh my god,1
+rogueboys-rogue-one-with-drew-mcweeny,unkar plutt,1
 roscoes-house-of-chicken-and-waffles-with-carl-tart,wow,23
 roscoes-house-of-chicken-and-waffles-with-carl-tart,spoonman,2
 roscoes-house-of-chicken-and-waffles-with-carl-tart,platinum plate club,1
@@ -3209,12 +3248,12 @@ salt-straw-2-with-saylor-curda-and-tiana-okoye,snack or wack,2
 salt-straw-2-with-saylor-curda-and-tiana-okoye,oh my god,18
 salt-straw-2-with-saylor-curda-and-tiana-okoye,jesus christ,5
 salt-straw-2-with-saylor-curda-and-tiana-okoye,spoon nation,1
-salt-straw-2-with-saylor-curda-and-tiana-okoye,birdfuck,2
 salt-straw-2-with-saylor-curda-and-tiana-okoye,heat seeker,1
 salt-straw-2-with-saylor-curda-and-tiana-okoye,wally and irma,1
 salt-straw-2-with-saylor-curda-and-tiana-okoye,simulacrum,1
 salt-straw-2-with-saylor-curda-and-tiana-okoye,hat on a hat,1
 salt-straw-2-with-saylor-curda-and-tiana-okoye,ungapatchka,1
+salt-straw-2-with-saylor-curda-and-tiana-okoye,gemmy,17
 salt-straw-with-neil-campbell-andy-samberg,wow,33
 salt-straw-with-neil-campbell-andy-samberg,spoonman,2
 salt-straw-with-neil-campbell-andy-samberg,golden plate club,1
@@ -3228,17 +3267,17 @@ sbarro-with-griffin-newman,golden plate club,1
 sbarro-with-griffin-newman,munch madness,1
 sbarro-with-griffin-newman,oh my god,5
 sbarro-with-griffin-newman,jesus christ,1
-sbarro-with-griffin-newman,birdfuck,2
-sbarro-with-griffin-newman,rumblies,4
 sbarro-with-griffin-newman,heat seeker,2
 sbarro-with-griffin-newman,hat on a hat,2
 sbarro-with-griffin-newman,ungapatchka,3
+sbarro-with-griffin-newman,rumblies,4
+sbarro-with-griffin-newman,gemmy,2
+sbarro-with-griffin-newman,unkar plutt,4
 sees-candies-with-john-hodgman,wow,48
 sees-candies-with-john-hodgman,spoonman,5
 sees-candies-with-john-hodgman,chompion,1
 sees-candies-with-john-hodgman,oh my god,9
 sees-candies-with-john-hodgman,spoon nation,1
-sees-candies-with-john-hodgman,birdfuck,6
 sees-candies-with-john-hodgman,hand holding club,1
 shake-shack-2-with-libby-watson,wow,41
 shake-shack-2-with-libby-watson,spoonman,5
@@ -3288,10 +3327,11 @@ shipley-do-nuts-with-jon-gabrus-live,jesus christ,7
 shipley-do-nuts-with-jon-gabrus-live,for god's sake,1
 shipley-do-nuts-with-jon-gabrus-live,howdy ho,2
 shipley-do-nuts-with-jon-gabrus-live,spoon nation,1
-shipley-do-nuts-with-jon-gabrus-live,rumblies,1
+shipley-do-nuts-with-jon-gabrus-live,case of the rumblies,1
 shipley-do-nuts-with-jon-gabrus-live,heat seeker,1
 shipley-do-nuts-with-jon-gabrus-live,wally and irma,2
 shipley-do-nuts-with-jon-gabrus-live,hand holding club,1
+shipley-do-nuts-with-jon-gabrus-live,rumblies,1
 shockdoughbooerdeath-lucifers-pizza,wow,29
 shockdoughbooerdeath-lucifers-pizza,spoonman,3
 shockdoughbooerdeath-lucifers-pizza,golden plate club,1
@@ -3313,7 +3353,6 @@ shockdoughbooerdeath-zankou-chicken-with-jason-mantzoukas,oh my god,14
 shockdoughbooerdeath-zankou-chicken-with-jason-mantzoukas,jesus christ,3
 shockdoughbooerdeath-zankou-chicken-with-jason-mantzoukas,howdy ho,3
 shockdoughbooerdeath-zankou-chicken-with-jason-mantzoukas,spoon nation,1
-shockdoughbooerdeath-zankou-chicken-with-jason-mantzoukas,birdfuck,3
 shockdoughbooerdeath-zankou-chicken-with-jason-mantzoukas,hand holding club,1
 sidecar-doughnuts-with-david-wain,wow,48
 sidecar-doughnuts-with-david-wain,spoonman,3
@@ -3323,17 +3362,18 @@ sidecar-doughnuts-with-david-wain,oh my god,4
 sidecar-doughnuts-with-david-wain,jesus christ,1
 sidecar-doughnuts-with-david-wain,spoon nation,1
 sidecar-doughnuts-with-david-wain,wally and irma,2
+sidecar-doughnuts-with-david-wain,unkar plutt,2
 silverlake-ramen-with-sierra-katow,wow,44
 silverlake-ramen-with-sierra-katow,spoonman,6
 silverlake-ramen-with-sierra-katow,golden plate club,2
 silverlake-ramen-with-sierra-katow,oh my god,4
 silverlake-ramen-with-sierra-katow,jesus christ,3
-silverlake-ramen-with-sierra-katow,birdfuck,1
-silverlake-ramen-with-sierra-katow,rumblies,1
 silverlake-ramen-with-sierra-katow,heat seeker,1
 silverlake-ramen-with-sierra-katow,wally and irma,2
 silverlake-ramen-with-sierra-katow,hand holding club,1
 silverlake-ramen-with-sierra-katow,hat on a hat,1
+silverlake-ramen-with-sierra-katow,rumblies,1
+silverlake-ramen-with-sierra-katow,gemmy,3
 sizzle-pie-with-bill-oakley-live,this show sucks,2
 sizzle-pie-with-bill-oakley-live,wow,23
 sizzle-pie-with-bill-oakley-live,spoonman,2
@@ -3352,6 +3392,7 @@ sizzler-with-marisa-pinson,oh my god,10
 sizzler-with-marisa-pinson,for god's sake,1
 sizzler-with-marisa-pinson,spoon nation,1
 sizzler-with-marisa-pinson,spoiler alert,2
+sizzler-with-marisa-pinson,unkar plutt,4
 smashburger-with-carlos-santos,wow,41
 smashburger-with-carlos-santos,spoonman,4
 smashburger-with-carlos-santos,golden plate club,1
@@ -3370,9 +3411,9 @@ smokes-poutinerie-with-alana-johnston-live,oh my god,16
 smokes-poutinerie-with-alana-johnston-live,jesus christ,1
 smokes-poutinerie-with-alana-johnston-live,for god's sake,2
 smokes-poutinerie-with-alana-johnston-live,spoon nation,1
-smokes-poutinerie-with-alana-johnston-live,rumblies,2
 smokes-poutinerie-with-alana-johnston-live,heat seeker,1
 smokes-poutinerie-with-alana-johnston-live,wally and irma,1
+smokes-poutinerie-with-alana-johnston-live,rumblies,2
 sombrero-with-neil-campbell-and-fran-gillespie-live,wow,47
 sombrero-with-neil-campbell-and-fran-gillespie-live,spoonman,5
 sombrero-with-neil-campbell-and-fran-gillespie-live,golden plate club,1
@@ -3426,6 +3467,7 @@ steak-n-shake-3-with-evan-susser,jesus christ,3
 steak-n-shake-3-with-evan-susser,for god's sake,4
 steak-n-shake-3-with-evan-susser,spoon nation,1
 steak-n-shake-3-with-evan-susser,wally and irma,1
+steak-n-shake-3-with-evan-susser,unkar plutt,2
 steak-n-shake-4-with-evan-susser,wow,31
 steak-n-shake-4-with-evan-susser,spoonman,1
 steak-n-shake-4-with-evan-susser,golden plate club,5
@@ -3478,8 +3520,8 @@ steak-n-shake-9-slice-house-with-evan-susser-live,snack or wack,3
 steak-n-shake-9-slice-house-with-evan-susser-live,munch madness,2
 steak-n-shake-9-slice-house-with-evan-susser-live,oh my god,8
 steak-n-shake-9-slice-house-with-evan-susser-live,jesus christ,4
-steak-n-shake-9-slice-house-with-evan-susser-live,birdfuck,2
 steak-n-shake-9-slice-house-with-evan-susser-live,wally and irma,1
+steak-n-shake-9-slice-house-with-evan-susser-live,gemmy,2
 steak-n-shake-with-evan-susser,wow,15
 steak-n-shake-with-evan-susser,spoonman,12
 steak-n-shake-with-evan-susser,golden plate club,4
@@ -3495,8 +3537,8 @@ subway-2-with-rj-fried,snack or wack,3
 subway-2-with-rj-fried,oh my god,1
 subway-2-with-rj-fried,jesus christ,3
 subway-2-with-rj-fried,for god's sake,1
-subway-2-with-rj-fried,rumblies,1
 subway-2-with-rj-fried,heat seeker,1
+subway-2-with-rj-fried,rumblies,1
 subway-3-with-sean-clements-hayes-davenport,wow,42
 subway-3-with-sean-clements-hayes-davenport,spoonman,5
 subway-3-with-sean-clements-hayes-davenport,golden plate club,1
@@ -3511,10 +3553,9 @@ subway-4-with-andre-hyland,spoonman,2
 subway-4-with-andre-hyland,munch madness,2
 subway-4-with-andre-hyland,chompion,1
 subway-4-with-andre-hyland,oh my god,7
-subway-4-with-andre-hyland,birdfuck,2
-subway-4-with-andre-hyland,rumblies,2
 subway-4-with-andre-hyland,wally and irma,1
 subway-4-with-andre-hyland,spoiler alert,2
+subway-4-with-andre-hyland,rumblies,2
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,this show sucks,2
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,wow,82
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,spoonman,1
@@ -3522,10 +3563,11 @@ subway-5-doritos-footlong-nachos-with-toni-charline-ramos,broken plate club,1
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,snack or wack,1
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,oh my god,22
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,jesus christ,6
-subway-5-doritos-footlong-nachos-with-toni-charline-ramos,birdfuck,10
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,heat seeker,2
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,wally and irma,1
 subway-5-doritos-footlong-nachos-with-toni-charline-ramos,spoiler alert,2
+subway-5-doritos-footlong-nachos-with-toni-charline-ramos,gemmy,6
+subway-5-doritos-footlong-nachos-with-toni-charline-ramos,unkar plutt,3
 subway-breakfast-with-lily-sullivan,wow,49
 subway-breakfast-with-lily-sullivan,spoonman,1
 subway-breakfast-with-lily-sullivan,platinum plate club,2
@@ -3630,8 +3672,9 @@ taco-bell-3-with-bobby-lee,platinum plate club,1
 taco-bell-3-with-bobby-lee,oh my god,16
 taco-bell-3-with-bobby-lee,jesus christ,3
 taco-bell-3-with-bobby-lee,spoon nation,1
-taco-bell-3-with-bobby-lee,rumblies,1
+taco-bell-3-with-bobby-lee,case of the rumblies,1
 taco-bell-3-with-bobby-lee,wally and irma,1
+taco-bell-3-with-bobby-lee,rumblies,1
 taco-bell-4-with-gillian-jacobs,wow,18
 taco-bell-4-with-gillian-jacobs,spoonman,7
 taco-bell-4-with-gillian-jacobs,golden plate club,2
@@ -3671,18 +3714,17 @@ taco-bell-ix-with-beck-bennett,golden plate club,1
 taco-bell-ix-with-beck-bennett,munch madness,2
 taco-bell-ix-with-beck-bennett,oh my god,8
 taco-bell-ix-with-beck-bennett,jesus christ,1
-taco-bell-ix-with-beck-bennett,birdfuck,2
 taco-bell-ix-with-beck-bennett,heat seeker,1
 taco-bell-ix-with-beck-bennett,wally and irma,1
 taco-bell-ix-with-beck-bennett,hat on a hat,1
 taco-bell-ix-with-beck-bennett,ungapatchka,3
+taco-bell-ix-with-beck-bennett,gemmy,5
 taco-bell-viii-with-samoa-joe,wow,37
 taco-bell-viii-with-samoa-joe,spoonman,6
 taco-bell-viii-with-samoa-joe,golden plate club,3
 taco-bell-viii-with-samoa-joe,platinum plate club,2
 taco-bell-viii-with-samoa-joe,oh my god,4
 taco-bell-viii-with-samoa-joe,spoon nation,1
-taco-bell-viii-with-samoa-joe,birdfuck,7
 taco-bell-viii-with-samoa-joe,wally and irma,1
 taco-bell-with-jack-allison,wow,4
 taco-bell-with-jack-allison,oh my god,2
@@ -3699,7 +3741,6 @@ tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,golden plate cl
 tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,munch madness,1
 tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,oh my god,123
 tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,jesus christ,6
-tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,birdfuck,2
 tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,simulacrum,1
 tasty-burger-with-mookie-blaiklock-zach-cherry-mike-hanford-live,ungapatchka,1
 tender-greens-2-with-niccole-thurman,wow,29
@@ -3707,8 +3748,8 @@ tender-greens-2-with-niccole-thurman,spoonman,2
 tender-greens-2-with-niccole-thurman,golden plate club,5
 tender-greens-2-with-niccole-thurman,oh my god,9
 tender-greens-2-with-niccole-thurman,for god's sake,1
-tender-greens-2-with-niccole-thurman,birdfuck,5
 tender-greens-2-with-niccole-thurman,wally and irma,1
+tender-greens-2-with-niccole-thurman,gemmy,19
 tender-greens-with-ryan-stanger,this show sucks,1
 tender-greens-with-ryan-stanger,wow,42
 tender-greens-with-ryan-stanger,spoonman,11
@@ -3717,6 +3758,7 @@ tender-greens-with-ryan-stanger,jesus christ,1
 tender-greens-with-ryan-stanger,spoon nation,4
 tender-greens-with-ryan-stanger,hand holding club,1
 tender-greens-with-ryan-stanger,spoiler alert,1
+tender-greens-with-ryan-stanger,unkar plutt,1
 tgi-fridays-2-with-the-sklar-brothers,wow,10
 tgi-fridays-2-with-the-sklar-brothers,golden plate club,2
 tgi-fridays-2-with-the-sklar-brothers,oh my god,4
@@ -3810,6 +3852,7 @@ the-coffee-bean-with-hannah-kasulka,for god's sake,2
 the-coffee-bean-with-hannah-kasulka,blah blah blah,1
 the-coffee-bean-with-hannah-kasulka,spoon nation,1
 the-coffee-bean-with-hannah-kasulka,hand holding club,1
+the-coffee-bean-with-hannah-kasulka,unkar plutt,3
 the-dopeboys-420-smokestackular-with-jon-gabrus,wow,16
 the-dopeboys-420-smokestackular-with-jon-gabrus,spoonman,3
 the-dopeboys-420-smokestackular-with-jon-gabrus,golden plate club,2
@@ -3857,6 +3900,7 @@ the-hat-with-betsy-sodaro-and-mano-agapion-live,for god's sake,1
 the-hat-with-betsy-sodaro-and-mano-agapion-live,howdy ho,1
 the-hat-with-betsy-sodaro-and-mano-agapion-live,spoon nation,1
 the-hat-with-betsy-sodaro-and-mano-agapion-live,heat seeker,5
+the-hat-with-betsy-sodaro-and-mano-agapion-live,unkar plutt,1
 the-musso-frank-grill-with-evan-susser,this show sucks,2
 the-musso-frank-grill-with-evan-susser,wow,52
 the-musso-frank-grill-with-evan-susser,spoonman,1
@@ -3893,16 +3937,16 @@ thighstop-with-jon-gabrus,spoon nation,1
 thighstop-with-jon-gabrus,heat seeker,1
 thighstop-with-jon-gabrus,simulacrum,1
 thighstop-with-jon-gabrus,ungapatchka,2
+thighstop-with-jon-gabrus,gemmy,3
 toastique-with-mary-sohn,wow,54
 toastique-with-mary-sohn,spoonman,2
 toastique-with-mary-sohn,snack or wack,1
 toastique-with-mary-sohn,oh my god,10
 toastique-with-mary-sohn,jesus christ,4
-toastique-with-mary-sohn,birdfuck,5
-toastique-with-mary-sohn,rumblies,1
 toastique-with-mary-sohn,heat seeker,2
 toastique-with-mary-sohn,wally and irma,1
 toastique-with-mary-sohn,ungapatchka,2
+toastique-with-mary-sohn,rumblies,1
 togos-with-matty-smith,wow,13
 togos-with-matty-smith,spoonman,7
 togos-with-matty-smith,oh my god,3
@@ -3950,15 +3994,15 @@ topical-freeze-tinas-burritos-with-jamelle-bouie,spoonman,7
 topical-freeze-tinas-burritos-with-jamelle-bouie,snack or wack,1
 topical-freeze-tinas-burritos-with-jamelle-bouie,oh my god,2
 topical-freeze-tinas-burritos-with-jamelle-bouie,spoon nation,1
-topical-freeze-tinas-burritos-with-jamelle-bouie,rumblies,2
+topical-freeze-tinas-burritos-with-jamelle-bouie,case of the rumblies,1
 topical-freeze-tinas-burritos-with-jamelle-bouie,heat seeker,1
+topical-freeze-tinas-burritos-with-jamelle-bouie,rumblies,2
 toront-dough-boston-pizza-with-samoa-joe,wow,35
 toront-dough-boston-pizza-with-samoa-joe,spoonman,3
 toront-dough-boston-pizza-with-samoa-joe,platinum plate club,1
 toront-dough-boston-pizza-with-samoa-joe,snack or wack,1
 toront-dough-boston-pizza-with-samoa-joe,oh my god,6
 toront-dough-boston-pizza-with-samoa-joe,jesus christ,2
-toront-dough-boston-pizza-with-samoa-joe,birdfuck,2
 toront-dough-boston-pizza-with-samoa-joe,heat seeker,1
 toront-dough-boston-pizza-with-samoa-joe,wally and irma,3
 toront-dough-boston-pizza-with-samoa-joe,spoiler alert,1
@@ -3969,10 +4013,10 @@ toront-dough-harveys-with-shaun-diston,golden plate club,2
 toront-dough-harveys-with-shaun-diston,platinum plate club,1
 toront-dough-harveys-with-shaun-diston,oh my god,20
 toront-dough-harveys-with-shaun-diston,jesus christ,1
-toront-dough-harveys-with-shaun-diston,birdfuck,1
-toront-dough-harveys-with-shaun-diston,rumblies,1
 toront-dough-harveys-with-shaun-diston,heat seeker,1
 toront-dough-harveys-with-shaun-diston,wally and irma,2
+toront-dough-harveys-with-shaun-diston,rumblies,1
+toront-dough-harveys-with-shaun-diston,gemmy,4
 toront-dough-little-canada-with-taylor-davis-and-carson-pinch,wow,96
 toront-dough-little-canada-with-taylor-davis-and-carson-pinch,spoonman,2
 toront-dough-little-canada-with-taylor-davis-and-carson-pinch,platinum plate club,4
@@ -3984,7 +4028,6 @@ toront-dough-mcdonalds-canada-with-mike-hanford,spoonman,1
 toront-dough-mcdonalds-canada-with-mike-hanford,platinum plate club,2
 toront-dough-mcdonalds-canada-with-mike-hanford,oh my god,6
 toront-dough-mcdonalds-canada-with-mike-hanford,jesus christ,1
-toront-dough-mcdonalds-canada-with-mike-hanford,birdfuck,1
 toront-dough-mcdonalds-canada-with-mike-hanford,heat seeker,1
 toront-dough-mcdonalds-canada-with-mike-hanford,wally and irma,2
 toront-dough-mcdonalds-canada-with-mike-hanford,hat on a hat,1
@@ -3994,7 +4037,6 @@ toront-dough-swiss-chalet-with-alana-johnston,golden plate club,2
 toront-dough-swiss-chalet-with-alana-johnston,platinum plate club,3
 toront-dough-swiss-chalet-with-alana-johnston,oh my god,27
 toront-dough-swiss-chalet-with-alana-johnston,jesus christ,1
-toront-dough-swiss-chalet-with-alana-johnston,birdfuck,2
 toront-dough-swiss-chalet-with-alana-johnston,wally and irma,1
 toront-dough-swiss-chalet-with-alana-johnston,ungapatchka,1
 toront-dough-tim-hortons-with-stephanie-beatriz-and-alana-johnston,wow,91
@@ -4011,8 +4053,9 @@ tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,munch mad
 tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,oh my god,6
 tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,jesus christ,3
 tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,for god's sake,1
-tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,rumblies,1
+tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,case of the rumblies,1
 tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,wally and irma,1
+tournament-of-chompions-buffalo-wild-wings-v-wingstop-with-nicole-byer,rumblies,1
 tournament-of-chompions-carls-jrhardees-v-fuddruckers,wow,19
 tournament-of-chompions-carls-jrhardees-v-fuddruckers,spoonman,2
 tournament-of-chompions-carls-jrhardees-v-fuddruckers,golden plate club,2
@@ -4092,9 +4135,9 @@ tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,munch madness,1
 tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,chompion,1
 tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,oh my god,17
 tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,jesus christ,2
-tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,rumblies,2
 tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,heat seeker,1
 tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,wally and irma,4
+tournament-of-chompions-mcdonalds-v-popeyes-with-armen-weitzman,rumblies,2
 tournament-of-chompions-minisode-five-guys-v-shake-shack,wow,2
 tournament-of-chompions-minisode-five-guys-v-shake-shack,spoonman,2
 tournament-of-chompions-minisode-five-guys-v-shake-shack,golden plate club,3
@@ -4127,8 +4170,9 @@ tournament-of-chompions-wendys-v-wingstop-with-matt-selman,spoonman,2
 tournament-of-chompions-wendys-v-wingstop-with-matt-selman,munch madness,3
 tournament-of-chompions-wendys-v-wingstop-with-matt-selman,oh my god,5
 tournament-of-chompions-wendys-v-wingstop-with-matt-selman,for god's sake,1
-tournament-of-chompions-wendys-v-wingstop-with-matt-selman,rumblies,3
+tournament-of-chompions-wendys-v-wingstop-with-matt-selman,case of the rumblies,1
 tournament-of-chompions-wendys-v-wingstop-with-matt-selman,heat seeker,3
+tournament-of-chompions-wendys-v-wingstop-with-matt-selman,rumblies,3
 true-food-kitchen-with-claudia-odoherty,wow,37
 true-food-kitchen-with-claudia-odoherty,spoonman,2
 true-food-kitchen-with-claudia-odoherty,platinum plate club,1
@@ -4137,6 +4181,7 @@ true-food-kitchen-with-claudia-odoherty,jesus christ,1
 true-food-kitchen-with-claudia-odoherty,for god's sake,1
 true-food-kitchen-with-claudia-odoherty,spoon nation,1
 true-food-kitchen-with-claudia-odoherty,ungapatchka,2
+true-food-kitchen-with-claudia-odoherty,unkar plutt,1
 two-hands-corn-dogs-with-jamie-loftus,wow,43
 two-hands-corn-dogs-with-jamie-loftus,spoonman,3
 two-hands-corn-dogs-with-jamie-loftus,platinum plate club,1
@@ -4178,13 +4223,15 @@ unlocked-a-very-doughboys-christmas,wow,31
 unlocked-a-very-doughboys-christmas,spoonman,6
 unlocked-a-very-doughboys-christmas,oh my god,7
 unlocked-a-very-doughboys-christmas,spoon nation,1
-unlocked-a-very-doughboys-christmas,rumblies,4
+unlocked-a-very-doughboys-christmas,case of the rumblies,2
 unlocked-a-very-doughboys-christmas,wally and irma,1
+unlocked-a-very-doughboys-christmas,rumblies,4
 unlocked-beaver-patrol-with-jefferson-dutton,wow,23
 unlocked-beaver-patrol-with-jefferson-dutton,spoonman,3
 unlocked-beaver-patrol-with-jefferson-dutton,oh my god,5
 unlocked-beaver-patrol-with-jefferson-dutton,jesus christ,1
 unlocked-beaver-patrol-with-jefferson-dutton,wally and irma,1
+unlocked-beaver-patrol-with-jefferson-dutton,gemmy,2
 unlocked-chilis-with-eva-anderson,wow,9
 unlocked-chilis-with-eva-anderson,platinum plate club,1
 unlocked-chilis-with-eva-anderson,snack or wack,3
@@ -4232,29 +4279,28 @@ unlocked-man-bites-dog,oh my god,3
 unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,wow,31
 unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,munch madness,1
 unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,oh my god,7
-unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,birdfuck,1
 unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,heat seeker,1
 unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,wally and irma,1
+unlocked-mash-off-6-the-chompit-the-battle-of-the-5-cookies-with-eva-anderson-and-mike-hanford,gemmy,9
 unlocked-mreats-with-edwin-hodge,wow,21
 unlocked-mreats-with-edwin-hodge,spoonman,1
 unlocked-mreats-with-edwin-hodge,oh my god,1
-unlocked-mreats-with-edwin-hodge,rumblies,1
 unlocked-mreats-with-edwin-hodge,spoiler alert,1
+unlocked-mreats-with-edwin-hodge,rumblies,1
 unlocked-red-hot-ranch-with-jon-gabrus-live,wow,28
 unlocked-red-hot-ranch-with-jon-gabrus-live,spoonman,2
 unlocked-red-hot-ranch-with-jon-gabrus-live,golden plate club,2
 unlocked-red-hot-ranch-with-jon-gabrus-live,platinum plate club,1
 unlocked-red-hot-ranch-with-jon-gabrus-live,oh my god,9
 unlocked-red-hot-ranch-with-jon-gabrus-live,for god's sake,3
-unlocked-red-hot-ranch-with-jon-gabrus-live,birdfuck,1
 unlocked-red-hot-ranch-with-jon-gabrus-live,heat seeker,1
 unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,wow,26
 unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,platinum plate club,1
 unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,oh my god,6
 unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,jesus christ,1
 unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,blah blah blah,1
-unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,rumblies,3
 unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,wally and irma,1
+unlocked-shockdoughbooerdeath-doughschord-doughcision-candy-corn-power-hour-with-marisa-pinson,rumblies,3
 unlocked-soups-up-with-joe-hartzler,wow,12
 unlocked-soups-up-with-joe-hartzler,spoonman,1
 unlocked-soups-up-with-joe-hartzler,oh my god,8
@@ -4273,8 +4319,8 @@ unlocked-the-2018-doughboys-christmas-special-wiger-alone,spoonman,2
 unlocked-the-2018-doughboys-christmas-special-wiger-alone,oh my god,6
 unlocked-the-2018-doughboys-christmas-special-wiger-alone,jesus christ,3
 unlocked-the-2018-doughboys-christmas-special-wiger-alone,for god's sake,2
-unlocked-the-2018-doughboys-christmas-special-wiger-alone,rumblies,1
 unlocked-the-2018-doughboys-christmas-special-wiger-alone,wally and irma,9
+unlocked-the-2018-doughboys-christmas-special-wiger-alone,rumblies,1
 unlocked-the-band-of-tomorrow-with-caroline-anderson,wow,38
 unlocked-the-band-of-tomorrow-with-caroline-anderson,munch madness,1
 unlocked-the-band-of-tomorrow-with-caroline-anderson,heat seeker,1
@@ -4368,8 +4414,8 @@ waffle-house-with-carl-tart-live,snack or wack,1
 waffle-house-with-carl-tart-live,oh my god,6
 waffle-house-with-carl-tart-live,jesus christ,5
 waffle-house-with-carl-tart-live,spoon nation,1
-waffle-house-with-carl-tart-live,rumblies,1
 waffle-house-with-carl-tart-live,heat seeker,1
+waffle-house-with-carl-tart-live,rumblies,1
 wahlburgers-with-eliza-hooper,wow,62
 wahlburgers-with-eliza-hooper,spoonman,1
 wahlburgers-with-eliza-hooper,golden plate club,1
@@ -4402,8 +4448,8 @@ wendys-4-with-brooks-wheelan,golden plate club,1
 wendys-4-with-brooks-wheelan,munch madness,3
 wendys-4-with-brooks-wheelan,oh my god,16
 wendys-4-with-brooks-wheelan,jesus christ,2
-wendys-4-with-brooks-wheelan,birdfuck,3
 wendys-4-with-brooks-wheelan,ungapatchka,1
+wendys-4-with-brooks-wheelan,gemmy,10
 wendys-breakfast-with-the-sloppy-boys,wow,54
 wendys-breakfast-with-the-sloppy-boys,spoonman,4
 wendys-breakfast-with-the-sloppy-boys,platinum plate club,1
@@ -4429,8 +4475,9 @@ wetzels-pretzels-with-jon-daly,oh my god,16
 wetzels-pretzels-with-jon-daly,jesus christ,3
 wetzels-pretzels-with-jon-daly,howdy ho,3
 wetzels-pretzels-with-jon-daly,spoon nation,1
-wetzels-pretzels-with-jon-daly,rumblies,1
+wetzels-pretzels-with-jon-daly,case of the rumblies,1
 wetzels-pretzels-with-jon-daly,hand holding club,1
+wetzels-pretzels-with-jon-daly,rumblies,1
 whataburger-with-jon-gabrus-live,wow,36
 whataburger-with-jon-gabrus-live,spoonman,5
 whataburger-with-jon-gabrus-live,golden plate club,2
@@ -4459,6 +4506,7 @@ whole-foods-2-with-emily-yoshida,oh my god,17
 whole-foods-2-with-emily-yoshida,jesus christ,1
 whole-foods-2-with-emily-yoshida,spoon nation,1
 whole-foods-2-with-emily-yoshida,spoiler alert,3
+whole-foods-2-with-emily-yoshida,gemmy,9
 wienerschnitzel-with-rob-huebel,wow,29
 wienerschnitzel-with-rob-huebel,spoonman,1
 wienerschnitzel-with-rob-huebel,golden plate club,2
@@ -4472,9 +4520,9 @@ willie-maes-scotch-house-with-matt-selman,spoonman,2
 willie-maes-scotch-house-with-matt-selman,platinum plate club,2
 willie-maes-scotch-house-with-matt-selman,oh my god,14
 willie-maes-scotch-house-with-matt-selman,jesus christ,1
-willie-maes-scotch-house-with-matt-selman,birdfuck,5
 willie-maes-scotch-house-with-matt-selman,spoiler alert,1
 willie-maes-scotch-house-with-matt-selman,ungapatchka,3
+willie-maes-scotch-house-with-matt-selman,gemmy,1
 winchells-donut-house-with-mike-horowitz,wow,36
 winchells-donut-house-with-mike-horowitz,spoonman,5
 winchells-donut-house-with-mike-horowitz,golden plate club,3
@@ -4483,10 +4531,10 @@ winchells-donut-house-with-mike-horowitz,oh my god,5
 winchells-donut-house-with-mike-horowitz,jesus christ,2
 winchells-donut-house-with-mike-horowitz,for god's sake,1
 winchells-donut-house-with-mike-horowitz,spoon nation,2
-winchells-donut-house-with-mike-horowitz,rumblies,1
 winchells-donut-house-with-mike-horowitz,heat seeker,1
 winchells-donut-house-with-mike-horowitz,wally and irma,1
 winchells-donut-house-with-mike-horowitz,spoiler alert,1
+winchells-donut-house-with-mike-horowitz,rumblies,1
 wingstop-with-emmy-blotnick,wow,8
 wingstop-with-emmy-blotnick,spoonman,7
 wingstop-with-emmy-blotnick,oh my god,6

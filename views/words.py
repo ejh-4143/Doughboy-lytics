@@ -56,8 +56,9 @@ else:
         fig.add_trace(go.Scatter(
             x=eps.date, y=rate, mode="markers", name=phrase, legendgroup=phrase,
             marker=dict(size=6, color=color, opacity=0.35),
-            customdata=np.stack([eps.restaurant, eps.label, eps[phrase]], axis=1),
-            hovertemplate=(f"<b>%{{customdata[0]}}</b> · %{{customdata[1]}}<br>"
+            customdata=np.stack([eps.restaurant, eps.label, eps[phrase],
+                                 eps.date.dt.strftime("%b %d, %Y")], axis=1),
+            hovertemplate=(f"<b>%{{customdata[0]}}</b> · %{{customdata[1]}} · %{{customdata[3]}}<br>"
                            f"“{phrase}”: %{{customdata[2]:.0f}} times "
                            "(%{y:.1f} per 10k words)<extra></extra>")))
         # Break the line across long gaps in transcript coverage (podscripts is
